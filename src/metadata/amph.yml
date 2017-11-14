@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/amph
+
+idspace: AMPH
+base_url: /obo/amph
+
+products:
+- amph.owl: https://raw.githubusercontent.com/obophenotype/amph/master/amph.owl
+- amph.obo: https://raw.githubusercontent.com/obophenotype/amph/master/amph.obo
+
+term_browser: ontobee
+example_terms:
+- AMPH_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/amph/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/amph/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/AMPH?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/amph/master/
