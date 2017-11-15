@@ -1,10 +1,1123 @@
 format-version: 1.2
-data-version: releases/2017-11-14
-remark: amph
-ontology: amph
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/AMPH_00000000>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/AMPH_00000000> (amph)\n\nSubClassOf(<http://purl.obolibrary.org/obo/AMPH_00000000> owl:Thing)\n\n\n)
+data-version: amph/releases/2017-11-15/amph.owl
+remark: Amphioxus (Branchiostoma lanceolatum) ontology
+ontology: amph/amph
 
 [Term]
 id: AMPH:00000000
 name: amph
+
+[Term]
+id: AMPH:0000001
+name: gametogenesis
+is_a: UBERON:0000105 ! life cycle stage
+
+[Term]
+id: AMPH:0000002
+name: oogenesis
+relationship: BFO:0000050 AMPH:0000001 ! part of gametogenesis
+
+[Term]
+id: AMPH:0000003
+name: spermatogenesis
+relationship: BFO:0000050 AMPH:0000001 ! part of gametogenesis
+
+[Term]
+id: AMPH:0000004
+name: gamete stage
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPH:0000001 ! immediately preceded by gametogenesis
+
+[Term]
+id: AMPH:0000005
+name: unfertilized egg stage
+relationship: BFO:0000050 AMPH:0000004 ! part of gamete stage
+relationship: RO:0002087 AMPH:0000002 ! immediately preceded by oogenesis
+
+[Term]
+id: AMPH:0000006
+name: spermatozoid stage
+relationship: BFO:0000050 AMPH:0000004 ! part of gamete stage
+relationship: RO:0002087 AMPH:0000003 ! immediately preceded by spermatogenesis
+
+[Term]
+id: AMPH:0000007
+name: embryonic development
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPH:0000004 ! immediately preceded by gamete stage
+
+[Term]
+id: AMPH:0000008
+name: zygote period
+relationship: BFO:0000050 AMPH:0000007 ! part of embryonic development
+
+[Term]
+id: AMPH:0000009
+name: cleavage period
+relationship: BFO:0000050 AMPH:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPH:0000008 ! immediately preceded by zygote period
+
+[Term]
+id: AMPH:0000010
+name: blastula period
+relationship: BFO:0000050 AMPH:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPH:0000009 ! immediately preceded by cleavage period
+
+[Term]
+id: AMPH:0000011
+name: Gastrula period
+relationship: BFO:0000050 AMPH:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPH:0000010 ! immediately preceded by blastula period
+
+[Term]
+id: AMPH:0000012
+name: Neurula period
+relationship: BFO:0000050 AMPH:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPH:0000011 ! immediately preceded by Gastrula period
+
+[Term]
+id: AMPH:0000013
+name: Tailbud period
+relationship: BFO:0000050 AMPH:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPH:0000012 ! immediately preceded by Neurula period
+
+[Term]
+id: AMPH:0000014
+name: larval development
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPH:0000007 ! immediately preceded by embryonic development
+
+[Term]
+id: AMPH:0000015
+name: Larva stage
+relationship: BFO:0000050 AMPH:0000014 ! part of larval development
+
+[Term]
+id: AMPH:0000016
+name: Metamorphosis
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPH:0000014 ! immediately preceded by larval development
+
+[Term]
+id: AMPH:0000017
+name: juvenile
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPH:0000016 ! immediately preceded by Metamorphosis
+
+[Term]
+id: AMPH:0000018
+name: Juvenile period
+relationship: BFO:0000050 AMPH:0000017 ! part of juvenile
+
+[Term]
+id: AMPH:0000019
+name: adult
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPH:0000017 ! immediately preceded by juvenile
+
+[Term]
+id: AMPH:0000020
+name: Adult period
+relationship: BFO:0000050 AMPH:0000019 ! part of adult
+
+[Term]
+id: AMPH:0000022
+name: one cell stage
+def: "Zygote fertilized egg. Time since fertilization is 0min, corresponding to 0.00% of development" []
+relationship: BFO:0000050 AMPH:0000008 ! part of zygote period
+relationship: RO:0002087 AMPH:0000005 ! immediately preceded by unfertilized egg stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000023
+name: 2-cell stage
+relationship: BFO:0000050 AMPH:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPH:0000022 ! immediately preceded by one cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000024
+name: 4-cell stage
+relationship: BFO:0000050 AMPH:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPH:0000023 ! immediately preceded by 2-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000025
+name: 8-cell stage
+relationship: BFO:0000050 AMPH:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPH:0000024 ! immediately preceded by 4-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000026
+name: 16-cell stage
+relationship: BFO:0000050 AMPH:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPH:0000025 ! immediately preceded by 8-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000027
+name: 32-cell stage
+relationship: BFO:0000050 AMPH:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPH:0000026 ! immediately preceded by 16-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000028
+name: 64-cell stage
+relationship: BFO:0000050 AMPH:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPH:0000027 ! immediately preceded by 32-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000029
+name: 128-cell stage
+relationship: BFO:0000050 AMPH:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPH:0000028 ! immediately preceded by 64-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000030
+name: 256-cell stage
+synonym: "morula" EXACT []
+relationship: BFO:0000050 AMPH:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPH:0000029 ! immediately preceded by 128-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000031
+name: blastula stage
+relationship: BFO:0000050 AMPH:0000010 ! part of blastula period
+relationship: RO:0002087 AMPH:0000030 ! immediately preceded by 256-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000032
+name: gastrula-G0 stage
+def: "Initial flatening of the vegetal zone" []
+synonym: "Very early gastrula" EXACT []
+relationship: BFO:0000050 AMPH:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPH:0000031 ! immediately preceded by blastula stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPH:0000033
+name: gastrula-G1 stage
+def: "Flattened vegetal zone" []
+synonym: "Very early gastrula" EXACT []
+relationship: BFO:0000050 AMPH:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPH:0000032 ! immediately preceded by gastrula-G0 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPH:0000034
+name: gastrula-G2 stage
+def: "Depressed vegetal zone, mesendoderm does not touch ectoderm" []
+synonym: "Very early gastrula" EXACT []
+relationship: BFO:0000050 AMPH:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPH:0000033 ! immediately preceded by gastrula-G1 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPH:0000035
+name: gastrula-G3 stage
+def: "Cap shaped, mesendoderm completely touch ectoderm" []
+synonym: "Early gastrula" EXACT []
+relationship: BFO:0000050 AMPH:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPH:0000034 ! immediately preceded by gastrula-G2 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPH:0000036
+name: gastrula-G4 stage
+def: "Cup shaped" []
+synonym: "Mid-gastrula" EXACT []
+relationship: BFO:0000050 AMPH:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPH:0000035 ! immediately preceded by gastrula-G3 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPH:0000037
+name: gastrula-G5 stage
+def: "Vase shaped due to body elongation during blastopore closure" []
+synonym: "Late gastrula" EXACT []
+relationship: BFO:0000050 AMPH:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPH:0000036 ! immediately preceded by gastrula-G4 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPH:0000038
+name: gastrula-G6 stage
+def: "Bottle shaped with flattening neuroectoderm" []
+synonym: "Very late gastrula" EXACT []
+relationship: BFO:0000050 AMPH:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPH:0000037 ! immediately preceded by gastrula-G5 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPH:0000039
+name: gastrula-G7 stage
+def: "Distinct neural plate, just before blastopore closure" []
+synonym: "Final gastrula" EXACT []
+relationship: BFO:0000050 AMPH:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPH:0000038 ! immediately preceded by gastrula-G6 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPH:0000040
+name: neurula-N0 stage
+def: "0-3 somites" []
+synonym: "Very early neurula" EXACT []
+relationship: BFO:0000050 AMPH:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPH:0000039 ! immediately preceded by gastrula-G7 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPH:0000041
+name: neurula-N1 stage
+def: "4-6 somites" []
+synonym: "Early neurula" EXACT []
+relationship: BFO:0000050 AMPH:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPH:0000040 ! immediately preceded by neurula-N0 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPH:0000042
+name: neurula-N2 stage
+def: "7 to 8 somites" []
+synonym: "Mid-neurula" EXACT []
+relationship: BFO:0000050 AMPH:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPH:0000041 ! immediately preceded by neurula-N1 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPH:0000043
+name: neurula-N3 stage
+def: "8 to 9 somites, prior to schizocoelic somites" []
+synonym: "Late-neurula" EXACT []
+relationship: BFO:0000050 AMPH:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPH:0000042 ! immediately preceded by neurula-N2 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPH:0000044
+name: neurula-N4 stage
+def: "9 to 11 somites, prior to schizocoelic somites" []
+synonym: "Late-neurula II" EXACT []
+relationship: BFO:0000050 AMPH:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPH:0000043 ! immediately preceded by neurula-N3 stage
+
+[Term]
+id: AMPH:0000045
+name: neurula-T stage
+def: "Tailbud with enlarged pharyngeal region, from 11-13 somites" []
+synonym: "Premouth stage" EXACT []
+relationship: BFO:0000050 AMPH:0000013 ! part of Tailbud period
+relationship: RO:0002087 AMPH:0000043 ! immediately preceded by neurula-N3 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPH:0000046
+name: neurula-T2 stage
+def: "Tailbud with enlarged pharyngeal region, more than 13 somites, prior the mouth opens" []
+synonym: "Premouth stage II" EXACT []
+relationship: BFO:0000050 AMPH:0000013 ! part of Tailbud period
+relationship: RO:0002087 AMPH:0000045 ! immediately preceded by neurula-T stage
+
+[Term]
+id: AMPH:0000047
+name: larva-L0 stage
+def: "Open mouth, 0 gill slits" []
+synonym: "Early larvae" EXACT []
+relationship: BFO:0000050 AMPH:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPH:0000045 ! immediately preceded by neurula-T stage
+
+[Term]
+id: AMPH:0000048
+name: larva-L1 stage
+def: "Mouth and 1 gill slit open" []
+synonym: "1 gill slit larvae" EXACT []
+relationship: BFO:0000050 AMPH:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPH:0000047 ! immediately preceded by larva-L0 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPH:0000049
+name: larva-L2 stage
+def: "Mouth and 2 gill slit open" []
+synonym: "2 gill slit larvae" EXACT []
+relationship: BFO:0000050 AMPH:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPH:0000048 ! immediately preceded by larva-L1 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPH:0000050
+name: larva-L3 stage
+def: "Mouth and 3 gill slit open" []
+synonym: "3 gill slit larvae" EXACT []
+relationship: BFO:0000050 AMPH:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPH:0000049 ! immediately preceded by larva-L2 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPH:0000051
+name: larva-L4 stage
+def: "Mouth and 4-13 gill slits open" []
+synonym: "Late larvae" EXACT []
+relationship: BFO:0000050 AMPH:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPH:0000050 ! immediately preceded by larva-L3 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPH:0000052
+name: larva-PL stage
+def: "Mouth and 14-15 gill slits (B. lanceolatum)" []
+synonym: "Premetamorphic larvae" EXACT []
+relationship: BFO:0000050 AMPH:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPH:0000051 ! immediately preceded by larva-L4 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPH:0000053
+name: larva-EML stage
+def: "Metapleural folds start to grow" []
+synonym: "Early metamorphic larvae" EXACT []
+relationship: BFO:0000050 AMPH:0000016 ! part of Metamorphosis
+relationship: RO:0002087 AMPH:0000052 ! immediately preceded by larva-PL stage
+
+[Term]
+id: AMPH:0000054
+name: larva-MML stage
+def: "Gill slits start to duplicate, hepatic caecum starts to develop" []
+synonym: "Mid-metamorphic larvae" EXACT []
+relationship: BFO:0000050 AMPH:0000016 ! part of Metamorphosis
+relationship: RO:0002087 AMPH:0000053 ! immediately preceded by larva-EML stage
+
+[Term]
+id: AMPH:0000055
+name: larva-LML stage
+def: "Mouth migration to frontal position" []
+synonym: "Late metamorphic larvae" EXACT []
+relationship: BFO:0000050 AMPH:0000016 ! part of Metamorphosis
+relationship: RO:0002087 AMPH:0000054 ! immediately preceded by larva-MML stage
+
+[Term]
+id: AMPH:0000056
+name: juvenile-J stage
+def: "Adult-like morphology, length of less than 3cm" []
+synonym: "Postmetamorphic juvenile" EXACT []
+relationship: BFO:0000050 AMPH:0000018 ! part of Juvenile period
+relationship: RO:0002087 AMPH:0000055 ! immediately preceded by larva-LML stage
+
+[Term]
+id: AMPH:0000057
+name: adult-A stage
+def: "Adult-like morphology, length of more than 3cm" []
+synonym: "Adult" EXACT []
+relationship: BFO:0000050 AMPH:0000020 ! part of Adult period
+relationship: RO:0002087 AMPH:0000056 ! immediately preceded by juvenile-J stage
+
+[Term]
+id: AMPH:1000001
+name: whole embryo
+is_a: UBERON:0000061 ! anatomical structure
+relationship: RO:0002488 AMPH:0000008 ! existence starts during zygote period
+relationship: RO:0002492 AMPH:0000015 ! existence ends during Larva stage
+
+[Term]
+id: AMPH:1000002
+name: blastomere
+is_a: CL:0000000 ! cell
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+
+[Term]
+id: AMPH:1000003
+name: whole oocyte
+is_a: CL:0000000 ! cell
+
+[Term]
+id: AMPH:1000004
+name: tissue
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+
+[Term]
+id: AMPH:1000005
+name: embryonic territory
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+
+[Term]
+id: AMPH:1000006
+name: central nervous system
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+
+[Term]
+id: AMPH:1000007
+name: vegetal pole cytoplasm
+is_a: GO:0005575 ! cellular component
+relationship: RO:0002488 AMPH:0000005 ! existence starts during unfertilized egg stage
+relationship: RO:0002492 AMPH:0000022 ! existence ends during one cell stage
+
+[Term]
+id: AMPH:1000008
+name: vegetal pole cytoplasm of oocyte
+is_a: AMPH:1000007 ! vegetal pole cytoplasm
+relationship: BFO:0000050 AMPH:1000003 ! part of whole oocyte
+
+[Term]
+id: AMPH:1000009
+name: vegetal pole cytoplasm of embryo
+is_a: AMPH:1000007 ! vegetal pole cytoplasm
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+
+[Term]
+id: AMPH:1000010
+name: animal pole cytoplasm
+is_a: GO:0005575 ! cellular component
+relationship: RO:0002488 AMPH:0000005 ! existence starts during unfertilized egg stage
+relationship: RO:0002492 AMPH:0000022 ! existence ends during one cell stage
+
+[Term]
+id: AMPH:1000011
+name: animal pole cytoplasm of oocyte
+is_a: AMPH:1000010 ! animal pole cytoplasm
+relationship: BFO:0000050 AMPH:1000003 ! part of whole oocyte
+
+[Term]
+id: AMPH:1000012
+name: animal pole cytoplasm of embryo
+is_a: AMPH:1000010 ! animal pole cytoplasm
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+
+[Term]
+id: AMPH:1000013
+name: zygote
+def: "Diploid cell produced by the fusion of sperm cell nucleus and egg cell" []
+is_a: CL:0000000 ! cell
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+relationship: RO:0002488 AMPH:0000022 ! existence starts during one cell stage
+relationship: RO:0002492 AMPH:0000022 ! existence ends during one cell stage
+
+[Term]
+id: AMPH:1000014
+name: 2 cell stage embryo
+is_a: AMPH:1000001 ! whole embryo
+relationship: RO:0002488 AMPH:0000023 ! existence starts during 2-cell stage
+relationship: RO:0002492 AMPH:0000023 ! existence ends during 2-cell stage
+
+[Term]
+id: AMPH:1000015
+name: 4 cell stage embryo
+is_a: AMPH:1000001 ! whole embryo
+relationship: RO:0002488 AMPH:0000023 ! existence starts during 2-cell stage
+relationship: RO:0002492 AMPH:0000023 ! existence ends during 2-cell stage
+
+[Term]
+id: AMPH:1000016
+name: blastomere of 2-cell stage embryo
+def: "A cell found in the embryo before the formation of all the gem layers is complete" []
+is_a: AMPH:1000002 ! blastomere
+relationship: BFO:0000050 AMPH:1000014 ! part of 2 cell stage embryo
+relationship: RO:0002202 AMPH:1000013 ! develops from zygote
+relationship: RO:0002488 AMPH:0000023 ! existence starts during 2-cell stage
+relationship: RO:0002492 AMPH:0000023 ! existence ends during 2-cell stage
+
+[Term]
+id: AMPH:1000017
+name: blastomere of 4-cells stage embryo
+def: "A cell found in the embryo before the formation of all the gem layers is complete" []
+is_a: AMPH:1000002 ! blastomere
+relationship: BFO:0000050 AMPH:1000015 ! part of 4 cell stage embryo
+relationship: RO:0002202 AMPH:1000014 ! develops from 2 cell stage embryo
+relationship: RO:0002488 AMPH:0000024 ! existence starts during 4-cell stage
+relationship: RO:0002492 AMPH:0000024 ! existence ends during 4-cell stage
+
+[Term]
+id: AMPH:1000018
+name: micromeres
+def: "Cells found at the animal pole of the embryo, of small size" []
+is_a: AMPH:1000002 ! blastomere
+relationship: RO:0002202 AMPH:1000015 ! develops from 4 cell stage embryo
+relationship: RO:0002488 AMPH:0000025 ! existence starts during 8-cell stage
+relationship: RO:0002492 AMPH:0000025 ! existence ends during 8-cell stage
+
+[Term]
+id: AMPH:1000019
+name: macromeres
+def: "Cells found at the vegetal pole of the embryo, of big size" []
+is_a: AMPH:1000002 ! blastomere
+relationship: RO:0002202 AMPH:1000015 ! develops from 4 cell stage embryo
+relationship: RO:0002488 AMPH:0000025 ! existence starts during 8-cell stage
+relationship: RO:0002492 AMPH:0000025 ! existence ends during 8-cell stage
+
+[Term]
+id: AMPH:1000020
+name: animal blastomeres
+def: "Cells found at the animal pole of the embryo, before gastrulation starts" []
+is_a: AMPH:1000002 ! blastomere
+relationship: RO:0002202 AMPH:1000018 ! develops from micromeres
+relationship: RO:0002488 AMPH:0000026 ! existence starts during 16-cell stage
+relationship: RO:0002492 AMPH:0000031 ! existence ends during blastula stage
+
+[Term]
+id: AMPH:1000021
+name: vegetal blastomeres
+def: "Cells found at the vegetal pole of the embryo, before gastrulation starts" []
+is_a: AMPH:1000002 ! blastomere
+relationship: RO:0002202 AMPH:1000019 ! develops from macromeres
+relationship: RO:0002488 AMPH:0000026 ! existence starts during 16-cell stage
+relationship: RO:0002492 AMPH:0000031 ! existence ends during blastula stage
+
+[Term]
+id: AMPH:1000022
+name: Presumptive ectoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: RO:0002202 AMPH:1000020 ! develops from animal blastomeres
+relationship: RO:0002488 AMPH:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPH:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPH:1000023
+name: Dorsal presumptive ectoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000022 ! part of Presumptive ectoderm
+relationship: RO:0002202 AMPH:1000020 ! develops from animal blastomeres
+relationship: RO:0002488 AMPH:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPH:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPH:1000024
+name: Ventral presumptive ectoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000022 ! part of Presumptive ectoderm
+relationship: RO:0002202 AMPH:1000020 ! develops from animal blastomeres
+relationship: RO:0002488 AMPH:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPH:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPH:1000025
+name: Presumptive mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: RO:0002202 AMPH:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPH:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPH:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPH:1000026
+name: Dorsal presumptive mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000025 ! part of Presumptive mesendoderm
+relationship: RO:0002202 AMPH:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPH:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPH:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPH:1000027
+name: Ventral presumptive mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000025 ! part of Presumptive mesendoderm
+relationship: RO:0002202 AMPH:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPH:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPH:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPH:1000028
+name: Blastopore lip
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPH:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPH:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000029
+name: Dorsal blastopore lip
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000028 ! part of Blastopore lip
+relationship: RO:0002202 AMPH:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPH:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000030
+name: Ventral blastopore lip
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000028 ! part of Blastopore lip
+relationship: RO:0002202 AMPH:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPH:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000031
+name: Ectoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: RO:0002202 AMPH:1000022 ! develops from Presumptive ectoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000032
+name: Dorsal ectoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPH:1000023 ! develops from Dorsal presumptive ectoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000035 ! existence ends during gastrula-G3 stage
+
+[Term]
+id: AMPH:1000033
+name: Ventral ectoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPH:1000024 ! develops from Ventral presumptive ectoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000035 ! existence ends during gastrula-G3 stage
+
+[Term]
+id: AMPH:1000034
+name: Anterior ectoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPH:1000022 ! develops from Presumptive ectoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000035 ! existence ends during gastrula-G3 stage
+
+[Term]
+id: AMPH:1000035
+name: Posterior ectoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPH:1000022 ! develops from Presumptive ectoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000035 ! existence ends during gastrula-G3 stage
+
+[Term]
+id: AMPH:1000036
+name: Mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: RO:0002202 AMPH:1000025 ! develops from Presumptive mesendoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000037
+name: Dorsal mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000036 ! part of Mesendoderm
+relationship: RO:0002202 AMPH:1000026 ! develops from Dorsal presumptive mesendoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000038
+name: Ventral mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000036 ! part of Mesendoderm
+relationship: RO:0002202 AMPH:1000027 ! develops from Ventral presumptive mesendoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000039
+name: Anterior mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000036 ! part of Mesendoderm
+relationship: RO:0002202 AMPH:1000025 ! develops from Presumptive mesendoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000040
+name: Posterior mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000036 ! part of Mesendoderm
+relationship: RO:0002202 AMPH:1000025 ! develops from Presumptive mesendoderm
+relationship: RO:0002488 AMPH:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000041
+name: Presumptive neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000032 ! part of Dorsal ectoderm
+relationship: RO:0002202 AMPH:1000032 ! develops from Dorsal ectoderm
+relationship: RO:0002488 AMPH:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPH:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPH:1000042
+name: Presumptive border of the neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000032 ! part of Dorsal ectoderm
+relationship: RO:0002202 AMPH:1000032 ! develops from Dorsal ectoderm
+relationship: RO:0002488 AMPH:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPH:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPH:1000043
+name: Presumptive anterior neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000032 ! part of Dorsal ectoderm
+relationship: RO:0002202 AMPH:1000032 ! develops from Dorsal ectoderm
+relationship: RO:0002488 AMPH:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPH:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPH:1000044
+name: Presumptive epidermis
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPH:1000033 ! develops from Ventral ectoderm
+relationship: RO:0002488 AMPH:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPH:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPH:1000045
+name: Presumptive anterior epidermis
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPH:1000034 ! develops from Anterior ectoderm
+relationship: RO:0002488 AMPH:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPH:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPH:1000046
+name: Dorsal axial mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000037 ! part of Dorsal mesendoderm
+relationship: RO:0002202 AMPH:1000037 ! develops from Dorsal mesendoderm
+relationship: RO:0002488 AMPH:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000047
+name: Dorsal paraxial mesendoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000037 ! part of Dorsal mesendoderm
+relationship: RO:0002202 AMPH:1000037 ! develops from Dorsal mesendoderm
+relationship: RO:0002488 AMPH:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000048
+name: Neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000032 ! part of Dorsal ectoderm
+relationship: RO:0002202 AMPH:1000041 ! develops from Presumptive neural plate
+relationship: RO:0002488 AMPH:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPH:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPH:1000049
+name: Border of the neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000032 ! part of Dorsal ectoderm
+relationship: RO:0002202 AMPH:1000042 ! develops from Presumptive border of the neural plate
+relationship: RO:0002488 AMPH:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPH:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPH:1000050
+name: Anterior neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000032 ! part of Dorsal ectoderm
+relationship: RO:0002202 AMPH:1000043 ! develops from Presumptive anterior neural plate
+relationship: RO:0002488 AMPH:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPH:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPH:1000051
+name: Epidermis
+is_a: AMPH:1000004 ! tissue
+relationship: BFO:0000050 AMPH:1000044 ! part of Presumptive epidermis
+relationship: RO:0002202 AMPH:1000044 ! develops from Presumptive epidermis
+relationship: RO:0002488 AMPH:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPH:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPH:1000052
+name: Anterior epidermis
+is_a: AMPH:1000004 ! tissue
+relationship: BFO:0000050 AMPH:1000045 ! part of Presumptive anterior epidermis
+relationship: RO:0002202 AMPH:1000045 ! develops from Presumptive anterior epidermis
+relationship: RO:0002488 AMPH:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPH:0000044 ! existence ends during neurula-N4 stage
+
+[Term]
+id: AMPH:1000053
+name: Ventral epidermis
+is_a: AMPH:1000004 ! tissue
+relationship: BFO:0000050 AMPH:1000051 ! part of Epidermis
+relationship: RO:0002202 AMPH:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPH:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000054
+name: Presumptive notochord
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000046 ! part of Dorsal axial mesendoderm
+relationship: RO:0002202 AMPH:1000046 ! develops from Dorsal axial mesendoderm
+relationship: RO:0002488 AMPH:0000039 ! existence starts during gastrula-G7 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000055
+name: Presumptive somite 1
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000047 ! part of Dorsal paraxial mesendoderm
+relationship: RO:0002202 AMPH:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPH:0000039 ! existence starts during gastrula-G7 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000056
+name: Presumptive somite 2
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000047 ! part of Dorsal paraxial mesendoderm
+relationship: RO:0002202 AMPH:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPH:0000039 ! existence starts during gastrula-G7 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000057
+name: Presumptive somite 3
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000047 ! part of Dorsal paraxial mesendoderm
+relationship: RO:0002202 AMPH:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPH:0000039 ! existence starts during gastrula-G7 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000058
+name: Presumptive endoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000038 ! part of Ventral mesendoderm
+relationship: RO:0002202 AMPH:1000038 ! develops from Ventral mesendoderm
+relationship: RO:0002488 AMPH:0000039 ! existence starts during gastrula-G7 stage
+relationship: RO:0002492 AMPH:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPH:1000059
+name: Mesoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: RO:0002202 AMPH:1000036 ! develops from Mesendoderm
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000060
+name: Dorsal axial mesoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000059 ! part of Mesoderm
+relationship: RO:0002202 AMPH:1000046 ! develops from Dorsal axial mesendoderm
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000061
+name: Paraxial mesoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000059 ! part of Mesoderm
+relationship: RO:0002202 AMPH:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000062
+name: Left mesoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000059 ! part of Mesoderm
+relationship: RO:0002202 AMPH:1000059 ! develops from Mesoderm
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPH:1000063
+name: Right mesoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPH:1000059 ! part of Mesoderm
+relationship: RO:0002202 AMPH:1000059 ! develops from Mesoderm
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPH:1000064
+name: Notochord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000060 ! part of Dorsal axial mesoderm
+relationship: RO:0002202 AMPH:1000054 ! develops from Presumptive notochord
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPH:1000065
+name: Somite 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000061 ! part of Paraxial mesoderm
+relationship: RO:0002202 AMPH:1000055 ! develops from Presumptive somite 1
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000066
+name: Somite 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000061 ! part of Paraxial mesoderm
+relationship: RO:0002202 AMPH:1000056 ! develops from Presumptive somite 2
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000067
+name: Somite 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000061 ! part of Paraxial mesoderm
+relationship: RO:0002202 AMPH:1000057 ! develops from Presumptive somite 3
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000068
+name: Endoderm
+is_a: AMPH:1000005 ! embryonic territory
+relationship: RO:0002202 AMPH:1000058 ! develops from Presumptive endoderm
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000069
+name: Tailbud
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPH:1000070
+name: Inner lip of blastopore
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPH:1000028 ! develops from Blastopore lip
+relationship: RO:0002488 AMPH:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPH:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPH:1000071
+name: Presumptive cerebral vesicle
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000006 ! part of central nervous system
+relationship: RO:0002202 AMPH:1000050 ! develops from Anterior neural plate
+relationship: RO:0002488 AMPH:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPH:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPH:1000072
+name: Presumptive spinal chord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000006 ! part of central nervous system
+relationship: RO:0002202 AMPH:1000048 ! develops from Neural plate
+relationship: RO:0002488 AMPH:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPH:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPH:1000073
+name: Left epidermis
+is_a: AMPH:1000004 ! tissue
+relationship: BFO:0000050 AMPH:1000051 ! part of Epidermis
+relationship: RO:0002202 AMPH:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPH:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000074
+name: Right epidermis
+is_a: AMPH:1000004 ! tissue
+relationship: BFO:0000050 AMPH:1000051 ! part of Epidermis
+relationship: RO:0002202 AMPH:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPH:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000075
+name: Epidermal sensory neurons
+is_a: CL:0000000 ! cell
+relationship: BFO:0000050 AMPH:1000053 ! part of Ventral epidermis
+relationship: RO:0002202 AMPH:1000053 ! develops from Ventral epidermis
+relationship: RO:0002488 AMPH:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPH:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPH:1000076
+name: Anterior somite 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000065 ! part of Somite 1
+relationship: RO:0002202 AMPH:1000065 ! develops from Somite 1
+relationship: RO:0002488 AMPH:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000077
+name: Posterior somite 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000065 ! part of Somite 1
+relationship: RO:0002202 AMPH:1000065 ! develops from Somite 1
+relationship: RO:0002488 AMPH:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPH:1000078
+name: Dorsal somite 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000065 ! part of Somite 1
+relationship: RO:0002202 AMPH:1000065 ! develops from Somite 1
+relationship: RO:0002488 AMPH:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPH:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPH:1000079
+name: Ventral somite 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPH:1000065 ! part of Somite 1
+relationship: RO:0002202 AMPH:1000065 ! develops from Somite 1
+relationship: RO:0002488 AMPH:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPH:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: CL:0000000
+name: cell
+
+[Term]
+id: GO:0005575
+name: cellular component
+relationship: BFO:0000050 CL:0000000 ! part of cell
+
+[Term]
+id: UBERON:0000061
+name: anatomical structure
+
+[Term]
+id: UBERON:0000105
+name: life cycle stage
+
+[Typedef]
+id: BFO:0000050
+name: part of
+
+[Typedef]
+id: RO:0002087
+name: immediately preceded by
+
+[Typedef]
+id: RO:0002202
+name: develops from
+
+[Typedef]
+id: RO:0002488
+name: existence starts during
+
+[Typedef]
+id: RO:0002492
+name: existence ends during
 
