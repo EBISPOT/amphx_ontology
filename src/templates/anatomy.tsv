@@ -1,0 +1,84 @@
+ID	Anatomical Structure	Type (is-a)	Part of	Develops from	Starts at stage	Ends at stage	Description	Synonyms	UBERON (is-a)	UBERON (non-exact)	Cell type (is-a)	Cell type (non-exact)	Pubmed id	CLASS_TYPE
+ID	A rdfs:label	C %	C  'part of' some %	C  'develops from' some %	C  'existence starts during' some %	C  'existence ends during' some %	A obo:IAO_0000115	A oboInOwl:hasExactSynonym						subclass
+UBERON:0000061	Anatomical structure													
+CL:0000000	cell													
+GO:0005575	cellular component		cell											
+AMPH:1000001	whole embryo	Anatomical structure			zygote period	Larva stage								
+AMPH:1000002	blastomere	cell	whole embryo											
+AMPH:1000003	whole oocyte	cell												
+AMPH:1000004	Tissue	Anatomical structure	whole embryo											
+AMPH:1000005	Embryonic territory		whole embryo											
+AMPH:1000006	Central nervous system		whole embryo											
+AMPH:1000007	vegetal pole cytoplasm	cellular component			unfertilized egg	one cell								
+AMPH:1000008	vegetal pole cytoplasm of oocyte	vegetal pole cytoplasm	whole oocyte											
+AMPH:1000009	vegetal pole cytoplasm of embryo	vegetal pole cytoplasm	whole embryo											
+AMPH:1000010	animal pole cytoplasm	cellular component			unfertilized egg	one cell								
+AMPH:1000011	animal pole cytoplasm of oocyte	animal pole cytoplasm	whole oocyte											
+AMPH:1000012	animal pole cytoplasm of embryo	animal pole cytoplasm	whole embryo											
+AMPH:1000013	zygote	cell	whole embryo		one cell	one cell	Diploid cell produced by the fusion of sperm cell nucleus and egg cell				CL:0000365			
+AMPH:1000014	2 cell stage embryo	whole embryo			2-cell	2-cell								
+AMPH:1000015	4 cell stage embryo	whole embryo			2-cell	2-cell								
+AMPH:1000016	blastomere of 2-cell stage embryo	blastomere	2 cell stage embryo	zygote	2-cell	2-cell	A cell found in the embryo before the formation of all the gem layers is complete				CL:0000007			
+AMPH:1000017	blastomere of 4-cells stage embryo	blastomere	4 cell stage embryo	2 cell stage embryo	4-cell	4-cell	A cell found in the embryo before the formation of all the gem layers is complete				CL:0000007			
+AMPH:1000018	micromeres	blastomere		4 cell stage embryo	8-cell	8-cell	Cells found at the animal pole of the embryo, of small size							
+AMPH:1000019	macromeres	blastomere		4 cell stage embryo	8-cell	8-cell	Cells found at the vegetal pole of the embryo, of big size							
+AMPH:1000020	animal blastomeres	blastomere		micromeres	16-cell	blastula	Cells found at the animal pole of the embryo, before gastrulation starts							
+AMPH:1000021	vegetal blastomeres	blastomere		macromeres	16-cell	blastula	Cells found at the vegetal pole of the embryo, before gastrulation starts							
+AMPH:1000022	Presumptive ectoderm	Embryonic territory	whole embryo	animal blastomeres	gastrula-G0	gastrula-G2								
+AMPH:1000023	Dorsal presumptive ectoderm	Embryonic territory	Presumptive ectoderm	animal blastomeres	gastrula-G0	gastrula-G2								
+AMPH:1000024	Ventral presumptive ectoderm	Embryonic territory	Presumptive ectoderm	animal blastomeres	gastrula-G0	gastrula-G2								
+AMPH:1000025	Presumptive mesendoderm	Embryonic territory	whole embryo	vegetal blastomeres	gastrula-G0	gastrula-G2								
+AMPH:1000026	Dorsal presumptive mesendoderm	Embryonic territory	Presumptive mesendoderm	vegetal blastomeres	gastrula-G0	gastrula-G2								
+AMPH:1000027	Ventral presumptive mesendoderm	Embryonic territory	Presumptive mesendoderm	vegetal blastomeres	gastrula-G0	gastrula-G2								
+AMPH:1000028	Blastopore lip	Anatomical Structure	whole embryo	vegetal blastomeres	gastrula-G0	gastrula-G7								
+AMPH:1000029	Dorsal blastopore lip	Anatomical Structure	Blastopore lip	vegetal blastomeres	gastrula-G0	gastrula-G7								
+AMPH:1000030	Ventral blastopore lip	Anatomical Structure	Blastopore lip	vegetal blastomeres	gastrula-G0	gastrula-G7								
+AMPH:1000031	Ectoderm	Embryonic territory	whole embryo	Presumptive ectoderm	gastrula-G3	larva-LML								
+AMPH:1000032	Dorsal ectoderm	Embryonic territory	Ectoderm	Dorsal presumptive ectoderm	gastrula-G3	gastrula-G3								
+AMPH:1000033	Ventral ectoderm	Embryonic territory	Ectoderm	Ventral presumptive ectoderm	gastrula-G3	gastrula-G3								
+AMPH:1000034	Anterior ectoderm	Embryonic territory	Ectoderm	Presumptive ectoderm	gastrula-G3	gastrula-G3								
+AMPH:1000035	Posterior ectoderm	Embryonic territory	Ectoderm	Presumptive ectoderm	gastrula-G3	gastrula-G3								
+AMPH:1000036	Mesendoderm	Embryonic territory	whole embryo	Presumptive mesendoderm	gastrula-G3	gastrula-G7								
+AMPH:1000037	Dorsal mesendoderm	Embryonic territory	Mesendoderm	Dorsal presumptive mesendoderm	gastrula-G3	gastrula-G7								
+AMPH:1000038	Ventral mesendoderm	Embryonic territory	Mesendoderm	Ventral presumptive mesendoderm	gastrula-G3	gastrula-G7								
+AMPH:1000039	Anterior mesendoderm	Embryonic territory	Mesendoderm	Presumptive mesendoderm	gastrula-G3	gastrula-G7								
+AMPH:1000040	Posterior mesendoderm	Embryonic territory	Mesendoderm	Presumptive mesendoderm	gastrula-G3	gastrula-G7								
+AMPH:1000041	Presumptive neural plate	Anatomical Structure	Dorsal ectoderm	Dorsal ectoderm	gastrula-G4	gastrula-G5								
+AMPH:1000042	Presumptive border of the neural plate	Anatomical Structure	Dorsal ectoderm	Dorsal ectoderm	gastrula-G4	gastrula-G5								
+AMPH:1000043	Presumptive anterior neural plate	Anatomical Structure	Dorsal ectoderm	Dorsal ectoderm	gastrula-G4	gastrula-G5								
+AMPH:1000044	Presumptive epidermis	Embryonic territory	Ectoderm	Ventral ectoderm	gastrula-G4	gastrula-G5								
+AMPH:1000045	Presumptive anterior epidermis	Embryonic territory	Ectoderm	Anterior ectoderm	gastrula-G4	gastrula-G5								
+AMPH:1000046	Dorsal axial mesendoderm	Embryonic territory	Dorsal mesendoderm	Dorsal mesendoderm	gastrula-G4	gastrula-G7								
+AMPH:1000047	Dorsal paraxial mesendoderm	Embryonic territory	Dorsal mesendoderm	Dorsal mesendoderm	gastrula-G4	gastrula-G7								
+AMPH:1000048	Neural plate	Anatomical Structure	Dorsal ectoderm	Presumptive neural plate	gastrula-G6	neurula-N1								
+AMPH:1000049	Border of the neural plate	Anatomical Structure	Dorsal ectoderm	Presumptive border of the neural plate	gastrula-G6	neurula-N1								
+AMPH:1000050	Anterior neural plate	Anatomical Structure	Dorsal ectoderm	Presumptive anterior neural plate	gastrula-G6	neurula-N0								
+AMPH:1000051	Epidermis	Tissue	Presumptive epidermis	Presumptive epidermis	gastrula-G6	adult-A								
+AMPH:1000052	Anterior epidermis	Tissue	Presumptive anterior epidermis	Presumptive anterior epidermis	gastrula-G6	neurula-N4								
+AMPH:1000053	Ventral epidermis	Tissue	Epidermis	Epidermis	gastrula-G6	gastrula-G7								
+AMPH:1000054	Presumptive notochord	Embryonic territory	Dorsal axial mesendoderm	Dorsal axial mesendoderm	gastrula-G7	gastrula-G7								
+AMPH:1000055	Presumptive somite 1	Embryonic territory	Dorsal paraxial mesendoderm	Dorsal paraxial mesendoderm	gastrula-G7	gastrula-G7								
+AMPH:1000056	Presumptive somite 2	Embryonic territory	Dorsal paraxial mesendoderm	Dorsal paraxial mesendoderm	gastrula-G7	gastrula-G7								
+AMPH:1000057	Presumptive somite 3	Embryonic territory	Dorsal paraxial mesendoderm	Dorsal paraxial mesendoderm	gastrula-G7	gastrula-G7								
+AMPH:1000058	Presumptive endoderm	Embryonic territory	Ventral mesendoderm	Ventral mesendoderm	gastrula-G7	gastrula-G7								
+AMPH:1000059	Mesoderm	Embryonic territory	whole embryo	Mesendoderm	neurula-N0	larva-LML								
+AMPH:1000060	Dorsal axial mesoderm	Embryonic territory	Mesoderm	Dorsal axial mesendoderm	neurula-N0	larva-LML								
+AMPH:1000061	Paraxial mesoderm	Embryonic territory	Mesoderm	Dorsal paraxial mesendoderm	neurula-N0	larva-LML								
+AMPH:1000062	Left mesoderm	Embryonic territory	Mesoderm	Mesoderm	neurula-N0	neurula-N1								
+AMPH:1000063	Right mesoderm	Embryonic territory	Mesoderm	Mesoderm	neurula-N0	neurula-N1								
+AMPH:1000064	Notochord	Anatomical Structure	Dorsal axial mesoderm	Presumptive notochord	neurula-N0	adult-A								
+AMPH:1000065	Somite 1	Anatomical Structure	Paraxial mesoderm	Presumptive somite 1	neurula-N0	larva-LML								
+AMPH:1000066	Somite 2	Anatomical Structure	Paraxial mesoderm	Presumptive somite 2	neurula-N0	larva-LML								
+AMPH:1000067	Somite 3	Anatomical Structure	Paraxial mesoderm	Presumptive somite 3	neurula-N0	larva-LML								
+AMPH:1000068	Endoderm	Embryonic territory	whole embryo	Presumptive endoderm	neurula-N0	larva-LML								
+AMPH:1000069	Tailbud	Anatomical Structure	whole embryo		neurula-N0	larva-L4								
+AMPH:1000070	Inner lip of blastopore	Anatomical Structure	whole embryo	Blastopore lip	neurula-N0	neurula-N1								
+AMPH:1000071	Presumptive cerebral vesicle	Anatomical Structure	Central nervous system	Anterior neural plate	neurula-N1	neurula-N1								
+AMPH:1000072	Presumptive spinal chord	Anatomical Structure	Central nervous system	Neural plate	neurula-N1	neurula-N1								
+AMPH:1000073	Left epidermis	Tissue	Epidermis	Epidermis	neurula-N1	larva-LML								
+AMPH:1000074	Right epidermis	Tissue	Epidermis	Epidermis	neurula-N1	larva-LML								
+AMPH:1000075	Epidermal sensory neurons	cell	Ventral epidermis	Ventral epidermis	neurula-N1	adult-A								
+AMPH:1000076	Anterior somite 1	Anatomical Structure	Somite 1	Somite 1										
+AMPH:1000077	Posterior somite 1	Anatomical Structure	Somite 1	Somite 1										
+AMPH:1000078	Dorsal somite 1	Anatomical Structure	Somite 1	Somite 1										
+AMPH:1000079	Ventral somite 1	Anatomical Structure	Somite 1	Somite 1										

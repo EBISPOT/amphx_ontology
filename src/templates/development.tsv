@@ -1,0 +1,59 @@
+ID	Stage	part of stage	stage preceded by 	dev stage	Synonyms	Reference	Definition
+ID	A rdfs:label	C 'part of' some %	C 'immediately preceded by' some %	C %	A oboInOwl:hasExactSynonym SPLIT=|	A obo:IAO_0000301	A obo:IAO_0000115
+AMPH:0000001	gametogenesis			obo:UBERON_0000105			
+AMPH:0000002	oogenesis	gametogenesis					
+AMPH:0000003	spermatogenesis	gametogenesis					
+AMPH:0000004	gamete stage		gametogenesis	obo:UBERON_0000105			
+AMPH:0000005	unfertilized egg stage	gamete stage	oogenesis				
+AMPH:0000006	spermatozoid stage	gamete stage	spermatogenesis				
+AMPH:0000007	embryonic development		gamete stage	obo:UBERON_0000105			
+AMPH:0000008	zygote period	embryonic development					
+AMPH:0000009	cleavage period	embryonic development	zygote period				
+AMPH:0000010	blastula period	embryonic development	cleavage period				
+AMPH:0000011	Gastrula period	embryonic development	blastula period				
+AMPH:0000012	Neurula period	embryonic development	Gastrula period				
+AMPH:0000013	Tailbud period	embryonic development	Neurula period				
+AMPH:0000014	larval development		embryonic development	obo:UBERON_0000105			
+AMPH:0000015	Larva stage	larval development					
+AMPH:0000016	Metamorphosis		larval development	obo:UBERON_0000105			
+AMPH:0000017	juvenile		Metamorphosis	obo:UBERON_0000105			
+AMPH:0000018	Juvenile period	juvenile					
+AMPH:0000019	adult		juvenile	obo:UBERON_0000105			
+AMPH:0000020	Adult period	adult					
+AMPH:0000021	unfertilized egg	pre-fertilization				Hirakov and Kajita 1990	Unfertilized egg. Egg is not yet fertilized
+AMPH:0000022	one cell	zygote period	unfertilized egg			Hirakov and Kajita 1990	Zygote fertilized egg. Time since fertilization is 0min, corresponding to 0.00% of development
+AMPH:0000023	2-cell	cleavage period	one cell			Hirakov and Kajita 1990	
+AMPH:0000024	4-cell	cleavage period	2-cell			Hirakov and Kajita 1990	
+AMPH:0000025	8-cell	cleavage period	4-cell			Hirakov and Kajita 1990	
+AMPH:0000026	16-cell	cleavage period	8-cell			Hirakov and Kajita 1990	
+AMPH:0000027	32-cell	cleavage period	16-cell			Hirakov and Kajita 1990	
+AMPH:0000028	64-cell	cleavage period	32-cell			Hirakov and Kajita 1990	
+AMPH:0000029	128-cell	cleavage period	64-cell			Hirakov and Kajita 1990	
+AMPH:0000030	256-cell	cleavage period	128-cell		morula	Hirakov and Kajita 1990	
+AMPH:0000031	blastula	blastula period	256-cell			Hirakov and Kajita 1990	
+AMPH:0000032	gastrula-G0	Gastrula period	blastula		Very early gastrula	Hirakov and Kajita 1990	Initial flatening of the vegetal zone
+AMPH:0000033	gastrula-G1	Gastrula period	gastrula-G0		Very early gastrula	Hirakov and Kajita 1991	Flattened vegetal zone
+AMPH:0000034	gastrula-G2	Gastrula period	gastrula-G1		Very early gastrula	Hirakov and Kajita 1991	Depressed vegetal zone, mesendoderm does not touch ectoderm
+AMPH:0000035	gastrula-G3	Gastrula period	gastrula-G2		Early gastrula	Hirakov and Kajita 1991	Cap shaped, mesendoderm completely touch ectoderm
+AMPH:0000036	gastrula-G4	Gastrula period	gastrula-G3		Mid-gastrula	Hirakov and Kajita 1991	Cup shaped
+AMPH:0000037	gastrula-G5	Gastrula period	gastrula-G4		Late gastrula	Hirakov and Kajita 1991	Vase shaped due to body elongation during blastopore closure
+AMPH:0000038	gastrula-G6	Gastrula period	gastrula-G5		Very late gastrula	Hirakov and Kajita 1991	Bottle shaped with flattening neuroectoderm
+AMPH:0000039	gastrula-G7	Gastrula period	gastrula-G6		Final gastrula	Hirakov and Kajita 1991	Distinct neural plate, just before blastopore closure
+AMPH:0000040	neurula-N0	Neurula period	gastrula-G7		Very early neurula	Hirakov and Kajita 1991	0-3 somites
+AMPH:0000041	neurula-N1	Neurula period	neurula-N0		Early neurula	Hirakov and Kajita 1994	4-6 somites
+AMPH:0000042	neurula-N2	Neurula period	neurula-N1		Mid-neurula	Hirakov and Kajita 1994	7 to 8 somites
+AMPH:0000043	neurula-N3	Neurula period	neurula-N2		Late-neurula	Hirakov and Kajita 1994	8 to 9 somites, prior to schizocoelic somites
+AMPH:0000044	neurula-N4	Neurula period	neurula-N3		Late-neurula II		9 to 11 somites, prior to schizocoelic somites
+AMPH:0000045	neurula-T	Tailbud period	neurula-N3		Premouth stage	Hirakov and Kajita 1994	Tailbud with enlarged pharyngeal region, from 11-13 somites
+AMPH:0000046	neurula-T2	Tailbud period	neurula-T		Premouth stage II		Tailbud with enlarged pharyngeal region, more than 13 somites, prior the mouth opens
+AMPH:0000047	larva-L0	Larva stage	neurula-T		Early larvae		Open mouth, 0 gill slits
+AMPH:0000048	larva-L1	Larva stage	larva-L0		1 gill slit larvae	Hirakov and Kajita 1994	Mouth and 1 gill slit open
+AMPH:0000049	larva-L2	Larva stage	larva-L1		2 gill slit larvae	Hirakov and Kajita 1994	Mouth and 2 gill slit open
+AMPH:0000050	larva-L3	Larva stage	larva-L2		3 gill slit larvae	Hirakov and Kajita 1994	Mouth and 3 gill slit open
+AMPH:0000051	larva-L4	Larva stage	larva-L3		Late larvae	Hirakov and Kajita 1994	Mouth and 4-13 gill slits open
+AMPH:0000052	larva-PL	Larva stage	larva-L4		Premetamorphic larvae	Hirakov and Kajita 1994	Mouth and 14-15 gill slits (B. lanceolatum)
+AMPH:0000053	larva-EML	Metamorphosis	larva-PL		Early metamorphic larvae		Metapleural folds start to grow
+AMPH:0000054	larva-MML	Metamorphosis	larva-EML		Mid-metamorphic larvae		Gill slits start to duplicate, hepatic caecum starts to develop
+AMPH:0000055	larva-LML	Metamorphosis	larva-MML		Late metamorphic larvae		Mouth migration to frontal position
+AMPH:0000056	juvenile-J	Juvenile period	larva-LML		Postmetamorphic juvenile		Adult-like morphology, length of less than 3cm
+AMPH:0000057	adult-A	Adult period	juvenile-J		Adult		Adult-like morphology, length of more than 3cm
