@@ -66,19 +66,19 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002492> "exis
 
 # Class: <http://purl.obolibrary.org/obo/CL_0000000> (cell)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell"^^xsd:string)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0005575> (cellular component)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0005575> "cellular component")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0005575> "cellular component"^^xsd:string)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000061> (anatomical structure)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000061> "anatomical structure")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000061> "anatomical structure"^^xsd:string)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000105> (life cycle stage)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000105> "life cycle stage")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000105> "life cycle stage"^^xsd:string)
 
 
 )

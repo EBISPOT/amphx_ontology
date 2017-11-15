@@ -17,14 +17,11 @@ SPARQLDIR = ../sparql
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl $(ONT).obo all_templates_owl
+all: sparql_test all_imports $(ONT).owl $(ONT).obo development-generated.owl anatomy-generated.owl
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
 	mkdir -p $(RELEASEDIR)/imports &&\
-	cp imports/*{owl,obo} $(RELEASEDIR)/imports &&\
-	git add $(RELEASEDIR)/imports/*{obo,owl} &&\
-	(test -f subsets/*owl && cp subsets/*{owl,obo} $(RELEASEDIR)/subsets && git add $(RELEASEDIR)/subsets/* || echo "no subsets") &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 
 # ----------------------------------------
@@ -42,11 +39,11 @@ $(ONT).obo: $(ONT).owl
 # Templates
 # ----------------------------------------
 
-TEMPLATES=development anatomy
-all_templates_owl: $(patsubst %, %-generated.owl, $(TEMPLATES)) 
+anatomy-generated.owl:../templates/anatomy.tsv development-generated.owl
+	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) --input development-generated.owl template --merge-before --prefix "AMPH: http://purl.obolibrary.org/obo/AMPH_" --template ../templates/anatomy.tsv --output $@
 
-%-generated.owl: ../templates/%.tsv
-	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) template --merge-before --prefix "AMPH: http://purl.obolibrary.org/obo/AMPH_" --template ../templates/$*.tsv --output $@
+development-generated.owl: ../templates/development.tsv
+	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) template --merge-before --prefix "AMPH: http://purl.obolibrary.org/obo/AMPH_" --template ../templates/development.tsv --output $@
 
 
 # ----------------------------------------
