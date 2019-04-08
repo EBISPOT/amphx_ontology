@@ -17,13 +17,13 @@ AMPH:1000011	animal pole cytoplasm of oocyte	animal pole cytoplasm	whole oocyte
 AMPH:1000012	animal pole cytoplasm of embryo	animal pole cytoplasm	whole embryo										
 AMPH:1000013	zygote	cell	whole embryo		one cell stage	one cell stage	Diploid cell produced by the fusion of sperm cell nucleus and egg cell				CL:0000365		
 AMPH:1000014	2 cell stage embryo	whole embryo			2-cell stage	2-cell stage							
-AMPH:1000015	4 cell stage embryo	whole embryo			2-cell stage	2-cell stage							
-AMPH:1000016	blastomere of 2-cell stage embryo	blastomere	2 cell stage embryo	zygote	2-cell stage	2-cell stage	A cell found in the embryo before the formation of all the gem layers is complete				CL:0000007		
-AMPH:1000017	blastomere of 4-cells stage embryo	blastomere	4 cell stage embryo	2 cell stage embryo	4-cell stage	4-cell stage	A cell found in the embryo before the formation of all the gem layers is complete				CL:0000007		
-AMPH:1000018	micromeres	blastomere		4 cell stage embryo	8-cell stage	8-cell stage	Cells found at the animal pole of the embryo, of small size						
-AMPH:1000019	macromeres	blastomere		4 cell stage embryo	8-cell stage	8-cell stage	Cells found at the vegetal pole of the embryo, of big size						
-AMPH:1000020	animal blastomeres	blastomere		micromeres	16-cell stage	blastula stage	Cells found at the animal pole of the embryo, before gastrulation starts						
-AMPH:1000021	vegetal blastomeres	blastomere		macromeres	16-cell stage	blastula stage	Cells found at the vegetal pole of the embryo, before gastrulation starts						
+AMPH:1000015	4 cell stage embryo	whole embryo			4-cell stage	4-cell stage							
+AMPH:1000016	blastomere of 2-cell stage embryo	blastomere	whole embryo	zygote	2-cell stage	2-cell stage	A cell found in the embryo before the formation of all the gem layers is complete				CL:0000007		
+AMPH:1000017	blastomere of 4-cells stage embryo	blastomere	whole embryo	2 cell stage embryo	4-cell stage	4-cell stage	A cell found in the embryo before the formation of all the gem layers is complete				CL:0000007		
+AMPH:1000018	micromeres	blastomere	whole embryo	4 cell stage embryo	8-cell stage	8-cell stage	Cells found at the animal pole of the embryo, of small size						
+AMPH:1000019	macromeres	blastomere	whole embryo	4 cell stage embryo	8-cell stage	8-cell stage	Cells found at the vegetal pole of the embryo, of big size						
+AMPH:1000020	animal blastomeres	blastomere	whole embryo	micromeres	16-cell stage	blastula stage	Cells found at the animal pole of the embryo, before gastrulation starts						
+AMPH:1000021	vegetal blastomeres	blastomere	whole embryo	macromeres	16-cell stage	blastula stage	Cells found at the vegetal pole of the embryo, before gastrulation starts						
 AMPH:1000022	Presumptive ectoderm	embryonic territory	whole embryo	animal blastomeres	gastrula-G0 stage	gastrula-G2 stage							
 AMPH:1000023	Dorsal presumptive ectoderm	embryonic territory	Presumptive ectoderm	animal blastomeres	gastrula-G0 stage	gastrula-G2 stage							
 AMPH:1000024	Ventral presumptive ectoderm	embryonic territory	Presumptive ectoderm	animal blastomeres	gastrula-G0 stage	gastrula-G2 stage							
@@ -33,7 +33,7 @@ AMPH:1000027	Ventral presumptive mesendoderm	embryonic territory	Presumptive mes
 AMPH:1000028	Blastopore lip	anatomical structure	whole embryo	vegetal blastomeres	gastrula-G0 stage	gastrula-G7 stage							
 AMPH:1000029	Dorsal blastopore lip	anatomical structure	Blastopore lip	vegetal blastomeres	gastrula-G0 stage	gastrula-G7 stage							
 AMPH:1000030	Ventral blastopore lip	anatomical structure	Blastopore lip	vegetal blastomeres	gastrula-G0 stage	gastrula-G7 stage							
-AMPH:1000031	Ectoderm	embryonic territory	whole embryo	Presumptive ectoderm	gastrula-G3 stage	larva-LML stage							
+AMPH:1000031	Ectoderm	embryonic territory	whole embryo	Presumptive ectoderm	gastrula-G3 stage	neurula-N0 stage							
 AMPH:1000032	Dorsal ectoderm	embryonic territory	Ectoderm	Dorsal presumptive ectoderm	gastrula-G3 stage	gastrula-G3 stage							
 AMPH:1000033	Ventral ectoderm	embryonic territory	Ectoderm	Ventral presumptive ectoderm	gastrula-G3 stage	gastrula-G3 stage							
 AMPH:1000034	Anterior ectoderm	embryonic territory	Ectoderm	Presumptive ectoderm	gastrula-G3 stage	gastrula-G3 stage							
@@ -47,38 +47,301 @@ AMPH:1000041	Presumptive neural plate	anatomical structure	Dorsal ectoderm	Dorsa
 AMPH:1000042	Presumptive border of the neural plate	anatomical structure	Dorsal ectoderm	Dorsal ectoderm	gastrula-G4 stage	gastrula-G5 stage							
 AMPH:1000043	Presumptive anterior neural plate	anatomical structure	Dorsal ectoderm	Dorsal ectoderm	gastrula-G4 stage	gastrula-G5 stage							
 AMPH:1000044	Presumptive epidermis	embryonic territory	Ectoderm	Ventral ectoderm	gastrula-G4 stage	gastrula-G5 stage							
-AMPH:1000045	Presumptive anterior epidermis	embryonic territory	Ectoderm	Anterior ectoderm	gastrula-G4 stage	gastrula-G5 stage							
+AMPH:1000045	Presumptive anterior epidermis	embryonic territory	Presumptive epidermis	Anterior ectoderm	gastrula-G4 stage	gastrula-G5 stage							
 AMPH:1000046	Dorsal axial mesendoderm	embryonic territory	Dorsal mesendoderm	Dorsal mesendoderm	gastrula-G4 stage	gastrula-G7 stage							
 AMPH:1000047	Dorsal paraxial mesendoderm	embryonic territory	Dorsal mesendoderm	Dorsal mesendoderm	gastrula-G4 stage	gastrula-G7 stage							
-AMPH:1000048	Neural plate	anatomical structure	Dorsal ectoderm	Presumptive neural plate	gastrula-G6 stage	neurula-N1 stage							
-AMPH:1000049	Border of the neural plate	anatomical structure	Dorsal ectoderm	Presumptive border of the neural plate	gastrula-G6 stage	neurula-N1 stage							
-AMPH:1000050	Anterior neural plate	anatomical structure	Dorsal ectoderm	Presumptive anterior neural plate	gastrula-G6 stage	neurula-N0 stage							
-AMPH:1000051	Epidermis	tissue	Presumptive epidermis	Presumptive epidermis	gastrula-G6 stage	adult-A stage							
-AMPH:1000052	Anterior epidermis	tissue	Presumptive anterior epidermis	Presumptive anterior epidermis	gastrula-G6 stage	neurula-N4 stage							
-AMPH:1000053	Ventral epidermis	tissue	Epidermis	Epidermis	gastrula-G6 stage	gastrula-G7 stage							
-AMPH:1000054	Presumptive notochord	embryonic territory	Dorsal axial mesendoderm	Dorsal axial mesendoderm	gastrula-G7 stage	gastrula-G7 stage							
-AMPH:1000055	Presumptive somite 1	embryonic territory	Dorsal paraxial mesendoderm	Dorsal paraxial mesendoderm	gastrula-G7 stage	gastrula-G7 stage							
-AMPH:1000056	Presumptive somite 2	embryonic territory	Dorsal paraxial mesendoderm	Dorsal paraxial mesendoderm	gastrula-G7 stage	gastrula-G7 stage							
-AMPH:1000057	Presumptive somite 3	embryonic territory	Dorsal paraxial mesendoderm	Dorsal paraxial mesendoderm	gastrula-G7 stage	gastrula-G7 stage							
-AMPH:1000058	Presumptive endoderm	embryonic territory	Ventral mesendoderm	Ventral mesendoderm	gastrula-G7 stage	gastrula-G7 stage							
-AMPH:1000059	Mesoderm	embryonic territory	whole embryo	Mesendoderm	neurula-N0 stage	larva-LML stage							
-AMPH:1000060	Dorsal axial mesoderm	embryonic territory	Mesoderm	Dorsal axial mesendoderm	neurula-N0 stage	larva-LML stage							
-AMPH:1000061	Paraxial mesoderm	embryonic territory	Mesoderm	Dorsal paraxial mesendoderm	neurula-N0 stage	larva-LML stage							
-AMPH:1000062	Left mesoderm	embryonic territory	Mesoderm	Mesoderm	neurula-N0 stage	neurula-N1 stage							
-AMPH:1000063	Right mesoderm	embryonic territory	Mesoderm	Mesoderm	neurula-N0 stage	neurula-N1 stage							
-AMPH:1000064	Notochord	anatomical structure	Dorsal axial mesoderm	Presumptive notochord	neurula-N0 stage	adult-A stage							
-AMPH:1000065	Somite 1	anatomical structure	Paraxial mesoderm	Presumptive somite 1	neurula-N0 stage	larva-LML stage							
-AMPH:1000066	Somite 2	anatomical structure	Paraxial mesoderm	Presumptive somite 2	neurula-N0 stage	larva-LML stage							
-AMPH:1000067	Somite 3	anatomical structure	Paraxial mesoderm	Presumptive somite 3	neurula-N0 stage	larva-LML stage							
-AMPH:1000068	Endoderm	embryonic territory	whole embryo	Presumptive endoderm	neurula-N0 stage	larva-LML stage							
-AMPH:1000069	Tailbud	anatomical structure	whole embryo		neurula-N0 stage	larva-L4 stage							
-AMPH:1000070	Inner lip of blastopore	anatomical structure	whole embryo	Blastopore lip	neurula-N0 stage	neurula-N1 stage							
-AMPH:1000071	Presumptive cerebral vesicle	anatomical structure	central nervous system	Anterior neural plate	neurula-N1 stage	neurula-N1 stage							
-AMPH:1000072	Presumptive spinal chord	anatomical structure	central nervous system	Neural plate	neurula-N1 stage	neurula-N1 stage							
-AMPH:1000073	Left epidermis	tissue	Epidermis	Epidermis	neurula-N1 stage	larva-LML stage							
-AMPH:1000074	Right epidermis	tissue	Epidermis	Epidermis	neurula-N1 stage	larva-LML stage							
-AMPH:1000075	Epidermal sensory neurons	cell	Ventral epidermis	Ventral epidermis	neurula-N1 stage	adult-A stage							
-AMPH:1000076	Anterior somite 1	anatomical structure	Somite 1	Somite 1	neurula-N1 stage	larva-LML stage							
-AMPH:1000077	Posterior somite 1	anatomical structure	Somite 1	Somite 1	neurula-N1 stage	larva-LML stage							
-AMPH:1000078	Dorsal somite 1	anatomical structure	Somite 1	Somite 1	neurula-N1 stage	neurula-N2 stage							
-AMPH:1000079	Ventral somite 1	anatomical structure	Somite 1	Somite 1	neurula-N1 stage	larva-LML stage							
+AMPH:1000048	Neural plate	anatomical structure	whole embryo	Presumptive neural plate	gastrula-G6 stage	neurula-N1 stage							
+AMPH:1000049	Border of the neural plate	anatomical structure	Neural plate	Presumptive border of the neural plate	gastrula-G6 stage	neurula-N1 stage							
+AMPH:1000050	Anterior neural plate	anatomical structure	Neural plate	Presumptive anterior neural plate	gastrula-G6 stage	neurula-N0 stage							
+AMPH:1000051	Epidermis	tissue	whole embryo	Presumptive epidermis	gastrula-G6 stage	adult-A stage							
+AMPH:1000052	Anterior epidermis	tissue	Epidermis	Presumptive anterior epidermis	gastrula-G6 stage	adult-A stage							
+AMPH:1000053	Ventral epidermis	tissue	Epidermis	Epidermis	gastrula-G6 stage	adult-A stage							
+AMPH:1000054	Mesoderm	embryonic territory	whole embryo	Dorsal mesendoderm	neurula-N0 stage	neurula-N4 stage							
+AMPH:1000055	Presumptive notochord	embryonic territory	Mesoderm	Dorsal axial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000056	Presumptive somites 1	embryonic territory	Paraxial mesoderm	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000057	Presumptive somites 2	embryonic territory	Paraxial mesoderm	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000058	Presumptive somites 3	embryonic territory	Paraxial mesoderm	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000059	Presumptive left somite 1	embryonic territory	Presumptive somites 1	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000060	Presumptive right somite 1	embryonic territory	Presumptive somites 1	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000061	Presumptive left somite 2	embryonic territory	Presumptive somites 2	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000062	Presumptive right somite 2	embryonic territory	Presumptive somites 2	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000063	Presumptive left somite 3	embryonic territory	Presumptive somites 3	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000064	Presumptive right somite 3	embryonic territory	Presumptive somites 3	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N0 stage							
+AMPH:1000065	Paraxial mesoderm	embryonic territory	Mesoderm	Dorsal paraxial mesendoderm	neurula-N0 stage	neurula-N4 stage							
+AMPH:1000066	Left mesoderm	embryonic territory	Mesoderm	Mesendoderm	neurula-N0 stage	neurula-N1 stage							
+AMPH:1000067	Right mesoderm	embryonic territory	Mesoderm	Mesendoderm	neurula-N0 stage	neurula-N1 stage							
+AMPH:1000068	Left endoderm	embryonic territory	Endoderm	Mesendoderm	neurula-N0 stage	neurula-N1 stage							
+AMPH:1000069	Right endoderm	embryonic territory	Endoderm	Mesendoderm	neurula-N0 stage	neurula-N1 stage							
+AMPH:1000070	Notochord	anatomical structure	whole embryo	Presumptive notochord	neurula-N1 stage	adult-A stage							
+AMPH:1000071	Somites 1	anatomical structure	Somites	Presumptive somites 1	neurula-N0 stage	larva-L3 stage							
+AMPH:1000072	Somites 2	anatomical structure	Somites	Presumptive somites 2	neurula-N0 stage	larva-L3 stage							
+AMPH:1000073	Somites 3	anatomical structure	Somites	Presumptive somites 3	neurula-N0 stage	larva-L3 stage							
+AMPH:1000074	Posterior paraxial mesoderm	embryonic territory	Paraxial mesoderm	Dorsal paraxial mesendoderm	neurula-N1 stage	neurula-N4 stage							
+AMPH:1000075	Endoderm	embryonic territory	whole embryo	Ventral mesendoderm	neurula-N0 stage	larva-L4 stage							
+AMPH:1000076	Anterior endoderm	embryonic territory	Endoderm	Anterior mesendoderm	neurula-N0 stage	larva-L4 stage							
+AMPH:1000077	Posterior endoderm	embryonic territory	Endoderm	Posterior mesendoderm	neurula-N0 stage	neurula-N4 stage							
+AMPH:1000078	Tailbud	anatomical structure	whole embryo	Blastopore lip	neurula-N0 stage	larva-L4 stage							
+AMPH:1000079	Inner lip of blastopore	anatomical structure	Tailbud	Blastopore lip	neurula-N0 stage	neurula-N1 stage							
+AMPH:1000080	Presumptive cerebral vesicle	anatomical structure	Neural plate	Anterior neural plate	neurula-N1 stage	neurula-N1 stage							
+AMPH:1000081	Presumptive spinal chord	anatomical structure	Neural plate	Neural plate	neurula-N1 stage	neurula-N1 stage							
+AMPH:1000082	Left epidermis	tissue	Epidermis	Epidermis	neurula-N1 stage	adult-A stage							
+AMPH:1000083	Right epidermis	tissue	Epidermis	Epidermis	neurula-N1 stage	adult-A stage							
+AMPH:1000084	Epidermal sensory neurons	cell	whole embryo	Ventral epidermis	neurula-N1 stage	adult-A stage							
+AMPH:1000085	Anterior somites 1	anatomical structure	Somites 1	Somites 1	neurula-N1 stage	larva-L3 stage							
+AMPH:1000086	Posterior somites 1	anatomical structure	Somites 1	Somites 1	neurula-N1 stage	larva-L3 stage							
+AMPH:1000087	Dorsal somites 1	anatomical structure	Somites 1	Somites 1	neurula-N2 stage	neurula-N2 stage							
+AMPH:1000088	Ventral somites 1	anatomical structure	Somites 1	Somites 1	neurula-N2 stage	larva-L3 stage							
+AMPH:1000089	Left somite 1	anatomical structure	Somites 1	Somites 1	neurula-N1 stage	larva-L3 stage							
+AMPH:1000090	Right somite 1	anatomical structure	Somites 1	Somites 1	neurula-N1 stage	larva-L3 stage							
+AMPH:1000091	Left ventral somite 1	anatomical structure	Somites 1	Somites 1	neurula-N2 stage	neurula-N2 stage							
+AMPH:1000092	Anterior somites 2	anatomical structure	Somites 2	Somites 2	neurula-N1 stage	larva-L3 stage							
+AMPH:1000093	Posterior somites 2	anatomical structure	Somites 2	Somites 2	neurula-N1 stage	larva-L3 stage							
+AMPH:1000094	Dorsal somites 2	anatomical structure	Somites 2	Somites 2	neurula-N2 stage	neurula-N2 stage							
+AMPH:1000095	Ventral somites 2	anatomical structure	Somites 2	Somites 2	neurula-N2 stage	larva-L3 stage							
+AMPH:1000096	Left somite 2	anatomical structure	Somites 2	Somites 2	neurula-N1 stage	larva-L3 stage							
+AMPH:1000097	Right somite 2	anatomical structure	Somites 2	Somites 2	neurula-N1 stage	larva-L3 stage							
+AMPH:1000098	Anterior somites 3	anatomical structure	Somites 3	Somites 3	neurula-N1 stage	larva-L3 stage							
+AMPH:1000099	Posterior somites 3	anatomical structure	Somites 3	Somites 3	neurula-N1 stage	larva-L3 stage							
+AMPH:1000100	Dorsal somites 3	anatomical structure	Somites 3	Somites 3	neurula-N2 stage	neurula-N2 stage							
+AMPH:1000101	Ventral somites 3	anatomical structure	Somites 3	Somites 3	neurula-N2 stage	larva-L3 stage							
+AMPH:1000102	Left somite 3	anatomical structure	Somites 3	Somites 3	neurula-N1 stage	larva-L3 stage							
+AMPH:1000103	Right somite 3	anatomical structure	Somites 3	Somites 3	neurula-N1 stage	larva-L3 stage							
+AMPH:1000104	Neural tube	anatomical structure	central nervous system	Neural plate	neurula-N2 stage	adult-A stage							
+AMPH:1000105	Dorsal neural tube	anatomical structure	Neural tube	Neural plate	neurula-N2 stage	adult-A stage							
+AMPH:1000106	Ventral neural tube	anatomical structure	Neural tube	Neural plate	neurula-N2 stage	adult-A stage							
+AMPH:1000107	Lateral neural tube	anatomical structure	Neural tube	Neural plate	neurula-N2 stage	adult-A stage							
+AMPH:1000108	Cerebral vesicle	anatomical structure	Neural tube	Presumptive cerebral vesicle	neurula-N2 stage	adult-A stage							
+AMPH:1000109	Spinal chord	anatomical structure	Neural tube	Presumptive spinal chord	neurula-N2 stage	adult-A stage							
+AMPH:1000110	Somites 4	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000111	Anterior somites 4	anatomical structure	Somites 4	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000112	Posterior somites 4	anatomical structure	Somites 4	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000113	Dorsal somites 4	anatomical structure	Somites 4	Posterior paraxial mesoderm	neurula-N2 stage	neurula-N2 stage							
+AMPH:1000114	Ventral somites 4	anatomical structure	Somites 4	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000115	Left somite 4	anatomical structure	Somites 4	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000116	Right somite 4	anatomical structure	Somites 4	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000117	Somites 5	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000118	Anterior somites 5	anatomical structure	Somites 5	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000119	Posterior somites 5	anatomical structure	Somites 5	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000120	Dorsal somites 5	anatomical structure	Somites 5	Posterior paraxial mesoderm	neurula-N2 stage	neurula-N2 stage							
+AMPH:1000121	Ventral somites 5	anatomical structure	Somites 5	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000122	Left somite 5	anatomical structure	Somites 5	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000123	Right somite 5	anatomical structure	Somites 5	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000124	Somites 6	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000125	Anterior somites 6	anatomical structure	Somites 6	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000126	Posterior somites 6	anatomical structure	Somites 6	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000127	Dorsal somites 6	anatomical structure	Somites 6	Posterior paraxial mesoderm	neurula-N2 stage	neurula-N2 stage							
+AMPH:1000128	Ventral somites 6	anatomical structure	Somites 6	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000129	Left somite 6	anatomical structure	Somites 6	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000130	Right somite 6	anatomical structure	Somites 6	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000131	Somites 7	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000132	Anterior somites 7	anatomical structure	Somites 7	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000133	Posterior somites 7	anatomical structure	Somites 7	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000134	Dorsal somites 7	anatomical structure	Somites 7	Posterior paraxial mesoderm	neurula-N2 stage	neurula-N2 stage							
+AMPH:1000135	Ventral somites 7	anatomical structure	Somites 7	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000136	Left somite 7	anatomical structure	Somites 7	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000137	Right somite 7	anatomical structure	Somites 7	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000138	Somites 8	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000139	Anterior somites 8	anatomical structure	Somites 8	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000140	Posterior somites 8	anatomical structure	Somites 8	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000141	Dorsal somites 8	anatomical structure	Somites 8	Posterior paraxial mesoderm	neurula-N2 stage	neurula-N2 stage							
+AMPH:1000142	Ventral somites 8	anatomical structure	Somites 8	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000143	Left somite 8	anatomical structure	Somites 8	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000144	Right somite 8	anatomical structure	Somites 8	Posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage							
+AMPH:1000145	Left Hatschek's diverticulum	anatomical structure	Endoderm	Left endoderm	neurula-N2 stage	neurula-T2 stage							
+AMPH:1000146	Right Hatschek's diverticulum	anatomical structure	Endoderm	Right endoderm	neurula-N2 stage	neurula-T2 stage							
+AMPH:1000147	Pharyngeal endoderm	anatomical structure	Endoderm	Anterior endoderm	neurula-N2 stage	larva-L4 stage							
+AMPH:1000148	Left pharyngeal endoderm	anatomical structure	Pharyngeal endoderm	Anterior endoderm	neurula-N2 stage	larva-L4 stage							
+AMPH:1000149	Right pharyngeal endoderm	anatomical structure	Pharyngeal endoderm	Anterior endoderm	neurula-N2 stage	larva-L4 stage							
+AMPH:1000150	Ventral pharyngeal endoderm	anatomical structure	Pharyngeal endoderm	Anterior endoderm	neurula-N2 stage	larva-L4 stage							
+AMPH:1000151	Mid-endoderm	anatomical structure	Endoderm	Endoderm	neurula-N2 stage	neurula-N4 stage							
+AMPH:1000152	Cordoneural hinge	anatomical structure	Tailbud	Blastopore lip	neurula-N2 stage	larva-L4 stage							
+AMPH:1000153	Posterior wall of neurenteric canal	anatomical structure	Cordoneural hinge	Blastopore lip	neurula-N2 stage	larva-L4 stage							
+AMPH:1000154	Anterior cerebral vesicle	anatomical structure	Cerebral vesicle	Cerebral vesicle	neurula-N3 stage	adult-A stage							
+AMPH:1000155	Posterior cerebral vesicle	anatomical structure	Cerebral vesicle	Cerebral vesicle	neurula-N3 stage	adult-A stage							
+AMPH:1000156	Dorsal cerebral vesicle	anatomical structure	Cerebral vesicle	Cerebral vesicle	neurula-N3 stage	adult-A stage							
+AMPH:1000157	Ventral cerebral vesicle	anatomical structure	Cerebral vesicle	Cerebral vesicle	neurula-N3 stage	adult-A stage							
+AMPH:1000158	Anterior spinal chord	anatomical structure	Spinal chord	Spinal chord	neurula-N3 stage	adult-A stage							
+AMPH:1000159	Posterior spinal chord	anatomical structure	Spinal chord	Spinal chord	neurula-N3 stage	adult-A stage							
+AMPH:1000160	Posterior dorsal spinal chord	anatomical structure	Spinal chord	Spinal chord	neurula-N3 stage	adult-A stage							
+AMPH:1000161	Posterior ventral spinal chord	anatomical structure	Spinal chord	Spinal chord	neurula-N3 stage	adult-A stage							
+AMPH:1000162	Lateral spinal chord	anatomical structure	Spinal chord	Spinal chord	neurula-N3 stage	adult-A stage							
+AMPH:1000163	Posterior epidermis	tissue	Epidermis	Epidermis	neurula-N0 stage	adult-A stage							
+AMPH:1000164	Anterior notochord	anatomical structure	Notochord	Notochord	neurula-N3 stage	adult-A stage							
+AMPH:1000165	Posterior notochord	anatomical structure	Notochord	Notochord	neurula-N3 stage	adult-A stage							
+AMPH:1000166	Ventral mesoderm	embryonic territory	Mesoderm	Mesoderm	neurula-N3 stage	neurula-N4 stage							
+AMPH:1000167	Myotome of somites 1	anatomical structure	Somites 1	Dorsal somites 1	neurula-N3 stage	larva-L3 stage							
+AMPH:1000168	External cell layer of somites 1	anatomical structure	Somites 1	Somites 1	neurula-N3 stage	larva-L3 stage							
+AMPH:1000169	Presumptive Hatschek nephridium	embryonic territory	Left somite 1	Left ventral somite 1	neurula-N3 stage	neurula-T2 stage							
+AMPH:1000170	Myotome of somites 2	anatomical structure	Somites 2	Dorsal somites 2	neurula-N3 stage	larva-L3 stage							
+AMPH:1000171	External cell layer of somites 2	anatomical structure	Somites 2	Somites 2	neurula-N3 stage	larva-L3 stage							
+AMPH:1000172	Myotome of somites 3	anatomical structure	Somites 3	Dorsal somites 3	neurula-N3 stage	larva-L3 stage							
+AMPH:1000173	External cell layer of somites 3	anatomical structure	Somites 3	Somites 3	neurula-N3 stage	larva-L3 stage							
+AMPH:1000174	Myotome of somites 4	anatomical structure	Somites 4	Dorsal somites 4	neurula-N3 stage	larva-L3 stage							
+AMPH:1000175	External cell layer of somites 4	anatomical structure	Somites 4	Somites 4	neurula-N3 stage	larva-L3 stage							
+AMPH:1000176	Myotome of somites 5	anatomical structure	Somites 5	Dorsal somites 5	neurula-N3 stage	larva-L3 stage							
+AMPH:1000177	External cell layer of somites 5	anatomical structure	Somites 5	Somites 5	neurula-N3 stage	larva-L3 stage							
+AMPH:1000178	Myotome of somites 6	anatomical structure	Somites 6	Dorsal somites 6	neurula-N3 stage	larva-L3 stage							
+AMPH:1000179	External cell layer of somites 6	anatomical structure	Somites 6	Somites 6	neurula-N3 stage	larva-L3 stage							
+AMPH:1000180	Myotome of somites 7	anatomical structure	Somites 7	Dorsal somites 7	neurula-N3 stage	larva-L3 stage							
+AMPH:1000181	External cell layer of somites 7	anatomical structure	Somites 7	Somites 7	neurula-N3 stage	larva-L3 stage							
+AMPH:1000182	Myotome of somites 8	anatomical structure	Somites 8	Dorsal somites 8	neurula-N3 stage	larva-L3 stage							
+AMPH:1000183	External cell layer of somites 8	anatomical structure	Somites 8	Somites 8	neurula-N3 stage	larva-L3 stage							
+AMPH:1000184	Presumptive club shape gland	embryonic territory	Pharyngeal endoderm	Pharyngeal endoderm	neurula-N3 stage	neurula-T2 stage							
+AMPH:1000185	Presumptive endostyle	embryonic territory	Pharyngeal endoderm	Pharyngeal endoderm	neurula-N3 stage	neurula-T2 stage							
+AMPH:1000186	Somites 9	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000187	Anterior somites 9	anatomical structure	Somites 9	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000188	Posterior somites 9	anatomical structure	Somites 9	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000189	Myotome of somites 9	anatomical structure	Somites 9	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000190	External cell layer of somites 9	anatomical structure	Somites 9	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000191	Ventral somites 9	anatomical structure	Somites 9	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000192	Left somite 9	anatomical structure	Somites 9	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000193	Right somites 9	anatomical structure	Somites 9	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000194	Anterior somites 10	anatomical structure	Somites 10	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000195	Posterior somites 10	anatomical structure	Somites 10	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000196	Myotome of somites 10	anatomical structure	Somites 10	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000197	External cell layer of somites 10	anatomical structure	Somites 10	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000198	Ventral somites 10	anatomical structure	Somites 10	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000199	Left somite 10	anatomical structure	Somites 10	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000200	Right somites 10	anatomical structure	Somites 10	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000201	Anterior somites 11	anatomical structure	Somites 11	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000202	Posterior somites 11	anatomical structure	Somites 11	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000203	Myotome of somites 11	anatomical structure	Somites 11	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000204	External cell layer of somites 11	anatomical structure	Somites 11	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000205	Ventral somites 11	anatomical structure	Somites 11	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000206	Left somite 11	anatomical structure	Somites 11	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000207	Right somites 11	anatomical structure	Somites 11	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000208	Somites 10	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000209	Somites 11	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage							
+AMPH:1000210	Pigment spot	anatomical structure	Neural tube	Spinal chord	neurula-T stage	adult-A stage							
+AMPH:1000211	Subintestinal vessel anlage	anatomical structure	Mesoderm	Ventral mesoderm	neurula-T stage	neurula-T2 stage							
+AMPH:1000212	Somites 12	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000213	Anterior somites 12	anatomical structure	Somites 12	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000214	Posterior somites 12	anatomical structure	Somites 12	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000215	Myotome of somites 12	anatomical structure	Somites 12	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000216	External cell layer of somites 12	anatomical structure	Somites 12	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000217	Ventral somites 12	anatomical structure	Somites 12	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000218	Left somite 12	anatomical structure	Somites 12	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000219	Right somites 12	anatomical structure	Somites 12	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000220	Somites 13	anatomical structure	Somites	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000221	Anterior somites 13	anatomical structure	Somites 13	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000222	Posterior somites 13	anatomical structure	Somites 13	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000223	Myotome of somites 13	anatomical structure	Somites 13	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000224	External cell layer of somites 13	anatomical structure	Somites 13	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000225	Ventral somites 13	anatomical structure	Somites 13	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000226	Left somite 13	anatomical structure	Somites 13	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000227	Right somites 13	anatomical structure	Somites 13	Posterior paraxial mesoderm	neurula-T stage	larva-L3 stage							
+AMPH:1000228	Nascent somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T stage	larva-L4 stage							
+AMPH:1000229	Left nascent somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T stage	larva-L4 stage							
+AMPH:1000230	Right nascent somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T stage	larva-L4 stage							
+AMPH:1000231	Mouth primordium	anatomical structure	Left pharyngeal endoderm	Pharyngeal endoderm	neurula-T stage	neurula-T2 stage							
+AMPH:1000232	Presumptive first pharyngeal slit	anatomical structure	Right pharyngeal endoderm	Pharyngeal endoderm	neurula-T stage	larva-L0 stage							
+AMPH:1000233	Dorsal pharyngeal endoderm	anatomical structure	Endoderm	Endoderm	neurula-T stage	larva-PL stage							
+AMPH:1000234	Gut	anatomical structure	Gut	Endoderm	neurula-T stage	adult-A stage							
+AMPH:1000235	Anterior gut	anatomical structure	Gut	Anterior endoderm	neurula-T stage	adult-A stage							
+AMPH:1000236	Mid-gut	anatomical structure	Gut	Mid-endoderm	neurula-T stage	adult-A stage							
+AMPH:1000237	Ventral mid-gut	anatomical structure	Gut	Mid-endoderm	neurula-T stage	adult-A stage							
+AMPH:1000238	Hind-gut	anatomical structure	Gut	Posterior endoderm	neurula-T stage	adult-A stage							
+AMPH:1000239	Schizocoelic somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T2 stage	larva-L3 stage							
+AMPH:1000240	Anterior schizocoelic somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T2 stage	larva-L3 stage							
+AMPH:1000241	Posterior schizocoelic somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T2 stage	larva-L3 stage							
+AMPH:1000242	Myotome of schizocoelic somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T2 stage	larva-L3 stage							
+AMPH:1000243	External cell layer of schizocoelic somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T2 stage	larva-L3 stage							
+AMPH:1000244	Ventral schizocoelic somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T2 stage	larva-L3 stage							
+AMPH:1000245	Left schizocoelic somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T2 stage	larva-L3 stage							
+AMPH:1000246	Right schizocoelic somite	anatomical structure	Posterior paraxial mesoderm	Posterior paraxial mesoderm	neurula-T2 stage	larva-L3 stage							
+AMPH:1000247	Dorsal ocelli	anatomical structure	Neural tube	Posterior dorsal spinal chord	larva-L0 stage	adult-A stage							
+AMPH:1000248	Tail fin	anatomical structure	whole embryo	Posterior epidermis	larva-L0 stage	adult-A stage							
+AMPH:1000249	Subintestinal vessel	anatomical structure	whole embryo	Subintestinal vessel anlage	larva-L0 stage	adult-A stage							
+AMPH:1000250	Dorsal mesoderm	anatomical structure	Mesoderm	Mesoderm	neurula-N3 stage	neurula-N4 stage							
+AMPH:1000251	Dorsal aorta	anatomical structure	whole embryo	Dorsal mesoderm	larva-L0 stage	adult-A stage							
+AMPH:1000252	Hatschek's nephridium	anatomical structure	whole embryo	Presumptive Hatschek nephridium	larva-L0 stage	adult-A stage							
+AMPH:1000253	Preoral pit	anatomical structure	whole embryo	AMPH:1000145	larva-L0 stage	larva-MML stage							
+AMPH:1000254	Rostral coelom	anatomical structure	Endoderm	AMPH:1000146	larva-L0 stage	larva-L4 stage							
+AMPH:1000255	Mouth	anatomical structure	whole embryo	Mouth primordium	larva-L0 stage	adult-A stage							
+AMPH:1000256	Club shaped gland	anatomical structure	whole embryo	Presumptive club shape gland	larva-L0 stage	larva-EML stage							
+AMPH:1000257	Dorsal Club shaped gland	anatomical structure	Club shaped gland	Presumptive club shape gland	larva-L0 stage	larva-EML stage							
+AMPH:1000258	Ventral Club shaped gland	anatomical structure	Club shaped gland	Presumptive club shape gland	larva-L0 stage	larva-EML stage							
+AMPH:1000259	Endostyle	anatomical structure	whole embryo	Presumptive endostyle	larva-L0 stage	adult-A stage							
+AMPH:1000260	Iliocolonic region	anatomical structure	Mid-gut	Mid-gut	larva-L0 stage	adult-A stage							
+AMPH:1000261	Presumptive anus	anatomical structure	Hind-gut	Hind-gut	larva-L0 stage	larva-L0 stage							
+AMPH:1000262	Frontal eye	anatomical structure	Cerebral vesicle	Anterior cerebral vesicle	larva-L1 stage	adult-A stage							
+AMPH:1000263	First pharyngeal slit	anatomical structure	whole embryo	Presumptive first pharyngeal slit	larva-L1 stage	larva-MML stage							
+AMPH:1000264	Presumptive second pharyngeal slit	anatomical structure	Right pharyngeal endoderm	Pharyngeal endoderm	larva-L1 stage	larva-L1 stage							
+AMPH:1000265	Anus	anatomical structure	whole embryo	Presumptive anus	larva-L1 stage	adult-A stage							
+AMPH:1000266	Second pharyngeal slit	anatomical structure	whole embryo	Presumptive second pharyngeal slit	larva-L2 stage	larva-MML stage							
+AMPH:1000267	Presumptive Third pharyngeal slit	anatomical structure	Right pharyngeal endoderm	Pharyngeal endoderm	larva-L2 stage	larva-L2 stage							
+AMPH:1000268	Third pharyngeal slit	anatomical structure	whole embryo	Presumptive Third pharyngeal slit	larva-L3 stage	larva-MML stage							
+AMPH:1000269	Presumptive pharyngeal slit	anatomical structure	Right pharyngeal endoderm	Pharyngeal endoderm	larva-L3 stage	larva-L4 stage							
+AMPH:1000270	Infundibular organ	anatomical structure	Cerebral vesicle	Ventral cerebral vesicle	larva-L4 stage	adult-A stage							
+AMPH:1000271	Lamellar body	anatomical structure	Cerebral vesicle	Dorsal cerebral vesicle	larva-L4 stage	adult-A stage							
+AMPH:1000272	Primary motor center	anatomical structure	Cerebral vesicle	Posterior cerebral vesicle	larva-L4 stage	adult-A stage							
+AMPH:1000273	Myomere 1	anatomical structure	whole embryo	Myotome of somites 1	larva-L4 stage	larva-LML stage							
+AMPH:1000274	Left myomere 1	anatomical structure	Myomere 1	Left somite 1	larva-L4 stage	larva-LML stage							
+AMPH:1000275	Right myomere 1	anatomical structure	Myomere 1	Right somite 1	larva-L4 stage	larva-LML stage							
+AMPH:1000276	Somites	anatomical structure	whole embryo	Paraxial mesoderm	neurula-N1 stage	larva-L3 stage							
+AMPH:1000277	External cell layer 	anatomical structure	whole embryo	Somites	larva-L4 stage	larva-LML stage							
+AMPH:1000278	Myomere 2	anatomical structure	whole embryo	Myotome of somites 2	larva-L4 stage	larva-LML stage							
+AMPH:1000279	Left myomere 2	anatomical structure	Myomere 2	Left somite 2	larva-L4 stage	larva-LML stage							
+AMPH:1000280	Right myomere 2	anatomical structure	Myomere 2	Right somite 2	larva-L4 stage	larva-LML stage							
+AMPH:1000281	Myomere 3	anatomical structure	whole embryo	Myotome of somites 3	larva-L4 stage	larva-LML stage							
+AMPH:1000282	Left myomere 3	anatomical structure	Myomere 3	Left somite 3	larva-L4 stage	larva-LML stage							
+AMPH:1000283	Right myomere 3	anatomical structure	Myomere 3	Right somite 3	larva-L4 stage	larva-LML stage							
+AMPH:1000284	Myomere 4	anatomical structure	whole embryo	Myotome of somites 4	larva-L4 stage	larva-LML stage							
+AMPH:1000285	Left myomere 4	anatomical structure	Myomere 4	Left somite 4	larva-L4 stage	larva-LML stage							
+AMPH:1000286	Right myomere 4	anatomical structure	Myomere 4	Right somite 4	larva-L4 stage	larva-LML stage							
+AMPH:1000287	Myomere 5	anatomical structure	whole embryo	Myotome of somites 5	larva-L4 stage	larva-LML stage							
+AMPH:1000288	Left myomere 5	anatomical structure	Myomere 5	Left somite 5	larva-L4 stage	larva-LML stage							
+AMPH:1000289	Right myomere 5	anatomical structure	Myomere 5	Right somite 5	larva-L4 stage	larva-LML stage							
+AMPH:1000290	Myomere 6	anatomical structure	whole embryo	Myotome of somites 6	larva-L4 stage	larva-LML stage							
+AMPH:1000291	Left myomere 6	anatomical structure	Myomere 6	Left somite 6	larva-L4 stage	larva-LML stage							
+AMPH:1000292	Right myomere 6	anatomical structure	Myomere 6	Right somite 6	larva-L4 stage	larva-LML stage							
+AMPH:1000293	Myomere 7	anatomical structure	whole embryo	Myotome of somites 7	larva-L4 stage	larva-LML stage							
+AMPH:1000294	Left myomere 7	anatomical structure	Myomere 7	Left somite 7	larva-L4 stage	larva-LML stage							
+AMPH:1000295	Right myomere 7	anatomical structure	Myomere 7	Right somite 7	larva-L4 stage	larva-LML stage							
+AMPH:1000296	Myomere 8	anatomical structure	whole embryo	Myotome of somites 8	larva-L4 stage	larva-LML stage							
+AMPH:1000297	Left myomere 8	anatomical structure	Myomere 8	Left somite 8	larva-L4 stage	larva-LML stage							
+AMPH:1000298	Right myomere 8	anatomical structure	Myomere 8	Right somite 8	larva-L4 stage	larva-LML stage							
+AMPH:1000299	Myomere 9	anatomical structure	whole embryo	Myotome of somites 9	larva-L4 stage	larva-LML stage							
+AMPH:1000300	Left myomere 9	anatomical structure	Myomere 9	Left somite 9	larva-L4 stage	larva-LML stage							
+AMPH:1000301	Right myomere 9	anatomical structure	Myomere 9	Right somites 9	larva-L4 stage	larva-LML stage							
+AMPH:1000302	Myomere 10	anatomical structure	whole embryo	Myotome of somites 10	larva-L4 stage	larva-LML stage							
+AMPH:1000303	Left myomere 10	anatomical structure	Myomere 10	Left somite 10	larva-L4 stage	larva-LML stage							
+AMPH:1000304	Right myomere 10	anatomical structure	Myomere 10	Right somites 10	larva-L4 stage	larva-LML stage							
+AMPH:1000305	Myomere 11	anatomical structure	whole embryo	Myotome of somites 11	larva-L4 stage	larva-LML stage							
+AMPH:1000306	Left myomere 11	anatomical structure	Myomere 11	Left somite 11	larva-L4 stage	larva-LML stage							
+AMPH:1000307	Right myomere 11	anatomical structure	Myomere 11	Right somites 11	larva-L4 stage	larva-LML stage							
+AMPH:1000308	Myomere 12	anatomical structure	whole embryo	Myotome of somites 12	larva-L4 stage	larva-LML stage							
+AMPH:1000309	Left myomere 12	anatomical structure	Myomere 12	Left somite 12	larva-L4 stage	larva-LML stage							
+AMPH:1000310	Right myomere 12	anatomical structure	Myomere 12	Right somites 12	larva-L4 stage	larva-LML stage							
+AMPH:1000311	Myomere 13	anatomical structure	whole embryo	Myotome of somites 13	larva-L4 stage	larva-LML stage							
+AMPH:1000312	Left myomere 13	anatomical structure	Myomere 13	Left somite 13	larva-L4 stage	larva-LML stage							
+AMPH:1000313	Right myomere 13	anatomical structure	Myomere 13	Right somites 13	larva-L4 stage	larva-LML stage							
+AMPH:1000314	Myomere of Schizocoelic somite	anatomical structure	whole embryo	Myotome of schizocoelic somite	larva-L4 stage	larva-LML stage							
+AMPH:1000315	Left schizocoelic somite myomere	anatomical structure	Myomere of Schizocoelic somite	Left schizocoelic somite	larva-L4 stage	larva-LML stage							
+AMPH:1000316	Right schizocoelic somite myomere	anatomical structure	Myomere of Schizocoelic somite	Right schizocoelic somite	larva-L4 stage	larva-LML stage							
+AMPH:1000317	Pharyngeal slit	anatomical structure	whole embryo	Presumptive pharyngeal slit	larva-L4 stage	larva-MML stage							
+AMPH:1000318	Metapleural folds	anatomical structure	whole embryo	Epidermis	larva-PL stage	adult-A stage							
+AMPH:1000319	Atrium wall	anatomical structure	whole embryo	Ventral mesoderm	larva-PL stage	adult-A stage							
+AMPH:1000320	Pharynx	anatomical structure	whole embryo	Pharyngeal endoderm	larva-PL stage	adult-A stage							
+AMPH:1000321	Dorsal pharynx	anatomical structure	Pharynx	Pharyngeal endoderm	larva-PL stage	adult-A stage							
+AMPH:1000322	Ventral Pharynx	anatomical structure	Pharynx	Pharyngeal endoderm	larva-PL stage	adult-A stage							
+AMPH:1000323	Second row of pharyngeal slits	anatomical structure	Pharyngeal slit	Pharyngeal slit	larva-EML stage	larva-MML stage							
+AMPH:1000324	Tongue bars	anatomical structure	Pharyngeal slit	Pharyngeal slit	larva-MML stage	adult-A stage							
+AMPH:1000325	Cirri	anatomical structure	whole embryo	Anterior epidermis	larva-LML stage	adult-A stage							
+AMPH:1000326	Dorsal fin	anatomical structure	whole embryo	Epidermis	larva-LML stage	adult-A stage							
+AMPH:1000327	Ventral fin	anatomical structure	whole embryo	Epidermis	larva-LML stage	adult-A stage							
+AMPH:1000328	Atriopore	anatomical structure	whole embryo	Metapleural folds	larva-LML stage	adult-A stage							
+AMPH:1000329	Wheel organ	anatomical structure	whole embryo	Epidermis	larva-LML stage	adult-A stage							
+AMPH:1000330	Hatschek's groove	anatomical structure	whole embryo	Preoral pit	larva-LML stage	adult-A stage							
+AMPH:1000331	Left pharyngeal slit	anatomical structure	whole embryo	Pharyngeal slit	larva-LML stage	adult-A stage							
+AMPH:1000332	Right pharyngeal slit	anatomical structure	whole embryo	Pharyngeal slit	larva-LML stage	adult-A stage							
+AMPH:1000333	Hepatic caecum bud	anatomical structure	Gut	Mid-gut	larva-LML stage	larva-LML stage							
+AMPH:1000334	Myomere	anatomical structure	whole embryo	Myotome of schizocoelic somite	juvenile-J stage	adult-A stage							
+AMPH:1000335	Left myomere	anatomical structure	whole embryo	Left schizocoelic somite myomere	juvenile-J stage	adult-A stage							
+AMPH:1000336	Right myomere	anatomical structure	whole embryo	Right schizocoelic somite myomere	juvenile-J stage	adult-A stage							
+AMPH:1000337	Dermis	anatomical structure	whole embryo	External cell layer 	juvenile-J stage	adult-A stage							
+AMPH:1000338	Velum	anatomical structure	whole embryo		juvenile-J stage	adult-A stage							
+AMPH:1000339	Velar tentacle	anatomical structure	whole embryo		juvenile-J stage	adult-A stage							
+AMPH:1000340	Hepatic caecum	anatomical structure	Gut	Hepatic caecum bud	juvenile-J stage	adult-A stage							
+AMPH:1000341	Male gonads	anatomical structure	whole embryo		adult-A stage	adult-A stage							
+AMPH:1000342	Female gonads	anatomical structure	whole embryo		adult-A stage	adult-A stage							

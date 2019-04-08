@@ -46,9 +46,9 @@ AMPH:0000044	neurula-N4 stage	Neurula period	neurula-N3 stage		Late-neurula II		
 AMPH:0000045	neurula-T stage	Tailbud period	neurula-N3 stage		Premouth stage	Hirakov and Kajita 1994	Tailbud with enlarged pharyngeal region, from 11-13 somites
 AMPH:0000046	neurula-T2 stage	Tailbud period	neurula-T stage		Premouth stage II		Tailbud with enlarged pharyngeal region, more than 13 somites, prior the mouth opens
 AMPH:0000047	larva-L0 stage	Larva stage	neurula-T stage		Early larvae		Open mouth, 0 gill slits
-AMPH:0000048	larva-L1 stage	Larva stage	larva-L0 stage		1 gill slit larvae	Hirakov and Kajita 1994	Mouth and 1 gill slit open
-AMPH:0000049	larva-L2 stage	Larva stage	larva-L1 stage		2 gill slit larvae	Hirakov and Kajita 1994	Mouth and 2 gill slit open
-AMPH:0000050	larva-L3 stage	Larva stage	larva-L2 stage		3 gill slit larvae	Hirakov and Kajita 1994	Mouth and 3 gill slit open
+AMPH:0000048	larva-L1 stage	Larva stage	larva-L0 stage		1 pharyngeal slit larvae	Hirakov and Kajita 1994	Mouth and 1 gill slit open
+AMPH:0000049	larva-L2 stage	Larva stage	larva-L1 stage		2 pharyngeal slit larvae	Hirakov and Kajita 1994	Mouth and 2 gill slit open
+AMPH:0000050	larva-L3 stage	Larva stage	larva-L2 stage		3 pharyngeal slit larvae	Hirakov and Kajita 1994	Mouth and 3 gill slit open
 AMPH:0000051	larva-L4 stage	Larva stage	larva-L3 stage		Late larvae	Hirakov and Kajita 1994	Mouth and 4-13 gill slits open
 AMPH:0000052	larva-PL stage	Larva stage	larva-L4 stage		Premetamorphic larvae	Hirakov and Kajita 1994	Mouth and 14-15 gill slits (B. lanceolatum)
 AMPH:0000053	larva-EML stage	Metamorphosis	larva-PL stage		Early metamorphic larvae		Metapleural folds start to grow
