@@ -11,7 +11,7 @@ This ontology... YOUR DESCRIPTION HERE
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/amph.owl
+https://github.com/EBISPOT/amph_ontology/releases/download/v1.0.0/amph.owl
 
 (note this will not show up until the request has been approved by obofoundry.org)
 
