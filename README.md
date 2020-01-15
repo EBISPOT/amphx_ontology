@@ -3,9 +3,11 @@
 
 # amph
 
-This ontology... YOUR DESCRIPTION HERE
+The amphioxus ontology (AMPH) is to describe the anatomy of Amphioxus, also known as lancelet, member of the invertebrate subphylum Cephalochordata and the phylum Chordata, this ontology is species-specific.
+
 
 ## Versions
+1.0.0
 
 ### Stable release versions
 
@@ -17,7 +19,7 @@ https://github.com/EBISPOT/amph_ontology/releases/download/v1.0.0/amph.owl
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/amph-edit.owl](src/ontology/amph-edit.owl)
+Editors of this ontology should use the edit version, [src/ontology/amph-edit.owl](https://github.com/EBISPOT/amph_ontology/blob/master/src/ontology/amph-edit.owl)
 
 ## Contact
 
