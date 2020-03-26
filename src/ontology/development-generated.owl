@@ -113,22 +113,22 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gametogenesis</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000002 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000002">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000002">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oogenesis</rdfs:label>
@@ -136,13 +136,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000003 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000003">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000003">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spermatogenesis</rdfs:label>
@@ -150,14 +150,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000004 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000004">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamete stage</rdfs:label>
@@ -165,19 +165,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000005 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000005">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000005">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000004"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unfertilized egg stage</rdfs:label>
@@ -185,19 +185,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000006 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000006">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000006">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000004"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spermatozoid stage</rdfs:label>
@@ -205,14 +205,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000007 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000007">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000004"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic development</rdfs:label>
@@ -220,13 +220,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000008 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000008 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000008">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000008">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygote period</rdfs:label>
@@ -234,19 +234,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000009 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000009">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000009">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cleavage period</rdfs:label>
@@ -254,19 +254,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000010 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000010">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000010">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula period</rdfs:label>
@@ -274,19 +274,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000011 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000011">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000011">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gastrula period</rdfs:label>
@@ -294,19 +294,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000012 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000012">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000012">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurula period</rdfs:label>
@@ -314,19 +314,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000013 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000013 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000013">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000013">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000012"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailbud period</rdfs:label>
@@ -334,14 +334,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000014 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000014">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larval development</rdfs:label>
@@ -349,13 +349,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000015 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000015">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000015">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000014"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larva stage</rdfs:label>
@@ -363,14 +363,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000016 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000016">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000014"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metamorphosis</rdfs:label>
@@ -378,14 +378,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000017 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000017 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000017">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juvenile</rdfs:label>
@@ -393,13 +393,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000018 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000018 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000018">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000018">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000017"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juvenile period</rdfs:label>
@@ -407,14 +407,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000019 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000019 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000019">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000017"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult</rdfs:label>
@@ -422,13 +422,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000020 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000020 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000020">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000020">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000019"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adult period</rdfs:label>
@@ -436,19 +436,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000022 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000022 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000022">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000022">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000005"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zygote fertilized egg. Time since fertilization is 0min, corresponding to 0.00% of development</obo:IAO_0000115>
@@ -458,19 +458,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000023 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000023 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000023">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000023">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
@@ -479,19 +479,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000024 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000024 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000024">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000024">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000023"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
@@ -500,19 +500,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000025 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000025 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000025">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000025">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
@@ -521,19 +521,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000026 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000026 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000026">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000026">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
@@ -542,19 +542,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000027 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000027 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000027">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000027">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
@@ -563,19 +563,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000028 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000028 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000028">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000028">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000027"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
@@ -584,19 +584,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000029 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000029 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000029">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000029">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000028"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
@@ -605,19 +605,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000030 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000030">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000030">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000029"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
@@ -627,19 +627,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000031 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000031 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000031">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000031">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000030"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
@@ -648,19 +648,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000032 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000032 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000032">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000032">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000031"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial flatening of the vegetal zone</obo:IAO_0000115>
@@ -671,19 +671,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000033 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000033 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000033">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000033">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000032"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flattened vegetal zone</obo:IAO_0000115>
@@ -694,19 +694,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000034 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000034 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000034">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000034">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000033"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depressed vegetal zone, mesendoderm does not touch ectoderm</obo:IAO_0000115>
@@ -717,19 +717,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000035 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000035 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000035">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000035">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000034"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cap shaped, mesendoderm completely touch ectoderm</obo:IAO_0000115>
@@ -740,19 +740,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000036 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000036 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000036">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000036">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000035"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cup shaped</obo:IAO_0000115>
@@ -763,19 +763,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000037 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000037 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000037">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000037">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vase shaped due to body elongation during blastopore closure</obo:IAO_0000115>
@@ -786,19 +786,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000038 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000038 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000038">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000038">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000037"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bottle shaped with flattening neuroectoderm</obo:IAO_0000115>
@@ -809,19 +809,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000039 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000039 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000039">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000039">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000038"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distinct neural plate, just before blastopore closure</obo:IAO_0000115>
@@ -832,19 +832,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000040 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000040 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000040">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000040">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000012"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-3 somites</obo:IAO_0000115>
@@ -855,19 +855,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000041 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000041 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000041">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000041">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000012"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000040"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-6 somites</obo:IAO_0000115>
@@ -878,19 +878,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000042 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000042 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000042">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000042">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000012"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000041"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 to 8 somites</obo:IAO_0000115>
@@ -901,19 +901,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000043 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000043 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000043">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000043">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000012"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 to 9 somites, prior to schizocoelic somites</obo:IAO_0000115>
@@ -924,19 +924,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000044 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000044 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000044">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000044">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000012"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 to 11 somites, prior to schizocoelic somites</obo:IAO_0000115>
@@ -946,19 +946,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000045 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000045 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000045">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000045">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000013"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailbud with enlarged pharyngeal region, from 11-13 somites</obo:IAO_0000115>
@@ -969,19 +969,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000046 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000046 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000046">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000046">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000013"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000045"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailbud with enlarged pharyngeal region, more than 13 somites, prior the mouth opens</obo:IAO_0000115>
@@ -991,19 +991,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000047 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000047 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000047">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000047">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000045"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open mouth, 0 gill slits</obo:IAO_0000115>
@@ -1013,19 +1013,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000048 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000048 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000048">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000048">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 1 gill slit open</obo:IAO_0000115>
@@ -1036,19 +1036,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000049 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000049 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000049">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000049">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 2 gill slit open</obo:IAO_0000115>
@@ -1059,19 +1059,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000050 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000050 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000050">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000050">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000049"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 3 gill slit open</obo:IAO_0000115>
@@ -1082,19 +1082,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000051 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000051 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000051">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000051">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000050"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 4-13 gill slits open</obo:IAO_0000115>
@@ -1105,19 +1105,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000052 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000052 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000052">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000052">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 14-15 gill slits (B. lanceolatum)</obo:IAO_0000115>
@@ -1128,19 +1128,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000053 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000053 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000053">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000053">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000052"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metapleural folds start to grow</obo:IAO_0000115>
@@ -1150,19 +1150,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000054 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000054 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000054">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000054">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gill slits start to duplicate, hepatic caecum starts to develop</obo:IAO_0000115>
@@ -1172,19 +1172,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000055 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000055 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000055">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000055">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth migration to frontal position</obo:IAO_0000115>
@@ -1194,19 +1194,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000056 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000056 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000056">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000056">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000018"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adult-like morphology, length of less than 3cm</obo:IAO_0000115>
@@ -1216,19 +1216,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AMPH_0000057 -->
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000057 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPH_0000057">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000057">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000020"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPH_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adult-like morphology, length of more than 3cm</obo:IAO_0000115>

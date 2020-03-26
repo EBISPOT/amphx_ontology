@@ -4,7 +4,7 @@
 # these can be overwritten on the command line
 
 OBO=http://purl.obolibrary.org/obo
-ONT=amph
+ONT=amphx
 BASE=$(OBO)/$(ONT)
 SRC=$(ONT)-edit.owl
 RELEASEDIR=../..
@@ -40,10 +40,10 @@ $(ONT).obo: $(ONT).owl
 # ----------------------------------------
 
 anatomy-generated.owl:../templates/anatomy.tsv development-generated.owl
-	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) --input development-generated.owl template --merge-before --prefix "AMPH: http://purl.obolibrary.org/obo/AMPH_" --template ../templates/anatomy.tsv --output $@
+	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) --input development-generated.owl template --merge-before --prefix "AMPHX: http://purl.obolibrary.org/obo/AMPHX_" --template ../templates/anatomy.tsv --output $@
 
 development-generated.owl: ../templates/development.tsv
-	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) template --merge-before --prefix "AMPH: http://purl.obolibrary.org/obo/AMPH_" --template ../templates/development.tsv --output $@
+	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) template --merge-before --prefix "AMPHX: http://purl.obolibrary.org/obo/AMPHX_" --template ../templates/development.tsv --output $@
 
 
 # ----------------------------------------

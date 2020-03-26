@@ -1,0 +1,3482 @@
+format-version: 1.2
+data-version: amphx/releases/2020-03-26/amphx.owl
+ontology: amphx/amphx
+property_value: http://purl.org/dc/elements/1.1/description "An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum)." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Amphioxus Development and Anatomy Ontology (AMPHX)" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/
+
+[Term]
+id: AMPHX:0000001
+name: gametogenesis
+is_a: UBERON:0000105 ! life cycle stage
+
+[Term]
+id: AMPHX:0000002
+name: oogenesis
+relationship: BFO:0000050 AMPHX:0000001 ! part of gametogenesis
+
+[Term]
+id: AMPHX:0000003
+name: spermatogenesis
+relationship: BFO:0000050 AMPHX:0000001 ! part of gametogenesis
+
+[Term]
+id: AMPHX:0000004
+name: gamete stage
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPHX:0000001 ! immediately preceded by gametogenesis
+
+[Term]
+id: AMPHX:0000005
+name: unfertilized egg stage
+relationship: BFO:0000050 AMPHX:0000004 ! part of gamete stage
+relationship: RO:0002087 AMPHX:0000002 ! immediately preceded by oogenesis
+
+[Term]
+id: AMPHX:0000006
+name: spermatozoid stage
+relationship: BFO:0000050 AMPHX:0000004 ! part of gamete stage
+relationship: RO:0002087 AMPHX:0000003 ! immediately preceded by spermatogenesis
+
+[Term]
+id: AMPHX:0000007
+name: embryonic development
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPHX:0000004 ! immediately preceded by gamete stage
+
+[Term]
+id: AMPHX:0000008
+name: zygote period
+relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
+
+[Term]
+id: AMPHX:0000009
+name: cleavage period
+relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPHX:0000008 ! immediately preceded by zygote period
+
+[Term]
+id: AMPHX:0000010
+name: blastula period
+relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPHX:0000009 ! immediately preceded by cleavage period
+
+[Term]
+id: AMPHX:0000011
+name: Gastrula period
+relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPHX:0000010 ! immediately preceded by blastula period
+
+[Term]
+id: AMPHX:0000012
+name: Neurula period
+relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPHX:0000011 ! immediately preceded by Gastrula period
+
+[Term]
+id: AMPHX:0000013
+name: Tailbud period
+relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
+relationship: RO:0002087 AMPHX:0000012 ! immediately preceded by Neurula period
+
+[Term]
+id: AMPHX:0000014
+name: larval development
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPHX:0000007 ! immediately preceded by embryonic development
+
+[Term]
+id: AMPHX:0000015
+name: Larva stage
+relationship: BFO:0000050 AMPHX:0000014 ! part of larval development
+
+[Term]
+id: AMPHX:0000016
+name: Metamorphosis
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPHX:0000014 ! immediately preceded by larval development
+
+[Term]
+id: AMPHX:0000017
+name: juvenile
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPHX:0000016 ! immediately preceded by Metamorphosis
+
+[Term]
+id: AMPHX:0000018
+name: Juvenile period
+relationship: BFO:0000050 AMPHX:0000017 ! part of juvenile
+
+[Term]
+id: AMPHX:0000019
+name: adult
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 AMPHX:0000017 ! immediately preceded by juvenile
+
+[Term]
+id: AMPHX:0000020
+name: Adult period
+relationship: BFO:0000050 AMPHX:0000019 ! part of adult
+
+[Term]
+id: AMPHX:0000022
+name: one cell stage
+def: "Zygote fertilized egg. Time since fertilization is 0min, corresponding to 0.00% of development" []
+relationship: BFO:0000050 AMPHX:0000008 ! part of zygote period
+relationship: RO:0002087 AMPHX:0000005 ! immediately preceded by unfertilized egg stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000023
+name: 2-cell stage
+relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPHX:0000022 ! immediately preceded by one cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000024
+name: 4-cell stage
+relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPHX:0000023 ! immediately preceded by 2-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000025
+name: 8-cell stage
+relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPHX:0000024 ! immediately preceded by 4-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000026
+name: 16-cell stage
+relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPHX:0000025 ! immediately preceded by 8-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000027
+name: 32-cell stage
+relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPHX:0000026 ! immediately preceded by 16-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000028
+name: 64-cell stage
+relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPHX:0000027 ! immediately preceded by 32-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000029
+name: 128-cell stage
+relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPHX:0000028 ! immediately preceded by 64-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000030
+name: 256-cell stage
+synonym: "morula" EXACT []
+relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
+relationship: RO:0002087 AMPHX:0000029 ! immediately preceded by 128-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000031
+name: blastula stage
+relationship: BFO:0000050 AMPHX:0000010 ! part of blastula period
+relationship: RO:0002087 AMPHX:0000030 ! immediately preceded by 256-cell stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000032
+name: gastrula-G0 stage
+def: "Initial flatening of the vegetal zone" []
+synonym: "Very early gastrula" EXACT []
+relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPHX:0000031 ! immediately preceded by blastula stage
+property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
+
+[Term]
+id: AMPHX:0000033
+name: gastrula-G1 stage
+def: "Flattened vegetal zone" []
+synonym: "Very early gastrula" EXACT []
+relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPHX:0000032 ! immediately preceded by gastrula-G0 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPHX:0000034
+name: gastrula-G2 stage
+def: "Depressed vegetal zone, mesendoderm does not touch ectoderm" []
+synonym: "Very early gastrula" EXACT []
+relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPHX:0000033 ! immediately preceded by gastrula-G1 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPHX:0000035
+name: gastrula-G3 stage
+def: "Cap shaped, mesendoderm completely touch ectoderm" []
+synonym: "Early gastrula" EXACT []
+relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPHX:0000034 ! immediately preceded by gastrula-G2 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPHX:0000036
+name: gastrula-G4 stage
+def: "Cup shaped" []
+synonym: "Mid-gastrula" EXACT []
+relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPHX:0000035 ! immediately preceded by gastrula-G3 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPHX:0000037
+name: gastrula-G5 stage
+def: "Vase shaped due to body elongation during blastopore closure" []
+synonym: "Late gastrula" EXACT []
+relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPHX:0000036 ! immediately preceded by gastrula-G4 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPHX:0000038
+name: gastrula-G6 stage
+def: "Bottle shaped with flattening neuroectoderm" []
+synonym: "Very late gastrula" EXACT []
+relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPHX:0000037 ! immediately preceded by gastrula-G5 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPHX:0000039
+name: gastrula-G7 stage
+def: "Distinct neural plate, just before blastopore closure" []
+synonym: "Final gastrula" EXACT []
+relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: RO:0002087 AMPHX:0000038 ! immediately preceded by gastrula-G6 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPHX:0000040
+name: neurula-N0 stage
+def: "0-3 somites" []
+synonym: "Very early neurula" EXACT []
+relationship: BFO:0000050 AMPHX:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPHX:0000039 ! immediately preceded by gastrula-G7 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
+
+[Term]
+id: AMPHX:0000041
+name: neurula-N1 stage
+def: "4-6 somites" []
+synonym: "Early neurula" EXACT []
+relationship: BFO:0000050 AMPHX:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPHX:0000040 ! immediately preceded by neurula-N0 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPHX:0000042
+name: neurula-N2 stage
+def: "7 to 8 somites" []
+synonym: "Mid-neurula" EXACT []
+relationship: BFO:0000050 AMPHX:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPHX:0000041 ! immediately preceded by neurula-N1 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPHX:0000043
+name: neurula-N3 stage
+def: "8 to 9 somites, prior to schizocoelic somites" []
+synonym: "Late-neurula" EXACT []
+relationship: BFO:0000050 AMPHX:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPHX:0000042 ! immediately preceded by neurula-N2 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPHX:0000044
+name: neurula-N4 stage
+def: "9 to 11 somites, prior to schizocoelic somites" []
+synonym: "Late-neurula II" EXACT []
+relationship: BFO:0000050 AMPHX:0000012 ! part of Neurula period
+relationship: RO:0002087 AMPHX:0000043 ! immediately preceded by neurula-N3 stage
+
+[Term]
+id: AMPHX:0000045
+name: neurula-T stage
+def: "Tailbud with enlarged pharyngeal region, from 11-13 somites" []
+synonym: "Premouth stage" EXACT []
+relationship: BFO:0000050 AMPHX:0000013 ! part of Tailbud period
+relationship: RO:0002087 AMPHX:0000043 ! immediately preceded by neurula-N3 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPHX:0000046
+name: neurula-T2 stage
+def: "Tailbud with enlarged pharyngeal region, more than 13 somites, prior the mouth opens" []
+synonym: "Premouth stage II" EXACT []
+relationship: BFO:0000050 AMPHX:0000013 ! part of Tailbud period
+relationship: RO:0002087 AMPHX:0000045 ! immediately preceded by neurula-T stage
+
+[Term]
+id: AMPHX:0000047
+name: larva-L0 stage
+def: "Open mouth, 0 gill slits" []
+synonym: "Early larvae" EXACT []
+relationship: BFO:0000050 AMPHX:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPHX:0000045 ! immediately preceded by neurula-T stage
+
+[Term]
+id: AMPHX:0000048
+name: larva-L1 stage
+def: "Mouth and 1 gill slit open" []
+synonym: "1 pharyngeal slit larvae" EXACT []
+relationship: BFO:0000050 AMPHX:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPHX:0000047 ! immediately preceded by larva-L0 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPHX:0000049
+name: larva-L2 stage
+def: "Mouth and 2 gill slit open" []
+synonym: "2 pharyngeal slit larvae" EXACT []
+relationship: BFO:0000050 AMPHX:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPHX:0000048 ! immediately preceded by larva-L1 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPHX:0000050
+name: larva-L3 stage
+def: "Mouth and 3 gill slit open" []
+synonym: "3 pharyngeal slit larvae" EXACT []
+relationship: BFO:0000050 AMPHX:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPHX:0000049 ! immediately preceded by larva-L2 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPHX:0000051
+name: larva-L4 stage
+def: "Mouth and 4-13 gill slits open" []
+synonym: "Late larvae" EXACT []
+relationship: BFO:0000050 AMPHX:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPHX:0000050 ! immediately preceded by larva-L3 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPHX:0000052
+name: larva-PL stage
+def: "Mouth and 14-15 gill slits (B. lanceolatum)" []
+synonym: "Premetamorphic larvae" EXACT []
+relationship: BFO:0000050 AMPHX:0000015 ! part of Larva stage
+relationship: RO:0002087 AMPHX:0000051 ! immediately preceded by larva-L4 stage
+property_value: IAO:0000301 "Hirakov and Kajita 1994" xsd:string
+
+[Term]
+id: AMPHX:0000053
+name: larva-EML stage
+def: "Metapleural folds start to grow" []
+synonym: "Early metamorphic larvae" EXACT []
+relationship: BFO:0000050 AMPHX:0000016 ! part of Metamorphosis
+relationship: RO:0002087 AMPHX:0000052 ! immediately preceded by larva-PL stage
+
+[Term]
+id: AMPHX:0000054
+name: larva-MML stage
+def: "Gill slits start to duplicate, hepatic caecum starts to develop" []
+synonym: "Mid-metamorphic larvae" EXACT []
+relationship: BFO:0000050 AMPHX:0000016 ! part of Metamorphosis
+relationship: RO:0002087 AMPHX:0000053 ! immediately preceded by larva-EML stage
+
+[Term]
+id: AMPHX:0000055
+name: larva-LML stage
+def: "Mouth migration to frontal position" []
+synonym: "Late metamorphic larvae" EXACT []
+relationship: BFO:0000050 AMPHX:0000016 ! part of Metamorphosis
+relationship: RO:0002087 AMPHX:0000054 ! immediately preceded by larva-MML stage
+
+[Term]
+id: AMPHX:0000056
+name: juvenile-J stage
+def: "Adult-like morphology, length of less than 3cm" []
+synonym: "Postmetamorphic juvenile" EXACT []
+relationship: BFO:0000050 AMPHX:0000018 ! part of Juvenile period
+relationship: RO:0002087 AMPHX:0000055 ! immediately preceded by larva-LML stage
+
+[Term]
+id: AMPHX:0000057
+name: adult-A stage
+def: "Adult-like morphology, length of more than 3cm" []
+synonym: "Adult" EXACT []
+relationship: BFO:0000050 AMPHX:0000020 ! part of Adult period
+relationship: RO:0002087 AMPHX:0000056 ! immediately preceded by juvenile-J stage
+
+[Term]
+id: AMPHX:1000001
+name: whole embryo
+is_a: UBERON:0000061 ! anatomical structure
+relationship: RO:0002488 AMPHX:0000008 ! existence starts during zygote period
+relationship: RO:0002492 AMPHX:0000015 ! existence ends during Larva stage
+
+[Term]
+id: AMPHX:1000002
+name: blastomere
+is_a: CL:0000000 ! cell
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+
+[Term]
+id: AMPHX:1000003
+name: whole oocyte
+is_a: CL:0000000 ! cell
+
+[Term]
+id: AMPHX:1000004
+name: tissue
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+
+[Term]
+id: AMPHX:1000005
+name: embryonic territory
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+
+[Term]
+id: AMPHX:1000006
+name: central nervous system
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+
+[Term]
+id: AMPHX:1000007
+name: vegetal pole cytoplasm
+is_a: GO:0005575 ! cellular component
+relationship: RO:0002488 AMPHX:0000005 ! existence starts during unfertilized egg stage
+relationship: RO:0002492 AMPHX:0000022 ! existence ends during one cell stage
+
+[Term]
+id: AMPHX:1000008
+name: vegetal pole cytoplasm of oocyte
+is_a: AMPHX:1000007 ! vegetal pole cytoplasm
+relationship: BFO:0000050 AMPHX:1000003 ! part of whole oocyte
+
+[Term]
+id: AMPHX:1000009
+name: vegetal pole cytoplasm of embryo
+is_a: AMPHX:1000007 ! vegetal pole cytoplasm
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+
+[Term]
+id: AMPHX:1000010
+name: animal pole cytoplasm
+is_a: GO:0005575 ! cellular component
+relationship: RO:0002488 AMPHX:0000005 ! existence starts during unfertilized egg stage
+relationship: RO:0002492 AMPHX:0000022 ! existence ends during one cell stage
+
+[Term]
+id: AMPHX:1000011
+name: animal pole cytoplasm of oocyte
+is_a: AMPHX:1000010 ! animal pole cytoplasm
+relationship: BFO:0000050 AMPHX:1000003 ! part of whole oocyte
+
+[Term]
+id: AMPHX:1000012
+name: animal pole cytoplasm of embryo
+is_a: AMPHX:1000010 ! animal pole cytoplasm
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+
+[Term]
+id: AMPHX:1000013
+name: zygote
+def: "Diploid cell produced by the fusion of sperm cell nucleus and egg cell" []
+is_a: CL:0000000 ! cell
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002488 AMPHX:0000022 ! existence starts during one cell stage
+relationship: RO:0002492 AMPHX:0000022 ! existence ends during one cell stage
+
+[Term]
+id: AMPHX:1000014
+name: 2 cell stage embryo
+is_a: AMPHX:1000001 ! whole embryo
+relationship: RO:0002488 AMPHX:0000023 ! existence starts during 2-cell stage
+relationship: RO:0002492 AMPHX:0000023 ! existence ends during 2-cell stage
+
+[Term]
+id: AMPHX:1000015
+name: 4 cell stage embryo
+is_a: AMPHX:1000001 ! whole embryo
+relationship: RO:0002488 AMPHX:0000024 ! existence starts during 4-cell stage
+relationship: RO:0002492 AMPHX:0000024 ! existence ends during 4-cell stage
+
+[Term]
+id: AMPHX:1000016
+name: blastomere of 2-cell stage embryo
+def: "A cell found in the embryo before the formation of all the gem layers is complete" []
+is_a: AMPHX:1000002 ! blastomere
+relationship: RO:0002202 AMPHX:1000013 ! develops from zygote
+relationship: RO:0002488 AMPHX:0000023 ! existence starts during 2-cell stage
+relationship: RO:0002492 AMPHX:0000023 ! existence ends during 2-cell stage
+
+[Term]
+id: AMPHX:1000017
+name: blastomere of 4-cells stage embryo
+def: "A cell found in the embryo before the formation of all the gem layers is complete" []
+is_a: AMPHX:1000002 ! blastomere
+relationship: RO:0002202 AMPHX:1000014 ! develops from 2 cell stage embryo
+relationship: RO:0002488 AMPHX:0000024 ! existence starts during 4-cell stage
+relationship: RO:0002492 AMPHX:0000024 ! existence ends during 4-cell stage
+
+[Term]
+id: AMPHX:1000018
+name: micromeres
+def: "Cells found at the animal pole of the embryo, of small size" []
+is_a: AMPHX:1000002 ! blastomere
+relationship: RO:0002202 AMPHX:1000015 ! develops from 4 cell stage embryo
+relationship: RO:0002488 AMPHX:0000025 ! existence starts during 8-cell stage
+relationship: RO:0002492 AMPHX:0000025 ! existence ends during 8-cell stage
+
+[Term]
+id: AMPHX:1000019
+name: macromeres
+def: "Cells found at the vegetal pole of the embryo, of big size" []
+is_a: AMPHX:1000002 ! blastomere
+relationship: RO:0002202 AMPHX:1000015 ! develops from 4 cell stage embryo
+relationship: RO:0002488 AMPHX:0000025 ! existence starts during 8-cell stage
+relationship: RO:0002492 AMPHX:0000025 ! existence ends during 8-cell stage
+
+[Term]
+id: AMPHX:1000020
+name: animal blastomeres
+def: "Cells found at the animal pole of the embryo, before gastrulation starts" []
+is_a: AMPHX:1000002 ! blastomere
+relationship: RO:0002202 AMPHX:1000018 ! develops from micromeres
+relationship: RO:0002488 AMPHX:0000026 ! existence starts during 16-cell stage
+relationship: RO:0002492 AMPHX:0000031 ! existence ends during blastula stage
+
+[Term]
+id: AMPHX:1000021
+name: vegetal blastomeres
+def: "Cells found at the vegetal pole of the embryo, before gastrulation starts" []
+is_a: AMPHX:1000002 ! blastomere
+relationship: RO:0002202 AMPHX:1000019 ! develops from macromeres
+relationship: RO:0002488 AMPHX:0000026 ! existence starts during 16-cell stage
+relationship: RO:0002492 AMPHX:0000031 ! existence ends during blastula stage
+
+[Term]
+id: AMPHX:1000022
+name: Presumptive ectoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: RO:0002202 AMPHX:1000020 ! develops from animal blastomeres
+relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPHX:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPHX:1000023
+name: Dorsal presumptive ectoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000022 ! part of Presumptive ectoderm
+relationship: RO:0002202 AMPHX:1000020 ! develops from animal blastomeres
+relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPHX:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPHX:1000024
+name: Ventral presumptive ectoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000022 ! part of Presumptive ectoderm
+relationship: RO:0002202 AMPHX:1000020 ! develops from animal blastomeres
+relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPHX:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPHX:1000025
+name: Presumptive mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPHX:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPHX:1000026
+name: Dorsal presumptive mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000025 ! part of Presumptive mesendoderm
+relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPHX:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPHX:1000027
+name: Ventral presumptive mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000025 ! part of Presumptive mesendoderm
+relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPHX:0000034 ! existence ends during gastrula-G2 stage
+
+[Term]
+id: AMPHX:1000028
+name: Blastopore lip
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000029
+name: Dorsal blastopore lip
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000028 ! part of Blastopore lip
+relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000030
+name: Ventral blastopore lip
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000028 ! part of Blastopore lip
+relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomeres
+relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000031
+name: Ectoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: RO:0002202 AMPHX:1000022 ! develops from Presumptive ectoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000032
+name: Dorsal ectoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPHX:1000023 ! develops from Dorsal presumptive ectoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000035 ! existence ends during gastrula-G3 stage
+
+[Term]
+id: AMPHX:1000033
+name: Ventral ectoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPHX:1000024 ! develops from Ventral presumptive ectoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000035 ! existence ends during gastrula-G3 stage
+
+[Term]
+id: AMPHX:1000034
+name: Anterior ectoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPHX:1000022 ! develops from Presumptive ectoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000035 ! existence ends during gastrula-G3 stage
+
+[Term]
+id: AMPHX:1000035
+name: Posterior ectoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPHX:1000022 ! develops from Presumptive ectoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000035 ! existence ends during gastrula-G3 stage
+
+[Term]
+id: AMPHX:1000036
+name: Mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: RO:0002202 AMPHX:1000025 ! develops from Presumptive mesendoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000037
+name: Dorsal mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000036 ! part of Mesendoderm
+relationship: RO:0002202 AMPHX:1000026 ! develops from Dorsal presumptive mesendoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000038
+name: Ventral mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000036 ! part of Mesendoderm
+relationship: RO:0002202 AMPHX:1000027 ! develops from Ventral presumptive mesendoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000039
+name: Anterior mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000036 ! part of Mesendoderm
+relationship: RO:0002202 AMPHX:1000025 ! develops from Presumptive mesendoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000040
+name: Posterior mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000036 ! part of Mesendoderm
+relationship: RO:0002202 AMPHX:1000025 ! develops from Presumptive mesendoderm
+relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000041
+name: Presumptive neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000032 ! part of Dorsal ectoderm
+relationship: RO:0002202 AMPHX:1000032 ! develops from Dorsal ectoderm
+relationship: RO:0002488 AMPHX:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPHX:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPHX:1000042
+name: Presumptive border of the neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000032 ! part of Dorsal ectoderm
+relationship: RO:0002202 AMPHX:1000032 ! develops from Dorsal ectoderm
+relationship: RO:0002488 AMPHX:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPHX:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPHX:1000043
+name: Presumptive anterior neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000032 ! part of Dorsal ectoderm
+relationship: RO:0002202 AMPHX:1000032 ! develops from Dorsal ectoderm
+relationship: RO:0002488 AMPHX:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPHX:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPHX:1000044
+name: Presumptive epidermis
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000031 ! part of Ectoderm
+relationship: RO:0002202 AMPHX:1000033 ! develops from Ventral ectoderm
+relationship: RO:0002488 AMPHX:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPHX:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPHX:1000045
+name: Presumptive anterior epidermis
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000044 ! part of Presumptive epidermis
+relationship: RO:0002202 AMPHX:1000034 ! develops from Anterior ectoderm
+relationship: RO:0002488 AMPHX:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPHX:0000037 ! existence ends during gastrula-G5 stage
+
+[Term]
+id: AMPHX:1000046
+name: Dorsal axial mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000037 ! part of Dorsal mesendoderm
+relationship: RO:0002202 AMPHX:1000037 ! develops from Dorsal mesendoderm
+relationship: RO:0002488 AMPHX:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000047
+name: Dorsal paraxial mesendoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000037 ! part of Dorsal mesendoderm
+relationship: RO:0002202 AMPHX:1000037 ! develops from Dorsal mesendoderm
+relationship: RO:0002488 AMPHX:0000036 ! existence starts during gastrula-G4 stage
+relationship: RO:0002492 AMPHX:0000039 ! existence ends during gastrula-G7 stage
+
+[Term]
+id: AMPHX:1000048
+name: Neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000041 ! develops from Presumptive neural plate
+relationship: RO:0002488 AMPHX:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPHX:1000049
+name: Border of the neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000048 ! part of Neural plate
+relationship: RO:0002202 AMPHX:1000042 ! develops from Presumptive border of the neural plate
+relationship: RO:0002488 AMPHX:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPHX:1000050
+name: Anterior neural plate
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000048 ! part of Neural plate
+relationship: RO:0002202 AMPHX:1000043 ! develops from Presumptive anterior neural plate
+relationship: RO:0002488 AMPHX:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000051
+name: Epidermis
+is_a: AMPHX:1000004 ! tissue
+relationship: RO:0002202 AMPHX:1000044 ! develops from Presumptive epidermis
+relationship: RO:0002488 AMPHX:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000052
+name: Anterior epidermis
+is_a: AMPHX:1000004 ! tissue
+relationship: BFO:0000050 AMPHX:1000051 ! part of Epidermis
+relationship: RO:0002202 AMPHX:1000045 ! develops from Presumptive anterior epidermis
+relationship: RO:0002488 AMPHX:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000053
+name: Ventral epidermis
+is_a: AMPHX:1000004 ! tissue
+relationship: BFO:0000050 AMPHX:1000051 ! part of Epidermis
+relationship: RO:0002202 AMPHX:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPHX:0000038 ! existence starts during gastrula-G6 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000054
+name: Mesoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: RO:0002202 AMPHX:1000037 ! develops from Dorsal mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000044 ! existence ends during neurula-N4 stage
+
+[Term]
+id: AMPHX:1000055
+name: Presumptive notochord
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000054 ! part of Mesoderm
+relationship: RO:0002202 AMPHX:1000046 ! develops from Dorsal axial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000056
+name: Presumptive somites 1
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000065 ! part of Paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000057
+name: Presumptive somites 2
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000065 ! part of Paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000058
+name: Presumptive somites 3
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000065 ! part of Paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000059
+name: Presumptive left somite 1
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000056 ! part of Presumptive somites 1
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000060
+name: Presumptive right somite 1
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000056 ! part of Presumptive somites 1
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000061
+name: Presumptive left somite 2
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000057 ! part of Presumptive somites 2
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000062
+name: Presumptive right somite 2
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000057 ! part of Presumptive somites 2
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000063
+name: Presumptive left somite 3
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000058 ! part of Presumptive somites 3
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000064
+name: Presumptive right somite 3
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000058 ! part of Presumptive somites 3
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
+
+[Term]
+id: AMPHX:1000065
+name: Paraxial mesoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000054 ! part of Mesoderm
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000044 ! existence ends during neurula-N4 stage
+
+[Term]
+id: AMPHX:1000066
+name: Left mesoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000054 ! part of Mesoderm
+relationship: RO:0002202 AMPHX:1000036 ! develops from Mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPHX:1000067
+name: Right mesoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000054 ! part of Mesoderm
+relationship: RO:0002202 AMPHX:1000036 ! develops from Mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPHX:1000068
+name: Left endoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000036 ! develops from Mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPHX:1000069
+name: Right endoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000036 ! develops from Mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPHX:1000070
+name: Notochord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000055 ! develops from Presumptive notochord
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000071
+name: Somites 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000056 ! develops from Presumptive somites 1
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000072
+name: Somites 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000057 ! develops from Presumptive somites 2
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000073
+name: Somites 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000058 ! develops from Presumptive somites 3
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000074
+name: Posterior paraxial mesoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000065 ! part of Paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000047 ! develops from Dorsal paraxial mesendoderm
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000044 ! existence ends during neurula-N4 stage
+
+[Term]
+id: AMPHX:1000075
+name: Endoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: RO:0002202 AMPHX:1000038 ! develops from Ventral mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000076
+name: Anterior endoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000039 ! develops from Anterior mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000077
+name: Posterior endoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000040 ! develops from Posterior mesendoderm
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000044 ! existence ends during neurula-N4 stage
+
+[Term]
+id: AMPHX:1000078
+name: Tailbud
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000028 ! develops from Blastopore lip
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000079
+name: Inner lip of blastopore
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000078 ! part of Tailbud
+relationship: RO:0002202 AMPHX:1000028 ! develops from Blastopore lip
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPHX:1000080
+name: Presumptive cerebral vesicle
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000048 ! part of Neural plate
+relationship: RO:0002202 AMPHX:1000050 ! develops from Anterior neural plate
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPHX:1000081
+name: Presumptive spinal chord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000048 ! part of Neural plate
+relationship: RO:0002202 AMPHX:1000048 ! develops from Neural plate
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
+
+[Term]
+id: AMPHX:1000082
+name: Left epidermis
+is_a: AMPHX:1000004 ! tissue
+relationship: BFO:0000050 AMPHX:1000051 ! part of Epidermis
+relationship: RO:0002202 AMPHX:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000083
+name: Right epidermis
+is_a: AMPHX:1000004 ! tissue
+relationship: BFO:0000050 AMPHX:1000051 ! part of Epidermis
+relationship: RO:0002202 AMPHX:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000084
+name: Epidermal sensory neurons
+is_a: CL:0000000 ! cell
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000053 ! develops from Ventral epidermis
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000085
+name: Anterior somites 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000071 ! part of Somites 1
+relationship: RO:0002202 AMPHX:1000071 ! develops from Somites 1
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000086
+name: Posterior somites 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000071 ! part of Somites 1
+relationship: RO:0002202 AMPHX:1000071 ! develops from Somites 1
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000087
+name: Dorsal somites 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000071 ! part of Somites 1
+relationship: RO:0002202 AMPHX:1000071 ! develops from Somites 1
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPHX:1000088
+name: Ventral somites 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000071 ! part of Somites 1
+relationship: RO:0002202 AMPHX:1000071 ! develops from Somites 1
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000089
+name: Left somite 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000071 ! part of Somites 1
+relationship: RO:0002202 AMPHX:1000071 ! develops from Somites 1
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000090
+name: Right somite 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000071 ! part of Somites 1
+relationship: RO:0002202 AMPHX:1000071 ! develops from Somites 1
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000091
+name: Left ventral somite 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000071 ! part of Somites 1
+relationship: RO:0002202 AMPHX:1000071 ! develops from Somites 1
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPHX:1000092
+name: Anterior somites 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000072 ! part of Somites 2
+relationship: RO:0002202 AMPHX:1000072 ! develops from Somites 2
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000093
+name: Posterior somites 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000072 ! part of Somites 2
+relationship: RO:0002202 AMPHX:1000072 ! develops from Somites 2
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000094
+name: Dorsal somites 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000072 ! part of Somites 2
+relationship: RO:0002202 AMPHX:1000072 ! develops from Somites 2
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPHX:1000095
+name: Ventral somites 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000072 ! part of Somites 2
+relationship: RO:0002202 AMPHX:1000072 ! develops from Somites 2
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000096
+name: Left somite 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000072 ! part of Somites 2
+relationship: RO:0002202 AMPHX:1000072 ! develops from Somites 2
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000097
+name: Right somite 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000072 ! part of Somites 2
+relationship: RO:0002202 AMPHX:1000072 ! develops from Somites 2
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000098
+name: Anterior somites 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000073 ! part of Somites 3
+relationship: RO:0002202 AMPHX:1000073 ! develops from Somites 3
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000099
+name: Posterior somites 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000073 ! part of Somites 3
+relationship: RO:0002202 AMPHX:1000073 ! develops from Somites 3
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000100
+name: Dorsal somites 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000073 ! part of Somites 3
+relationship: RO:0002202 AMPHX:1000073 ! develops from Somites 3
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPHX:1000101
+name: Ventral somites 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000073 ! part of Somites 3
+relationship: RO:0002202 AMPHX:1000073 ! develops from Somites 3
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000102
+name: Left somite 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000073 ! part of Somites 3
+relationship: RO:0002202 AMPHX:1000073 ! develops from Somites 3
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000103
+name: Right somite 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000073 ! part of Somites 3
+relationship: RO:0002202 AMPHX:1000073 ! develops from Somites 3
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000104
+name: Neural tube
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000006 ! part of central nervous system
+relationship: RO:0002202 AMPHX:1000048 ! develops from Neural plate
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000105
+name: Dorsal neural tube
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000104 ! part of Neural tube
+relationship: RO:0002202 AMPHX:1000048 ! develops from Neural plate
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000106
+name: Ventral neural tube
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000104 ! part of Neural tube
+relationship: RO:0002202 AMPHX:1000048 ! develops from Neural plate
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000107
+name: Lateral neural tube
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000104 ! part of Neural tube
+relationship: RO:0002202 AMPHX:1000048 ! develops from Neural plate
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000108
+name: Cerebral vesicle
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000104 ! part of Neural tube
+relationship: RO:0002202 AMPHX:1000080 ! develops from Presumptive cerebral vesicle
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000109
+name: Spinal chord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000104 ! part of Neural tube
+relationship: RO:0002202 AMPHX:1000081 ! develops from Presumptive spinal chord
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000110
+name: Somites 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000111
+name: Anterior somites 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000110 ! part of Somites 4
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000112
+name: Posterior somites 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000110 ! part of Somites 4
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000113
+name: Dorsal somites 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000110 ! part of Somites 4
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPHX:1000114
+name: Ventral somites 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000110 ! part of Somites 4
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000115
+name: Left somite 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000110 ! part of Somites 4
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000116
+name: Right somite 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000110 ! part of Somites 4
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000117
+name: Somites 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000118
+name: Anterior somites 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000117 ! part of Somites 5
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000119
+name: Posterior somites 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000117 ! part of Somites 5
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000120
+name: Dorsal somites 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000117 ! part of Somites 5
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPHX:1000121
+name: Ventral somites 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000117 ! part of Somites 5
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000122
+name: Left somite 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000117 ! part of Somites 5
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000123
+name: Right somite 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000117 ! part of Somites 5
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000124
+name: Somites 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000125
+name: Anterior somites 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000124 ! part of Somites 6
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000126
+name: Posterior somites 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000124 ! part of Somites 6
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000127
+name: Dorsal somites 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000124 ! part of Somites 6
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPHX:1000128
+name: Ventral somites 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000124 ! part of Somites 6
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000129
+name: Left somite 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000124 ! part of Somites 6
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000130
+name: Right somite 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000124 ! part of Somites 6
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000131
+name: Somites 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000132
+name: Anterior somites 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000131 ! part of Somites 7
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000133
+name: Posterior somites 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000131 ! part of Somites 7
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000134
+name: Dorsal somites 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000131 ! part of Somites 7
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPHX:1000135
+name: Ventral somites 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000131 ! part of Somites 7
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000136
+name: Left somite 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000131 ! part of Somites 7
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000137
+name: Right somite 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000131 ! part of Somites 7
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000138
+name: Somites 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000139
+name: Anterior somites 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000138 ! part of Somites 8
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000140
+name: Posterior somites 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000138 ! part of Somites 8
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000141
+name: Dorsal somites 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000138 ! part of Somites 8
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000042 ! existence ends during neurula-N2 stage
+
+[Term]
+id: AMPHX:1000142
+name: Ventral somites 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000138 ! part of Somites 8
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000143
+name: Left somite 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000138 ! part of Somites 8
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000144
+name: Right somite 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000138 ! part of Somites 8
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000145
+name: Left Hatschek's diverticulum
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000068 ! develops from Left endoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000046 ! existence ends during neurula-T2 stage
+
+[Term]
+id: AMPHX:1000146
+name: Right Hatschek's diverticulum
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000069 ! develops from Right endoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000046 ! existence ends during neurula-T2 stage
+
+[Term]
+id: AMPHX:1000147
+name: Pharyngeal endoderm
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000076 ! develops from Anterior endoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000148
+name: Left pharyngeal endoderm
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000147 ! part of Pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000076 ! develops from Anterior endoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000149
+name: Right pharyngeal endoderm
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000147 ! part of Pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000076 ! develops from Anterior endoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000150
+name: Ventral pharyngeal endoderm
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000147 ! part of Pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000076 ! develops from Anterior endoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000151
+name: Mid-endoderm
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000075 ! develops from Endoderm
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000044 ! existence ends during neurula-N4 stage
+
+[Term]
+id: AMPHX:1000152
+name: Cordoneural hinge
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000078 ! part of Tailbud
+relationship: RO:0002202 AMPHX:1000028 ! develops from Blastopore lip
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000153
+name: Posterior wall of neurenteric canal
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000152 ! part of Cordoneural hinge
+relationship: RO:0002202 AMPHX:1000028 ! develops from Blastopore lip
+relationship: RO:0002488 AMPHX:0000042 ! existence starts during neurula-N2 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000154
+name: Anterior cerebral vesicle
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000108 ! part of Cerebral vesicle
+relationship: RO:0002202 AMPHX:1000108 ! develops from Cerebral vesicle
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000155
+name: Posterior cerebral vesicle
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000108 ! part of Cerebral vesicle
+relationship: RO:0002202 AMPHX:1000108 ! develops from Cerebral vesicle
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000156
+name: Dorsal cerebral vesicle
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000108 ! part of Cerebral vesicle
+relationship: RO:0002202 AMPHX:1000108 ! develops from Cerebral vesicle
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000157
+name: Ventral cerebral vesicle
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000108 ! part of Cerebral vesicle
+relationship: RO:0002202 AMPHX:1000108 ! develops from Cerebral vesicle
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000158
+name: Anterior spinal chord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000109 ! part of Spinal chord
+relationship: RO:0002202 AMPHX:1000109 ! develops from Spinal chord
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000159
+name: Posterior spinal chord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000109 ! part of Spinal chord
+relationship: RO:0002202 AMPHX:1000109 ! develops from Spinal chord
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000160
+name: Posterior dorsal spinal chord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000109 ! part of Spinal chord
+relationship: RO:0002202 AMPHX:1000109 ! develops from Spinal chord
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000161
+name: Posterior ventral spinal chord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000109 ! part of Spinal chord
+relationship: RO:0002202 AMPHX:1000109 ! develops from Spinal chord
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000162
+name: Lateral spinal chord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000109 ! part of Spinal chord
+relationship: RO:0002202 AMPHX:1000109 ! develops from Spinal chord
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000163
+name: Posterior epidermis
+is_a: AMPHX:1000004 ! tissue
+relationship: BFO:0000050 AMPHX:1000051 ! part of Epidermis
+relationship: RO:0002202 AMPHX:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000164
+name: Anterior notochord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000070 ! part of Notochord
+relationship: RO:0002202 AMPHX:1000070 ! develops from Notochord
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000165
+name: Posterior notochord
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000070 ! part of Notochord
+relationship: RO:0002202 AMPHX:1000070 ! develops from Notochord
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000166
+name: Ventral mesoderm
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000054 ! part of Mesoderm
+relationship: RO:0002202 AMPHX:1000054 ! develops from Mesoderm
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000044 ! existence ends during neurula-N4 stage
+
+[Term]
+id: AMPHX:1000167
+name: Myotome of somites 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000071 ! part of Somites 1
+relationship: RO:0002202 AMPHX:1000087 ! develops from Dorsal somites 1
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000168
+name: External cell layer of somites 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000071 ! part of Somites 1
+relationship: RO:0002202 AMPHX:1000071 ! develops from Somites 1
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000169
+name: Presumptive Hatschek nephridium
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000089 ! part of Left somite 1
+relationship: RO:0002202 AMPHX:1000091 ! develops from Left ventral somite 1
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000046 ! existence ends during neurula-T2 stage
+
+[Term]
+id: AMPHX:1000170
+name: Myotome of somites 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000072 ! part of Somites 2
+relationship: RO:0002202 AMPHX:1000094 ! develops from Dorsal somites 2
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000171
+name: External cell layer of somites 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000072 ! part of Somites 2
+relationship: RO:0002202 AMPHX:1000072 ! develops from Somites 2
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000172
+name: Myotome of somites 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000073 ! part of Somites 3
+relationship: RO:0002202 AMPHX:1000100 ! develops from Dorsal somites 3
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000173
+name: External cell layer of somites 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000073 ! part of Somites 3
+relationship: RO:0002202 AMPHX:1000073 ! develops from Somites 3
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000174
+name: Myotome of somites 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000110 ! part of Somites 4
+relationship: RO:0002202 AMPHX:1000113 ! develops from Dorsal somites 4
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000175
+name: External cell layer of somites 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000110 ! part of Somites 4
+relationship: RO:0002202 AMPHX:1000110 ! develops from Somites 4
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000176
+name: Myotome of somites 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000117 ! part of Somites 5
+relationship: RO:0002202 AMPHX:1000120 ! develops from Dorsal somites 5
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000177
+name: External cell layer of somites 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000117 ! part of Somites 5
+relationship: RO:0002202 AMPHX:1000117 ! develops from Somites 5
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000178
+name: Myotome of somites 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000124 ! part of Somites 6
+relationship: RO:0002202 AMPHX:1000127 ! develops from Dorsal somites 6
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000179
+name: External cell layer of somites 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000124 ! part of Somites 6
+relationship: RO:0002202 AMPHX:1000124 ! develops from Somites 6
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000180
+name: Myotome of somites 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000131 ! part of Somites 7
+relationship: RO:0002202 AMPHX:1000134 ! develops from Dorsal somites 7
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000181
+name: External cell layer of somites 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000131 ! part of Somites 7
+relationship: RO:0002202 AMPHX:1000131 ! develops from Somites 7
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000182
+name: Myotome of somites 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000138 ! part of Somites 8
+relationship: RO:0002202 AMPHX:1000141 ! develops from Dorsal somites 8
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000183
+name: External cell layer of somites 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000138 ! part of Somites 8
+relationship: RO:0002202 AMPHX:1000138 ! develops from Somites 8
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000184
+name: Presumptive club shape gland
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000147 ! part of Pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000046 ! existence ends during neurula-T2 stage
+
+[Term]
+id: AMPHX:1000185
+name: Presumptive endostyle
+is_a: AMPHX:1000005 ! embryonic territory
+relationship: BFO:0000050 AMPHX:1000147 ! part of Pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000046 ! existence ends during neurula-T2 stage
+
+[Term]
+id: AMPHX:1000186
+name: Somites 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000187
+name: Anterior somites 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000186 ! part of Somites 9
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000188
+name: Posterior somites 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000186 ! part of Somites 9
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000189
+name: Myotome of somites 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000186 ! part of Somites 9
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000190
+name: External cell layer of somites 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000186 ! part of Somites 9
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000191
+name: Ventral somites 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000186 ! part of Somites 9
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000192
+name: Left somite 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000186 ! part of Somites 9
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000193
+name: Right somites 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000186 ! part of Somites 9
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000194
+name: Anterior somites 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000208 ! part of Somites 10
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000195
+name: Posterior somites 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000208 ! part of Somites 10
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000196
+name: Myotome of somites 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000208 ! part of Somites 10
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000197
+name: External cell layer of somites 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000208 ! part of Somites 10
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000198
+name: Ventral somites 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000208 ! part of Somites 10
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000199
+name: Left somite 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000208 ! part of Somites 10
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000200
+name: Right somites 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000208 ! part of Somites 10
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000201
+name: Anterior somites 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000209 ! part of Somites 11
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000202
+name: Posterior somites 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000209 ! part of Somites 11
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000203
+name: Myotome of somites 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000209 ! part of Somites 11
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000204
+name: External cell layer of somites 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000209 ! part of Somites 11
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000205
+name: Ventral somites 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000209 ! part of Somites 11
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000206
+name: Left somite 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000209 ! part of Somites 11
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000207
+name: Right somites 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000209 ! part of Somites 11
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000208
+name: Somites 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000209
+name: Somites 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000044 ! existence starts during neurula-N4 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000210
+name: Pigment spot
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000104 ! part of Neural tube
+relationship: RO:0002202 AMPHX:1000109 ! develops from Spinal chord
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000211
+name: Subintestinal vessel anlage
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000054 ! part of Mesoderm
+relationship: RO:0002202 AMPHX:1000166 ! develops from Ventral mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000046 ! existence ends during neurula-T2 stage
+
+[Term]
+id: AMPHX:1000212
+name: Somites 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000213
+name: Anterior somites 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000212 ! part of Somites 12
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000214
+name: Posterior somites 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000212 ! part of Somites 12
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000215
+name: Myotome of somites 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000212 ! part of Somites 12
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000216
+name: External cell layer of somites 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000212 ! part of Somites 12
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000217
+name: Ventral somites 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000212 ! part of Somites 12
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000218
+name: Left somite 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000212 ! part of Somites 12
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000219
+name: Right somites 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000212 ! part of Somites 12
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000220
+name: Somites 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000276 ! part of Somites
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000221
+name: Anterior somites 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000220 ! part of Somites 13
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000222
+name: Posterior somites 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000220 ! part of Somites 13
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000223
+name: Myotome of somites 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000220 ! part of Somites 13
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000224
+name: External cell layer of somites 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000220 ! part of Somites 13
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000225
+name: Ventral somites 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000220 ! part of Somites 13
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000226
+name: Left somite 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000220 ! part of Somites 13
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000227
+name: Right somites 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000220 ! part of Somites 13
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000228
+name: Nascent somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000229
+name: Left nascent somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000230
+name: Right nascent somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000231
+name: Mouth primordium
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000148 ! part of Left pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000046 ! existence ends during neurula-T2 stage
+
+[Term]
+id: AMPHX:1000232
+name: Presumptive first pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000149 ! part of Right pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000047 ! existence ends during larva-L0 stage
+
+[Term]
+id: AMPHX:1000233
+name: Dorsal pharyngeal endoderm
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000075 ! develops from Endoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000052 ! existence ends during larva-PL stage
+
+[Term]
+id: AMPHX:1000234
+name: Gut
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000234 ! part of Gut
+relationship: RO:0002202 AMPHX:1000075 ! develops from Endoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000235
+name: Anterior gut
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000234 ! part of Gut
+relationship: RO:0002202 AMPHX:1000076 ! develops from Anterior endoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000236
+name: Mid-gut
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000234 ! part of Gut
+relationship: RO:0002202 AMPHX:1000151 ! develops from Mid-endoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000237
+name: Ventral mid-gut
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000234 ! part of Gut
+relationship: RO:0002202 AMPHX:1000151 ! develops from Mid-endoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000238
+name: Hind-gut
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000234 ! part of Gut
+relationship: RO:0002202 AMPHX:1000077 ! develops from Posterior endoderm
+relationship: RO:0002488 AMPHX:0000045 ! existence starts during neurula-T stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000239
+name: Schizocoelic somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000046 ! existence starts during neurula-T2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000240
+name: Anterior schizocoelic somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000046 ! existence starts during neurula-T2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000241
+name: Posterior schizocoelic somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000046 ! existence starts during neurula-T2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000242
+name: Myotome of schizocoelic somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000046 ! existence starts during neurula-T2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000243
+name: External cell layer of schizocoelic somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000046 ! existence starts during neurula-T2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000244
+name: Ventral schizocoelic somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000046 ! existence starts during neurula-T2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000245
+name: Left schizocoelic somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000046 ! existence starts during neurula-T2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000246
+name: Right schizocoelic somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000074 ! part of Posterior paraxial mesoderm
+relationship: RO:0002202 AMPHX:1000074 ! develops from Posterior paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000046 ! existence starts during neurula-T2 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000247
+name: Dorsal ocelli
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000104 ! part of Neural tube
+relationship: RO:0002202 AMPHX:1000160 ! develops from Posterior dorsal spinal chord
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000248
+name: Tail fin
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000163 ! develops from Posterior epidermis
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000249
+name: Subintestinal vessel
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000211 ! develops from Subintestinal vessel anlage
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000250
+name: Dorsal mesoderm
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000054 ! part of Mesoderm
+relationship: RO:0002202 AMPHX:1000054 ! develops from Mesoderm
+relationship: RO:0002488 AMPHX:0000043 ! existence starts during neurula-N3 stage
+relationship: RO:0002492 AMPHX:0000044 ! existence ends during neurula-N4 stage
+
+[Term]
+id: AMPHX:1000251
+name: Dorsal aorta
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000250 ! develops from Dorsal mesoderm
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000252
+name: Hatschek's nephridium
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000169 ! develops from Presumptive Hatschek nephridium
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000253
+name: Preoral pit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000145 ! develops from Left Hatschek's diverticulum
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000054 ! existence ends during larva-MML stage
+
+[Term]
+id: AMPHX:1000254
+name: Rostral coelom
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000075 ! part of Endoderm
+relationship: RO:0002202 AMPHX:1000146 ! develops from Right Hatschek's diverticulum
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000255
+name: Mouth
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000231 ! develops from Mouth primordium
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000256
+name: Club shaped gland
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000184 ! develops from Presumptive club shape gland
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000053 ! existence ends during larva-EML stage
+
+[Term]
+id: AMPHX:1000257
+name: Dorsal Club shaped gland
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000256 ! part of Club shaped gland
+relationship: RO:0002202 AMPHX:1000184 ! develops from Presumptive club shape gland
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000053 ! existence ends during larva-EML stage
+
+[Term]
+id: AMPHX:1000258
+name: Ventral Club shaped gland
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000256 ! part of Club shaped gland
+relationship: RO:0002202 AMPHX:1000184 ! develops from Presumptive club shape gland
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000053 ! existence ends during larva-EML stage
+
+[Term]
+id: AMPHX:1000259
+name: Endostyle
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000185 ! develops from Presumptive endostyle
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000260
+name: Iliocolonic region
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000236 ! part of Mid-gut
+relationship: RO:0002202 AMPHX:1000236 ! develops from Mid-gut
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000261
+name: Presumptive anus
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000238 ! part of Hind-gut
+relationship: RO:0002202 AMPHX:1000238 ! develops from Hind-gut
+relationship: RO:0002488 AMPHX:0000047 ! existence starts during larva-L0 stage
+relationship: RO:0002492 AMPHX:0000047 ! existence ends during larva-L0 stage
+
+[Term]
+id: AMPHX:1000262
+name: Frontal eye
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000108 ! part of Cerebral vesicle
+relationship: RO:0002202 AMPHX:1000154 ! develops from Anterior cerebral vesicle
+relationship: RO:0002488 AMPHX:0000048 ! existence starts during larva-L1 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000263
+name: First pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000232 ! develops from Presumptive first pharyngeal slit
+relationship: RO:0002488 AMPHX:0000048 ! existence starts during larva-L1 stage
+relationship: RO:0002492 AMPHX:0000054 ! existence ends during larva-MML stage
+
+[Term]
+id: AMPHX:1000264
+name: Presumptive second pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000149 ! part of Right pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000048 ! existence starts during larva-L1 stage
+relationship: RO:0002492 AMPHX:0000048 ! existence ends during larva-L1 stage
+
+[Term]
+id: AMPHX:1000265
+name: Anus
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000261 ! develops from Presumptive anus
+relationship: RO:0002488 AMPHX:0000048 ! existence starts during larva-L1 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000266
+name: Second pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000264 ! develops from Presumptive second pharyngeal slit
+relationship: RO:0002488 AMPHX:0000049 ! existence starts during larva-L2 stage
+relationship: RO:0002492 AMPHX:0000054 ! existence ends during larva-MML stage
+
+[Term]
+id: AMPHX:1000267
+name: Presumptive Third pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000149 ! part of Right pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000049 ! existence starts during larva-L2 stage
+relationship: RO:0002492 AMPHX:0000049 ! existence ends during larva-L2 stage
+
+[Term]
+id: AMPHX:1000268
+name: Third pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000267 ! develops from Presumptive Third pharyngeal slit
+relationship: RO:0002488 AMPHX:0000050 ! existence starts during larva-L3 stage
+relationship: RO:0002492 AMPHX:0000054 ! existence ends during larva-MML stage
+
+[Term]
+id: AMPHX:1000269
+name: Presumptive pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000149 ! part of Right pharyngeal endoderm
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000050 ! existence starts during larva-L3 stage
+relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
+
+[Term]
+id: AMPHX:1000270
+name: Infundibular organ
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000108 ! part of Cerebral vesicle
+relationship: RO:0002202 AMPHX:1000157 ! develops from Ventral cerebral vesicle
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000271
+name: Lamellar body
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000108 ! part of Cerebral vesicle
+relationship: RO:0002202 AMPHX:1000156 ! develops from Dorsal cerebral vesicle
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000272
+name: Primary motor center
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000108 ! part of Cerebral vesicle
+relationship: RO:0002202 AMPHX:1000155 ! develops from Posterior cerebral vesicle
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000273
+name: Myomere 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000167 ! develops from Myotome of somites 1
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000274
+name: Left myomere 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000273 ! part of Myomere 1
+relationship: RO:0002202 AMPHX:1000089 ! develops from Left somite 1
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000275
+name: Right myomere 1
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000273 ! part of Myomere 1
+relationship: RO:0002202 AMPHX:1000090 ! develops from Right somite 1
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000276
+name: Somites
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000065 ! develops from Paraxial mesoderm
+relationship: RO:0002488 AMPHX:0000041 ! existence starts during neurula-N1 stage
+relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
+
+[Term]
+id: AMPHX:1000277
+name: External cell layer 
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000276 ! develops from Somites
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000278
+name: Myomere 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000170 ! develops from Myotome of somites 2
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000279
+name: Left myomere 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000278 ! part of Myomere 2
+relationship: RO:0002202 AMPHX:1000096 ! develops from Left somite 2
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000280
+name: Right myomere 2
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000278 ! part of Myomere 2
+relationship: RO:0002202 AMPHX:1000097 ! develops from Right somite 2
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000281
+name: Myomere 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000172 ! develops from Myotome of somites 3
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000282
+name: Left myomere 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000281 ! part of Myomere 3
+relationship: RO:0002202 AMPHX:1000102 ! develops from Left somite 3
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000283
+name: Right myomere 3
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000281 ! part of Myomere 3
+relationship: RO:0002202 AMPHX:1000103 ! develops from Right somite 3
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000284
+name: Myomere 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000174 ! develops from Myotome of somites 4
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000285
+name: Left myomere 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000284 ! part of Myomere 4
+relationship: RO:0002202 AMPHX:1000115 ! develops from Left somite 4
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000286
+name: Right myomere 4
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000284 ! part of Myomere 4
+relationship: RO:0002202 AMPHX:1000116 ! develops from Right somite 4
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000287
+name: Myomere 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000176 ! develops from Myotome of somites 5
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000288
+name: Left myomere 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000287 ! part of Myomere 5
+relationship: RO:0002202 AMPHX:1000122 ! develops from Left somite 5
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000289
+name: Right myomere 5
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000287 ! part of Myomere 5
+relationship: RO:0002202 AMPHX:1000123 ! develops from Right somite 5
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000290
+name: Myomere 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000178 ! develops from Myotome of somites 6
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000291
+name: Left myomere 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000290 ! part of Myomere 6
+relationship: RO:0002202 AMPHX:1000129 ! develops from Left somite 6
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000292
+name: Right myomere 6
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000290 ! part of Myomere 6
+relationship: RO:0002202 AMPHX:1000130 ! develops from Right somite 6
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000293
+name: Myomere 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000180 ! develops from Myotome of somites 7
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000294
+name: Left myomere 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000293 ! part of Myomere 7
+relationship: RO:0002202 AMPHX:1000136 ! develops from Left somite 7
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000295
+name: Right myomere 7
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000293 ! part of Myomere 7
+relationship: RO:0002202 AMPHX:1000137 ! develops from Right somite 7
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000296
+name: Myomere 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000182 ! develops from Myotome of somites 8
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000297
+name: Left myomere 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000296 ! part of Myomere 8
+relationship: RO:0002202 AMPHX:1000143 ! develops from Left somite 8
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000298
+name: Right myomere 8
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000296 ! part of Myomere 8
+relationship: RO:0002202 AMPHX:1000144 ! develops from Right somite 8
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000299
+name: Myomere 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000189 ! develops from Myotome of somites 9
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000300
+name: Left myomere 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000299 ! part of Myomere 9
+relationship: RO:0002202 AMPHX:1000192 ! develops from Left somite 9
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000301
+name: Right myomere 9
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000299 ! part of Myomere 9
+relationship: RO:0002202 AMPHX:1000193 ! develops from Right somites 9
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000302
+name: Myomere 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000196 ! develops from Myotome of somites 10
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000303
+name: Left myomere 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000302 ! part of Myomere 10
+relationship: RO:0002202 AMPHX:1000199 ! develops from Left somite 10
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000304
+name: Right myomere 10
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000302 ! part of Myomere 10
+relationship: RO:0002202 AMPHX:1000200 ! develops from Right somites 10
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000305
+name: Myomere 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000203 ! develops from Myotome of somites 11
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000306
+name: Left myomere 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000305 ! part of Myomere 11
+relationship: RO:0002202 AMPHX:1000206 ! develops from Left somite 11
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000307
+name: Right myomere 11
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000305 ! part of Myomere 11
+relationship: RO:0002202 AMPHX:1000207 ! develops from Right somites 11
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000308
+name: Myomere 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000215 ! develops from Myotome of somites 12
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000309
+name: Left myomere 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000308 ! part of Myomere 12
+relationship: RO:0002202 AMPHX:1000218 ! develops from Left somite 12
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000310
+name: Right myomere 12
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000308 ! part of Myomere 12
+relationship: RO:0002202 AMPHX:1000219 ! develops from Right somites 12
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000311
+name: Myomere 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000223 ! develops from Myotome of somites 13
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000312
+name: Left myomere 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000311 ! part of Myomere 13
+relationship: RO:0002202 AMPHX:1000226 ! develops from Left somite 13
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000313
+name: Right myomere 13
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000311 ! part of Myomere 13
+relationship: RO:0002202 AMPHX:1000227 ! develops from Right somites 13
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000314
+name: Myomere of Schizocoelic somite
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000242 ! develops from Myotome of schizocoelic somite
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000315
+name: Left schizocoelic somite myomere
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000314 ! part of Myomere of Schizocoelic somite
+relationship: RO:0002202 AMPHX:1000245 ! develops from Left schizocoelic somite
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000316
+name: Right schizocoelic somite myomere
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000314 ! part of Myomere of Schizocoelic somite
+relationship: RO:0002202 AMPHX:1000246 ! develops from Right schizocoelic somite
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000317
+name: Pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000269 ! develops from Presumptive pharyngeal slit
+relationship: RO:0002488 AMPHX:0000051 ! existence starts during larva-L4 stage
+relationship: RO:0002492 AMPHX:0000054 ! existence ends during larva-MML stage
+
+[Term]
+id: AMPHX:1000318
+name: Metapleural folds
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPHX:0000052 ! existence starts during larva-PL stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000319
+name: Atrium wall
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000166 ! develops from Ventral mesoderm
+relationship: RO:0002488 AMPHX:0000052 ! existence starts during larva-PL stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000320
+name: Pharynx
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000052 ! existence starts during larva-PL stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000321
+name: Dorsal pharynx
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000320 ! part of Pharynx
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000052 ! existence starts during larva-PL stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000322
+name: Ventral Pharynx
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000320 ! part of Pharynx
+relationship: RO:0002202 AMPHX:1000147 ! develops from Pharyngeal endoderm
+relationship: RO:0002488 AMPHX:0000052 ! existence starts during larva-PL stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000323
+name: Second row of pharyngeal slits
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000317 ! part of Pharyngeal slit
+relationship: RO:0002202 AMPHX:1000317 ! develops from Pharyngeal slit
+relationship: RO:0002488 AMPHX:0000053 ! existence starts during larva-EML stage
+relationship: RO:0002492 AMPHX:0000054 ! existence ends during larva-MML stage
+
+[Term]
+id: AMPHX:1000324
+name: Tongue bars
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000317 ! part of Pharyngeal slit
+relationship: RO:0002202 AMPHX:1000317 ! develops from Pharyngeal slit
+relationship: RO:0002488 AMPHX:0000054 ! existence starts during larva-MML stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000325
+name: Cirri
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000052 ! develops from Anterior epidermis
+relationship: RO:0002488 AMPHX:0000055 ! existence starts during larva-LML stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000326
+name: Dorsal fin
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPHX:0000055 ! existence starts during larva-LML stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000327
+name: Ventral fin
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPHX:0000055 ! existence starts during larva-LML stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000328
+name: Atriopore
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000318 ! develops from Metapleural folds
+relationship: RO:0002488 AMPHX:0000055 ! existence starts during larva-LML stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000329
+name: Wheel organ
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000051 ! develops from Epidermis
+relationship: RO:0002488 AMPHX:0000055 ! existence starts during larva-LML stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000330
+name: Hatschek's groove
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000253 ! develops from Preoral pit
+relationship: RO:0002488 AMPHX:0000055 ! existence starts during larva-LML stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000331
+name: Left pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000317 ! develops from Pharyngeal slit
+relationship: RO:0002488 AMPHX:0000055 ! existence starts during larva-LML stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000332
+name: Right pharyngeal slit
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000317 ! develops from Pharyngeal slit
+relationship: RO:0002488 AMPHX:0000055 ! existence starts during larva-LML stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000333
+name: Hepatic caecum bud
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000234 ! part of Gut
+relationship: RO:0002202 AMPHX:1000236 ! develops from Mid-gut
+relationship: RO:0002488 AMPHX:0000055 ! existence starts during larva-LML stage
+relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
+
+[Term]
+id: AMPHX:1000334
+name: Myomere
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000242 ! develops from Myotome of schizocoelic somite
+relationship: RO:0002488 AMPHX:0000056 ! existence starts during juvenile-J stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000335
+name: Left myomere
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000315 ! develops from Left schizocoelic somite myomere
+relationship: RO:0002488 AMPHX:0000056 ! existence starts during juvenile-J stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000336
+name: Right myomere
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000316 ! develops from Right schizocoelic somite myomere
+relationship: RO:0002488 AMPHX:0000056 ! existence starts during juvenile-J stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000337
+name: Dermis
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002202 AMPHX:1000277 ! develops from External cell layer
+relationship: RO:0002488 AMPHX:0000056 ! existence starts during juvenile-J stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000338
+name: Velum
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002488 AMPHX:0000056 ! existence starts during juvenile-J stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000339
+name: Velar tentacle
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002488 AMPHX:0000056 ! existence starts during juvenile-J stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000340
+name: Hepatic caecum
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000234 ! part of Gut
+relationship: RO:0002202 AMPHX:1000333 ! develops from Hepatic caecum bud
+relationship: RO:0002488 AMPHX:0000056 ! existence starts during juvenile-J stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000341
+name: Male gonads
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002488 AMPHX:0000057 ! existence starts during adult-A stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: AMPHX:1000342
+name: Female gonads
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 AMPHX:1000001 ! part of whole embryo
+relationship: RO:0002488 AMPHX:0000057 ! existence starts during adult-A stage
+relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
+
+[Term]
+id: CL:0000000
+name: cell
+
+[Term]
+id: GO:0005575
+name: cellular component
+relationship: BFO:0000050 CL:0000000 ! part of cell
+
+[Term]
+id: UBERON:0000061
+name: anatomical structure
+
+[Term]
+id: UBERON:0000105
+name: life cycle stage
+
+[Typedef]
+id: BFO:0000050
+name: part of
+
+[Typedef]
+id: RO:0002087
+name: immediately preceded by
+
+[Typedef]
+id: RO:0002202
+name: develops from
+
+[Typedef]
+id: RO:0002488
+name: existence starts during
+
+[Typedef]
+id: RO:0002492
+name: existence ends during
+

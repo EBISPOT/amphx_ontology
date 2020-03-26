@@ -4,3 +4,4 @@ src/ontology/mirror/*
 src/ontology/amph.obo
 src/ontology/amph.owl
 semantic.cache
+src/.DS_Store

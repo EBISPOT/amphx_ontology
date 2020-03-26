@@ -1,14 +1,21 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/upper.owl#"
-     xml:base="http://purl.obolibrary.org/obo/upper.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/amphx/amphx.owl#"
+     xml:base="http://purl.obolibrary.org/obo/amphx/amphx.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/upper.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/amphx/amphx.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/amphx/releases/2020-03-26/amphx.owl"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amphioxus Development and Anatomy Ontology (AMPHX)</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
+    </owl:Ontology>
     
 
 
@@ -1504,12 +1511,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000013"/>
             </owl:Restriction>
@@ -1536,12 +1537,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_1000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -1572,12 +1567,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000015"/>
             </owl:Restriction>
@@ -1604,12 +1593,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_1000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -1640,12 +1623,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000018"/>
             </owl:Restriction>
@@ -1674,12 +1651,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000019"/>
             </owl:Restriction>
@@ -1706,12 +1677,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_1000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -1805,12 +1770,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_1000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -2005,12 +1964,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000022"/>
             </owl:Restriction>
@@ -2168,12 +2121,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_1000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -2665,12 +2612,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000044"/>
             </owl:Restriction>
@@ -2762,12 +2703,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_1000054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -3455,12 +3390,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_1000075">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
