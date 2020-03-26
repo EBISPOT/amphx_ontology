@@ -22,6 +22,8 @@ Editors of this ontology should use the edit version, [src/ontology/amphx-edit.o
 
 Please use this GitHub repository's [Issue tracker](https://github.com/EBISPOT/amphx_ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
+The ontology is maintained by [Héctor Escriva](http://biom.obs-banyuls.fr/en/index.html), Observatoire Océanologique de Banyuls-sur-Mer, France
+
 ## Acknowledgements
 
 This ontology repository is using [ROBOT](https://github.com/ontodev/robot).
