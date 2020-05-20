@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: amphx/releases/2020-03-26/amphx.owl
+data-version: amphx/releases/2020-05-20/amphx.owl
 ontology: amphx/amphx
 property_value: http://purl.org/dc/elements/1.1/description "An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum)." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Amphioxus Development and Anatomy Ontology (AMPHX)" xsd:string
