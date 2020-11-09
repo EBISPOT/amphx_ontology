@@ -289,7 +289,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gastrula period</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula period</rdfs:label>
     </owl:Class>
     
 

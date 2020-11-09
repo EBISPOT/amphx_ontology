@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/amphx/amphx.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/amphx/releases/2020-05-20/amphx.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/amphx/releases/2020-11-09/amphx.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amphioxus Development and Anatomy Ontology (AMPHX)</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
@@ -296,7 +296,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gastrula period</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula period</rdfs:label>
     </owl:Class>
     
 

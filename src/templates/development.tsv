@@ -10,8 +10,8 @@ AMPHX:0000007	embryonic development		gamete stage	obo:UBERON_0000105
 AMPHX:0000008	zygote period	embryonic development					
 AMPHX:0000009	cleavage period	embryonic development	zygote period				
 AMPHX:0000010	blastula period	embryonic development	cleavage period				
-AMPHX:0000011	Gastrula period	embryonic development	blastula period				
-AMPHX:0000012	Neurula period	embryonic development	Gastrula period				
+AMPHX:0000011	gastrula period	embryonic development	blastula period				
+AMPHX:0000012	Neurula period	embryonic development	gastrula period				
 AMPHX:0000013	Tailbud period	embryonic development	Neurula period				
 AMPHX:0000014	larval development		embryonic development	obo:UBERON_0000105			
 AMPHX:0000015	Larva stage	larval development					
@@ -30,14 +30,14 @@ AMPHX:0000028	64-cell stage	cleavage period	32-cell stage			Hirakov and Kajita 1
 AMPHX:0000029	128-cell stage	cleavage period	64-cell stage			Hirakov and Kajita 1990	
 AMPHX:0000030	256-cell stage	cleavage period	128-cell stage		morula	Hirakov and Kajita 1990	
 AMPHX:0000031	blastula stage	blastula period	256-cell stage			Hirakov and Kajita 1990	
-AMPHX:0000032	gastrula-G0 stage	Gastrula period	blastula stage		Very early gastrula	Hirakov and Kajita 1990	Initial flatening of the vegetal zone
-AMPHX:0000033	gastrula-G1 stage	Gastrula period	gastrula-G0 stage		Very early gastrula	Hirakov and Kajita 1991	Flattened vegetal zone
-AMPHX:0000034	gastrula-G2 stage	Gastrula period	gastrula-G1 stage		Very early gastrula	Hirakov and Kajita 1991	Depressed vegetal zone, mesendoderm does not touch ectoderm
-AMPHX:0000035	gastrula-G3 stage	Gastrula period	gastrula-G2 stage		Early gastrula	Hirakov and Kajita 1991	Cap shaped, mesendoderm completely touch ectoderm
-AMPHX:0000036	gastrula-G4 stage	Gastrula period	gastrula-G3 stage		Mid-gastrula	Hirakov and Kajita 1991	Cup shaped
-AMPHX:0000037	gastrula-G5 stage	Gastrula period	gastrula-G4 stage		Late gastrula	Hirakov and Kajita 1991	Vase shaped due to body elongation during blastopore closure
-AMPHX:0000038	gastrula-G6 stage	Gastrula period	gastrula-G5 stage		Very late gastrula	Hirakov and Kajita 1991	Bottle shaped with flattening neuroectoderm
-AMPHX:0000039	gastrula-G7 stage	Gastrula period	gastrula-G6 stage		Final gastrula	Hirakov and Kajita 1991	Distinct neural plate, just before blastopore closure
+AMPHX:0000032	gastrula-G0 stage	gastrula period	blastula stage		Very early gastrula	Hirakov and Kajita 1990	Initial flatening of the vegetal zone
+AMPHX:0000033	gastrula-G1 stage	gastrula period	gastrula-G0 stage		Very early gastrula	Hirakov and Kajita 1991	Flattened vegetal zone
+AMPHX:0000034	gastrula-G2 stage	gastrula period	gastrula-G1 stage		Very early gastrula	Hirakov and Kajita 1991	Depressed vegetal zone, mesendoderm does not touch ectoderm
+AMPHX:0000035	gastrula-G3 stage	gastrula period	gastrula-G2 stage		Early gastrula	Hirakov and Kajita 1991	Cap shaped, mesendoderm completely touch ectoderm
+AMPHX:0000036	gastrula-G4 stage	gastrula period	gastrula-G3 stage		Mid-gastrula	Hirakov and Kajita 1991	Cup shaped
+AMPHX:0000037	gastrula-G5 stage	gastrula period	gastrula-G4 stage		Late gastrula	Hirakov and Kajita 1991	Vase shaped due to body elongation during blastopore closure
+AMPHX:0000038	gastrula-G6 stage	gastrula period	gastrula-G5 stage		Very late gastrula	Hirakov and Kajita 1991	Bottle shaped with flattening neuroectoderm
+AMPHX:0000039	gastrula-G7 stage	gastrula period	gastrula-G6 stage		Final gastrula	Hirakov and Kajita 1991	Distinct neural plate, just before blastopore closure
 AMPHX:0000040	neurula-N0 stage	Neurula period	gastrula-G7 stage		Very early neurula	Hirakov and Kajita 1991	0-3 somites
 AMPHX:0000041	neurula-N1 stage	Neurula period	neurula-N0 stage		Early neurula	Hirakov and Kajita 1994	4-6 somites
 AMPHX:0000042	neurula-N2 stage	Neurula period	neurula-N1 stage		Mid-neurula	Hirakov and Kajita 1994	7 to 8 somites

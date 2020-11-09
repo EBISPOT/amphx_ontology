@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: amphx/releases/2020-05-20/amphx.owl
+data-version: amphx/releases/2020-11-09/amphx.owl
 ontology: amphx/amphx
 property_value: http://purl.org/dc/elements/1.1/description "An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum)." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Amphioxus Development and Anatomy Ontology (AMPHX)" xsd:string
@@ -63,7 +63,7 @@ relationship: RO:0002087 AMPHX:0000009 ! immediately preceded by cleavage period
 
 [Term]
 id: AMPHX:0000011
-name: Gastrula period
+name: gastrula period
 relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
 relationship: RO:0002087 AMPHX:0000010 ! immediately preceded by blastula period
 
@@ -71,7 +71,7 @@ relationship: RO:0002087 AMPHX:0000010 ! immediately preceded by blastula period
 id: AMPHX:0000012
 name: Neurula period
 relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
-relationship: RO:0002087 AMPHX:0000011 ! immediately preceded by Gastrula period
+relationship: RO:0002087 AMPHX:0000011 ! immediately preceded by gastrula period
 
 [Term]
 id: AMPHX:0000013
@@ -195,7 +195,7 @@ id: AMPHX:0000032
 name: gastrula-G0 stage
 def: "Initial flatening of the vegetal zone" []
 synonym: "Very early gastrula" EXACT []
-relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: BFO:0000050 AMPHX:0000011 ! part of gastrula period
 relationship: RO:0002087 AMPHX:0000031 ! immediately preceded by blastula stage
 property_value: IAO:0000301 "Hirakov and Kajita 1990" xsd:string
 
@@ -204,7 +204,7 @@ id: AMPHX:0000033
 name: gastrula-G1 stage
 def: "Flattened vegetal zone" []
 synonym: "Very early gastrula" EXACT []
-relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: BFO:0000050 AMPHX:0000011 ! part of gastrula period
 relationship: RO:0002087 AMPHX:0000032 ! immediately preceded by gastrula-G0 stage
 property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
 
@@ -213,7 +213,7 @@ id: AMPHX:0000034
 name: gastrula-G2 stage
 def: "Depressed vegetal zone, mesendoderm does not touch ectoderm" []
 synonym: "Very early gastrula" EXACT []
-relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: BFO:0000050 AMPHX:0000011 ! part of gastrula period
 relationship: RO:0002087 AMPHX:0000033 ! immediately preceded by gastrula-G1 stage
 property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
 
@@ -222,7 +222,7 @@ id: AMPHX:0000035
 name: gastrula-G3 stage
 def: "Cap shaped, mesendoderm completely touch ectoderm" []
 synonym: "Early gastrula" EXACT []
-relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: BFO:0000050 AMPHX:0000011 ! part of gastrula period
 relationship: RO:0002087 AMPHX:0000034 ! immediately preceded by gastrula-G2 stage
 property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
 
@@ -231,7 +231,7 @@ id: AMPHX:0000036
 name: gastrula-G4 stage
 def: "Cup shaped" []
 synonym: "Mid-gastrula" EXACT []
-relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: BFO:0000050 AMPHX:0000011 ! part of gastrula period
 relationship: RO:0002087 AMPHX:0000035 ! immediately preceded by gastrula-G3 stage
 property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
 
@@ -240,7 +240,7 @@ id: AMPHX:0000037
 name: gastrula-G5 stage
 def: "Vase shaped due to body elongation during blastopore closure" []
 synonym: "Late gastrula" EXACT []
-relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: BFO:0000050 AMPHX:0000011 ! part of gastrula period
 relationship: RO:0002087 AMPHX:0000036 ! immediately preceded by gastrula-G4 stage
 property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
 
@@ -249,7 +249,7 @@ id: AMPHX:0000038
 name: gastrula-G6 stage
 def: "Bottle shaped with flattening neuroectoderm" []
 synonym: "Very late gastrula" EXACT []
-relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: BFO:0000050 AMPHX:0000011 ! part of gastrula period
 relationship: RO:0002087 AMPHX:0000037 ! immediately preceded by gastrula-G5 stage
 property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
 
@@ -258,7 +258,7 @@ id: AMPHX:0000039
 name: gastrula-G7 stage
 def: "Distinct neural plate, just before blastopore closure" []
 synonym: "Final gastrula" EXACT []
-relationship: BFO:0000050 AMPHX:0000011 ! part of Gastrula period
+relationship: BFO:0000050 AMPHX:0000011 ! part of gastrula period
 relationship: RO:0002087 AMPHX:0000038 ! immediately preceded by gastrula-G6 stage
 property_value: IAO:0000301 "Hirakov and Kajita 1991" xsd:string
 
