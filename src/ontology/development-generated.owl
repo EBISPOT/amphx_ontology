@@ -309,7 +309,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurula period</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula period</rdfs:label>
     </owl:Class>
     
 
@@ -329,7 +329,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailbud period</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tailbud period</rdfs:label>
     </owl:Class>
     
 
@@ -358,7 +358,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larva stage</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva period</rdfs:label>
     </owl:Class>
     
 
@@ -373,7 +379,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metamorphosis</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metamorphosis</rdfs:label>
     </owl:Class>
     
 
@@ -402,7 +408,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juvenile period</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juvenile period</rdfs:label>
     </owl:Class>
     
 
@@ -431,7 +443,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adult period</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult period</rdfs:label>
     </owl:Class>
     
 
@@ -451,9 +469,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zygote fertilized egg. Time since fertilization is 0min, corresponding to 0.00% of development</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one cell stage</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fertilized egg: time since fertilization is 0min, corresponding to 0.00% of development</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-cell stage</rdfs:label>
     </owl:Class>
     
 
@@ -473,7 +490,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-cell stage</rdfs:label>
     </owl:Class>
     
@@ -494,7 +511,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-cell stage</rdfs:label>
     </owl:Class>
     
@@ -515,7 +532,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-cell stage</rdfs:label>
     </owl:Class>
     
@@ -536,7 +553,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16-cell stage</rdfs:label>
     </owl:Class>
     
@@ -557,7 +574,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32-cell stage</rdfs:label>
     </owl:Class>
     
@@ -578,7 +595,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">64-cell stage</rdfs:label>
     </owl:Class>
     
@@ -599,7 +616,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">128-cell stage</rdfs:label>
     </owl:Class>
     
@@ -608,21 +625,8 @@
     <!-- http://purl.obolibrary.org/obo/AMPHX_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000030">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000029"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">256-cell stage</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -639,10 +643,11 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000030"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">initiation of asynchronous cell division</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula stage</rdfs:label>
     </owl:Class>
     
@@ -663,9 +668,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial flatening of the vegetal zone</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1990</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very early gastrula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">initial flattening of the vegetal zone</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula-G0 stage</rdfs:label>
     </owl:Class>
     
@@ -686,9 +689,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flattened vegetal zone</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1991</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very early gastrula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flattened vegetal pole</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1991</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very early gastrula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula-G1 stage</rdfs:label>
     </owl:Class>
     
@@ -709,9 +712,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depressed vegetal zone, mesendoderm does not touch ectoderm</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1991</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very early gastrula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">invaginated vegetal pole, mesendoderm does not touch ectoderm</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1991</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very early gastrula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula-G2 stage</rdfs:label>
     </owl:Class>
     
@@ -732,9 +735,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cap shaped, mesendoderm completely touch ectoderm</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1991</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Early gastrula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cap shaped, mesendoderm touches ectoderm</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1991</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early gastrula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula-G3 stage</rdfs:label>
     </owl:Class>
     
@@ -755,9 +758,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cup shaped</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1991</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mid-gastrula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cup shaped</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1991</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid-gastrula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula-G4 stage</rdfs:label>
     </owl:Class>
     
@@ -778,9 +781,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vase shaped due to body elongation during blastopore closure</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1991</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Late gastrula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vase shaped, due to body elongation during blastopore closure</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1991</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late gastrula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula-G5 stage</rdfs:label>
     </owl:Class>
     
@@ -801,9 +804,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bottle shaped with flattening neuroectoderm</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1991</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very late gastrula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bottle shaped, flattening neuroectoderm</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1991</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very late gastrula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula-G6 stage</rdfs:label>
     </owl:Class>
     
@@ -812,22 +815,8 @@
     <!-- http://purl.obolibrary.org/obo/AMPHX_0000039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000039">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distinct neural plate, just before blastopore closure</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1991</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Final gastrula</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula-G7 stage</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula G7 stage</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -844,12 +833,11 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-3 somites</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1991</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very early neurula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neural plate, just before blastopore closure</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very early neurula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula-N0 stage</rdfs:label>
     </owl:Class>
     
@@ -870,9 +858,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-6 somites</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1994</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Early neurula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-3 somite pairs</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1994</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very early neurula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula-N1 stage</rdfs:label>
     </owl:Class>
     
@@ -893,9 +881,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 to 8 somites</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1994</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mid-neurula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-5 somite pairs, hatching</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early neurula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula-N2 stage</rdfs:label>
     </owl:Class>
     
@@ -916,9 +903,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 to 9 somites, prior to schizocoelic somites</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1994</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Late-neurula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-7 somite pairs</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1994</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid-neurula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula-N3 stage</rdfs:label>
     </owl:Class>
     
@@ -939,8 +926,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 to 11 somites, prior to schizocoelic somites</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Late-neurula II</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-9 somite pairs, prior to schizocoelic somite formation</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late neurula</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula-N4 stage</rdfs:label>
     </owl:Class>
     
@@ -958,13 +945,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailbud with enlarged pharyngeal region, from 11-13 somites</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1994</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Premouth stage</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula-T stage</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 somite pairs, tailbud shape, enlarged pharyngeal region</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early premouth</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tailbud-T0 stage</rdfs:label>
     </owl:Class>
     
 
@@ -984,9 +970,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000045"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailbud with enlarged pharyngeal region, more than 13 somites, prior the mouth opens</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Premouth stage II</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula-T2 stage</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13 somite pairs, mouth and pre-oral pit anlagen, first pigment spot</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late premouth</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tailbud-T1 stage</rdfs:label>
     </owl:Class>
     
 
@@ -1003,11 +989,11 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open mouth, 0 gill slits</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Early larvae</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open mouth, no open gill slits</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early larva</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva-L0 stage</rdfs:label>
     </owl:Class>
     
@@ -1028,9 +1014,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 1 gill slit open</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1994</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 pharyngeal slit larvae</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open mouth, 1 open gill slit</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1994</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-gill slit larva</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva-L1 stage</rdfs:label>
     </owl:Class>
     
@@ -1051,9 +1037,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 2 gill slit open</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1994</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 pharyngeal slit larvae</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open mouth, 2 open gill slits</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1994</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-gill slit larva</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva-L2 stage</rdfs:label>
     </owl:Class>
     
@@ -1074,9 +1060,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 3 gill slit open</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1994</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 pharyngeal slit larvae</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open mouth, 3 open gill slits</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-gill slit larva</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva-L3 stage</rdfs:label>
     </owl:Class>
     
@@ -1097,9 +1082,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000050"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 4-13 gill slits open</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1994</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Late larvae</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open mouth, 4-13 gill slits</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late larva</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva-L4 stage</rdfs:label>
     </owl:Class>
     
@@ -1120,9 +1104,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth and 14-15 gill slits (B. lanceolatum)</obo:IAO_0000115>
-        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakov and Kajita 1994</obo:IAO_0000301>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Premetamorphic larvae</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open mouth, 14-15 gill slits </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pre-metamorphic larva</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva-PL stage</rdfs:label>
     </owl:Class>
     
@@ -1143,8 +1126,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000052"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metapleural folds start to grow</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Early metamorphic larvae</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metapleural folds start to grow</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early metamorphic larva</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva-EML stage</rdfs:label>
     </owl:Class>
     
@@ -1165,8 +1148,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gill slits start to duplicate, hepatic caecum starts to develop</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mid-metamorphic larvae</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gill slit row starts to duplicate, hepatic caecum starts to develop</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid-metamorphic larva</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva-MML stage</rdfs:label>
     </owl:Class>
     
@@ -1187,8 +1170,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth migration to frontal position</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Late metamorphic larvae</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mouth migration to frontal position</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late metamorphic larva</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva-LML stage</rdfs:label>
     </owl:Class>
     
@@ -1209,8 +1192,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adult-like morphology, length of less than 3cm</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Postmetamorphic juvenile</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult-like morphology, length of less than 3cm</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">post-metamorphic juvenile</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juvenile-J stage</rdfs:label>
     </owl:Class>
     
@@ -1231,9 +1214,32 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adult-like morphology, length of more than 3cm</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adult</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult-like morphology, length of more than 3cm</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult-A stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AMPHX_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000058">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-11 somite pairs</obo:IAO_0000115>
+        <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1994</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very late neurula</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula-N5 stage</rdfs:label>
     </owl:Class>
     
 
