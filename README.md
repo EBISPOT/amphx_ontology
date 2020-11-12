@@ -6,7 +6,7 @@
 The Amphioxus Development and Anatomy Ontology (AMPHX) is to describe the anatomy and development of Amphioxus, also known as lancelet, member of the invertebrate subphylum Cephalochordata and the phylum Chordata.
 
 ## Versions
-v2020-11-10
+1.0.0
 
 ### Stable release versions
 
