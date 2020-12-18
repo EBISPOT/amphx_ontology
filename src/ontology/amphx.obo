@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: amphx/releases/2020-11-10/amphx.owl
+data-version: amphx/releases/2020-12-18/amphx.owl
 ontology: amphx/amphx
 property_value: http://purl.org/dc/elements/1.1/description "An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum)." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Amphioxus Development and Anatomy Ontology (AMPHX)" xsd:string
@@ -8,11 +8,13 @@ property_value: http://purl.org/dc/terms/license https://creativecommons.org/lic
 [Term]
 id: AMPHX:0000001
 name: gametogenesis
+xref: NCIT:C16599
 is_a: UBERON:0000105 ! life cycle stage
 
 [Term]
 id: AMPHX:0000002
 name: oogenesis
+xref: NCIT:C16938
 relationship: BFO:0000050 AMPHX:0000001 ! part of gametogenesis
 
 [Term]
@@ -41,35 +43,41 @@ relationship: RO:0002087 AMPHX:0000003 ! immediately preceded by spermatogenesis
 [Term]
 id: AMPHX:0000007
 name: embryonic development
+xref: UBERON:0000068
 is_a: UBERON:0000105 ! life cycle stage
 relationship: RO:0002087 AMPHX:0000004 ! immediately preceded by gamete stage
 
 [Term]
 id: AMPHX:0000008
 name: zygote period
+xref: UBERON:0000106
 relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
 
 [Term]
 id: AMPHX:0000009
 name: cleavage period
+xref: UBERON:0000107
 relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
 relationship: RO:0002087 AMPHX:0000008 ! immediately preceded by zygote period
 
 [Term]
 id: AMPHX:0000010
 name: blastula period
+xref: UBERON:0000108
 relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
 relationship: RO:0002087 AMPHX:0000009 ! immediately preceded by cleavage period
 
 [Term]
 id: AMPHX:0000011
 name: gastrula period
+xref: UBERON:0000109
 relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
 relationship: RO:0002087 AMPHX:0000010 ! immediately preceded by blastula period
 
 [Term]
 id: AMPHX:0000012
 name: neurula period
+xref: UBERON:0000110
 relationship: BFO:0000050 AMPHX:0000007 ! part of embryonic development
 relationship: RO:0002087 AMPHX:0000011 ! immediately preceded by gastrula period
 
@@ -82,12 +90,14 @@ relationship: RO:0002087 AMPHX:0000012 ! immediately preceded by neurula period
 [Term]
 id: AMPHX:0000014
 name: larval development
+xref: UBERON:0000069
 is_a: UBERON:0000105 ! life cycle stage
 relationship: RO:0002087 AMPHX:0000007 ! immediately preceded by embryonic development
 
 [Term]
 id: AMPHX:0000015
 name: larva period
+xref: UBERON:0000069
 relationship: BFO:0000050 AMPHX:0000014 ! part of larval development
 relationship: RO:0002087 AMPHX:0000013 ! immediately preceded by tailbud period
 
@@ -106,6 +116,7 @@ relationship: RO:0002087 AMPHX:0000016 ! immediately preceded by metamorphosis
 [Term]
 id: AMPHX:0000018
 name: juvenile period
+xref: UBERON:0034919
 relationship: BFO:0000050 AMPHX:0000017 ! part of juvenile
 relationship: RO:0002087 AMPHX:0000015 ! immediately preceded by larva period
 
@@ -118,6 +129,7 @@ relationship: RO:0002087 AMPHX:0000017 ! immediately preceded by juvenile
 [Term]
 id: AMPHX:0000020
 name: adult period
+xref: UBERON:0000113
 relationship: BFO:0000050 AMPHX:0000019 ! part of adult
 relationship: RO:0002087 AMPHX:0000018 ! immediately preceded by juvenile period
 
@@ -131,6 +143,7 @@ relationship: RO:0002087 AMPHX:0000005 ! immediately preceded by unfertilized eg
 [Term]
 id: AMPHX:0000023
 name: 2-cell stage
+xref: UBERON:0007232
 relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
 relationship: RO:0002087 AMPHX:0000022 ! immediately preceded by 1-cell stage
 property_value: IAO:0000301 "Hirakow and Kajita 1990" xsd:string
@@ -138,6 +151,7 @@ property_value: IAO:0000301 "Hirakow and Kajita 1990" xsd:string
 [Term]
 id: AMPHX:0000024
 name: 4-cell stage
+xref: UBERON:0007233
 relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
 relationship: RO:0002087 AMPHX:0000023 ! immediately preceded by 2-cell stage
 property_value: IAO:0000301 "Hirakow and Kajita 1990" xsd:string
@@ -145,6 +159,7 @@ property_value: IAO:0000301 "Hirakow and Kajita 1990" xsd:string
 [Term]
 id: AMPHX:0000025
 name: 8-cell stage
+xref: UBERON:0007236
 relationship: BFO:0000050 AMPHX:0000009 ! part of cleavage period
 relationship: RO:0002087 AMPHX:0000024 ! immediately preceded by 4-cell stage
 property_value: IAO:0000301 "Hirakow and Kajita 1990" xsd:string
@@ -185,6 +200,7 @@ name: 256-cell stage
 id: AMPHX:0000031
 name: blastula stage
 def: "initiation of asynchronous cell division" []
+xref: UBERON:0000108
 relationship: BFO:0000050 AMPHX:0000010 ! part of blastula period
 relationship: RO:0002087 AMPHX:0000029 ! immediately preceded by 128-cell stage
 property_value: IAO:0000301 "Hirakow and Kajita 1990" xsd:string
@@ -421,28 +437,33 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000002
 name: blastomere
+xref: NCIT:C12518
 is_a: CL:0000000 ! cell
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 
 [Term]
 id: AMPHX:1000003
 name: whole oocyte
+xref: NCIT:C12598
 is_a: CL:0000000 ! cell
 
 [Term]
 id: AMPHX:1000004
 name: tissue
+xref: NCIT:C12801
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 
 [Term]
 id: AMPHX:1000005
 name: embryonic territory
+xref: NCIT:C34144
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 
 [Term]
 id: AMPHX:1000006
 name: central nervous system
+xref: NCIT:C12438
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 
 [Term]
@@ -487,6 +508,8 @@ relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 id: AMPHX:1000013
 name: zygote
 def: "diploid cell produced by fusion of sperm cell nucleus and egg cell" []
+xref: CL:0000365
+xref: SPD:0000786
 is_a: CL:0000000 ! cell
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002488 AMPHX:0000022 ! existence starts during 1-cell stage
@@ -495,6 +518,7 @@ relationship: RO:0002492 AMPHX:0000022 ! existence ends during 1-cell stage
 [Term]
 id: AMPHX:1000014
 name: 2-cell stage embryo
+xref: UBERON:0007232
 is_a: AMPHX:1000001 ! whole organism
 relationship: RO:0002488 AMPHX:0000023 ! existence starts during 2-cell stage
 relationship: RO:0002492 AMPHX:0000023 ! existence ends during 2-cell stage
@@ -502,6 +526,7 @@ relationship: RO:0002492 AMPHX:0000023 ! existence ends during 2-cell stage
 [Term]
 id: AMPHX:1000015
 name: 4-cell stage embryo
+xref: UBERON:0007233
 is_a: AMPHX:1000001 ! whole organism
 relationship: RO:0002488 AMPHX:0000024 ! existence starts during 4-cell stage
 relationship: RO:0002492 AMPHX:0000024 ! existence ends during 4-cell stage
@@ -510,6 +535,7 @@ relationship: RO:0002492 AMPHX:0000024 ! existence ends during 4-cell stage
 id: AMPHX:1000016
 name: blastomere of 2-cell stage embryo
 def: "cell of the embryo, before the formation of germ layers is complete" []
+xref: CL:0000007
 is_a: AMPHX:1000002 ! blastomere
 relationship: RO:0002202 AMPHX:1000013 ! develops from zygote
 relationship: RO:0002488 AMPHX:0000023 ! existence starts during 2-cell stage
@@ -519,6 +545,7 @@ relationship: RO:0002492 AMPHX:0000023 ! existence ends during 2-cell stage
 id: AMPHX:1000017
 name: blastomere of 4-cells stage embryo
 def: "cell of the embryo, before the formation of germ layers is complete" []
+xref: CL:0000007
 is_a: AMPHX:1000002 ! blastomere
 relationship: RO:0002202 AMPHX:1000014 ! develops from 2-cell stage embryo
 relationship: RO:0002488 AMPHX:0000024 ! existence starts during 4-cell stage
@@ -563,6 +590,7 @@ relationship: RO:0002492 AMPHX:0000031 ! existence ends during blastula stage
 [Term]
 id: AMPHX:1000022
 name: presumptive ectoderm
+xref: UBERON:0006601
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: RO:0002202 AMPHX:1000020 ! develops from animal blastomere
 relationship: RO:0002488 AMPHX:0000032 ! existence starts during gastrula-G0 stage
@@ -597,6 +625,7 @@ relationship: RO:0002492 AMPHX:0000034 ! existence ends during gastrula-G2 stage
 [Term]
 id: AMPHX:1000026
 name: dorsal presumptive mesendoderm
+xref: UBERON:0006603
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: BFO:0000050 AMPHX:1000025 ! part of presumptive mesendoderm
 relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomere
@@ -606,6 +635,7 @@ relationship: RO:0002492 AMPHX:0000034 ! existence ends during gastrula-G2 stage
 [Term]
 id: AMPHX:1000027
 name: ventral presumptive mesendoderm
+xref: UBERON:0006595
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: BFO:0000050 AMPHX:1000025 ! part of presumptive mesendoderm
 relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomere
@@ -615,6 +645,7 @@ relationship: RO:0002492 AMPHX:0000034 ! existence ends during gastrula-G2 stage
 [Term]
 id: AMPHX:1000028
 name: blastopore lip
+xref: UBERON:3010455
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomere
@@ -624,6 +655,7 @@ relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
 [Term]
 id: AMPHX:1000029
 name: dorsal blastopore lip
+xref: UBERON:3010457
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000028 ! part of blastopore lip
 relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomere
@@ -633,6 +665,7 @@ relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
 [Term]
 id: AMPHX:1000030
 name: ventral blastopore lip
+xref: UBERON:3010456
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000028 ! part of blastopore lip
 relationship: RO:0002202 AMPHX:1000021 ! develops from vegetal blastomere
@@ -642,6 +675,7 @@ relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
 [Term]
 id: AMPHX:1000031
 name: ectoderm
+xref: UBERON:0000924
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: RO:0002202 AMPHX:1000022 ! develops from presumptive ectoderm
 relationship: RO:0002488 AMPHX:0000035 ! existence starts during gastrula-G3 stage
@@ -668,6 +702,7 @@ relationship: RO:0002492 AMPHX:0000035 ! existence ends during gastrula-G3 stage
 [Term]
 id: AMPHX:1000034
 name: anterior ectoderm
+xref: UBERON:6000119
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: BFO:0000050 AMPHX:1000031 ! part of ectoderm
 relationship: RO:0002202 AMPHX:1000022 ! develops from presumptive ectoderm
@@ -730,6 +765,7 @@ relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
 [Term]
 id: AMPHX:1000041
 name: presumptive neural plate
+xref: UBERON:0007284
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000032 ! part of dorsal ectoderm
 relationship: RO:0002202 AMPHX:1000032 ! develops from dorsal ectoderm
@@ -748,6 +784,7 @@ relationship: RO:0002492 AMPHX:0000038 ! existence ends during gastrula-G6 stage
 [Term]
 id: AMPHX:1000043
 name: presumptive anterior neural plate
+xref: UBERON:2007014
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000032 ! part of dorsal ectoderm
 relationship: RO:0002202 AMPHX:1000032 ! develops from dorsal ectoderm
@@ -793,6 +830,7 @@ relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
 [Term]
 id: AMPHX:1000048
 name: neural plate
+xref: UBERON:0003075
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000041 ! develops from presumptive neural plate
@@ -820,6 +858,7 @@ relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
 [Term]
 id: AMPHX:1000051
 name: epidermis
+xref: UBERON:0007376
 is_a: AMPHX:1000004 ! tissue
 relationship: RO:0002202 AMPHX:1000044 ! develops from presumptive epidermis
 relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
@@ -846,6 +885,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000054
 name: mesoderm
+xref: UBERON:0000926
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: RO:0002202 AMPHX:1000037 ! develops from dorsal mesendoderm
 relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
@@ -854,6 +894,7 @@ relationship: RO:0002492 AMPHX:0000058 ! existence ends during neurula-N5 stage
 [Term]
 id: AMPHX:1000055
 name: presumptive notochord
+xref: UBERON:0004880
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: BFO:0000050 AMPHX:1000054 ! part of mesoderm
 relationship: RO:0002202 AMPHX:1000046 ! develops from dorsal axial mesendoderm
@@ -944,6 +985,7 @@ relationship: RO:0002492 AMPHX:0000040 ! existence ends during neurula-N0 stage
 [Term]
 id: AMPHX:1000065
 name: paraxial mesoderm
+xref: UBERON:0003077
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: BFO:0000050 AMPHX:1000054 ! part of mesoderm
 relationship: RO:0002202 AMPHX:1000047 ! develops from dorsal paraxial mesendoderm
@@ -989,6 +1031,7 @@ relationship: RO:0002492 AMPHX:0000041 ! existence ends during neurula-N1 stage
 [Term]
 id: AMPHX:1000070
 name: notochord
+xref: UBERON:0002328
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000055 ! develops from presumptive notochord
@@ -1034,6 +1077,7 @@ relationship: RO:0002492 AMPHX:0000058 ! existence ends during neurula-N5 stage
 [Term]
 id: AMPHX:1000075
 name: endoderm
+xref: UBERON:0000925
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: RO:0002202 AMPHX:1000038 ! develops from ventral mesendoderm
 relationship: RO:0002488 AMPHX:0000040 ! existence starts during neurula-N0 stage
@@ -1060,6 +1104,7 @@ relationship: RO:0002492 AMPHX:0000044 ! existence ends during neurula-N4 stage
 [Term]
 id: AMPHX:1000078
 name: tail bud
+xref: UBERON:0002533
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000028 ! develops from blastopore lip
@@ -1294,6 +1339,7 @@ relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
 [Term]
 id: AMPHX:1000104
 name: neural tube
+xref: UBERON:0001049
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000006 ! part of central nervous system
 relationship: RO:0002202 AMPHX:1000048 ! develops from neural plate
@@ -1312,6 +1358,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000106
 name: ventral neural tube
+xref: UBERON:0003306
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000104 ! part of neural tube
 relationship: RO:0002202 AMPHX:1000048 ! develops from neural plate
@@ -1330,6 +1377,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000108
 name: cerebral vesicle
+xref: UBERON:0009862
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000104 ! part of neural tube
 relationship: RO:0002202 AMPHX:1000080 ! develops from presumptive cerebral vesicle
@@ -1339,6 +1387,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000109
 name: spinal cord
+xref: UBERON:0002240
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000104 ! part of neural tube
 relationship: RO:0002202 AMPHX:1000081 ! develops from presumptive spinal cord
@@ -1663,6 +1712,7 @@ relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
 [Term]
 id: AMPHX:1000145
 name: left Hatschek&apos;s diverticulum
+xref: UBERON:0009868
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000075 ! part of endoderm
 relationship: RO:0002202 AMPHX:1000068 ! develops from left endoderm
@@ -1672,6 +1722,7 @@ relationship: RO:0002492 AMPHX:0000046 ! existence ends during tailbud-T1 stage
 [Term]
 id: AMPHX:1000146
 name: right Hatschek&apos;s diverticulum
+xref: UBERON:0009869
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000075 ! part of endoderm
 relationship: RO:0002202 AMPHX:1000069 ! develops from right endoderm
@@ -1726,6 +1777,7 @@ relationship: RO:0002492 AMPHX:0000058 ! existence ends during neurula-N5 stage
 [Term]
 id: AMPHX:1000152
 name: chordoneural hinge
+xref: UBERON:0007097
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000078 ! part of tail bud
 relationship: RO:0002202 AMPHX:1000028 ! develops from blastopore lip
@@ -1852,6 +1904,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000166
 name: ventral mesoderm
+xref: UBERON:2000083
 is_a: AMPHX:1000005 ! embryonic territory
 relationship: BFO:0000050 AMPHX:1000054 ! part of mesoderm
 relationship: RO:0002202 AMPHX:1000054 ! develops from mesoderm
@@ -2248,6 +2301,7 @@ relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
 [Term]
 id: AMPHX:1000210
 name: pigment spot
+xref: UBERON:0018340
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000104 ! part of neural tube
 relationship: RO:0002202 AMPHX:1000109 ! develops from spinal cord
@@ -2437,6 +2491,7 @@ relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
 [Term]
 id: AMPHX:1000231
 name: mouth primordium
+xref: UBERON:0000930
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000148 ! part of left pharyngeal endoderm
 relationship: RO:0002202 AMPHX:1000147 ! develops from pharyngeal endoderm
@@ -2464,6 +2519,7 @@ relationship: RO:0002492 AMPHX:0000052 ! existence ends during larva-PL stage
 [Term]
 id: AMPHX:1000234
 name: gut
+xref: UBERON:0001555
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000075 ! develops from endoderm
@@ -2473,6 +2529,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000235
 name: anterior gut
+xref: UBERON:0001041
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000234 ! part of gut
 relationship: RO:0002202 AMPHX:1000076 ! develops from anterior endoderm
@@ -2482,6 +2539,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000236
 name: mid-gut
+xref: UBERON:0001045
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000234 ! part of gut
 relationship: RO:0002202 AMPHX:1000151 ! develops from mid-endoderm
@@ -2500,6 +2558,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000238
 name: hind-gut
+xref: UBERON:0001046
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000234 ! part of gut
 relationship: RO:0002202 AMPHX:1000077 ! develops from posterior endoderm
@@ -2599,6 +2658,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000249
 name: subintestinal vessel
+xref: UBERON:0011944
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000211 ! develops from subintestinal vessel anlage
@@ -2617,6 +2677,7 @@ relationship: RO:0002492 AMPHX:0000044 ! existence ends during neurula-N4 stage
 [Term]
 id: AMPHX:1000251
 name: dorsal aorta
+xref: UBERON:0005805
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000250 ! develops from dorsal mesoderm
@@ -2626,6 +2687,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000252
 name: Hatschek&apos;s nephridium
+xref: UBERON:0009866
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000169 ! develops from presumptive Hatschek&apos;s nephridium
@@ -2635,6 +2697,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000253
 name: pre-oral pit
+xref: UBERON:0009865
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000145 ! develops from left Hatschek&apos;s diverticulum
@@ -2653,6 +2716,7 @@ relationship: RO:0002492 AMPHX:0000051 ! existence ends during larva-L4 stage
 [Term]
 id: AMPHX:1000255
 name: mouth
+xref: UBERON:0000165
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000231 ! develops from mouth primordium
@@ -2689,6 +2753,7 @@ relationship: RO:0002492 AMPHX:0000053 ! existence ends during larva-EML stage
 [Term]
 id: AMPHX:1000259
 name: endostyle
+xref: UBERON:0006870
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000185 ! develops from presumptive endostyle
@@ -2716,6 +2781,7 @@ relationship: RO:0002492 AMPHX:0000047 ! existence ends during larva-L0 stage
 [Term]
 id: AMPHX:1000262
 name: frontal eye
+xref: NCIT:C12401
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000108 ! part of cerebral vesicle
 relationship: RO:0002202 AMPHX:1000154 ! develops from anterior cerebral vesicle
@@ -2725,6 +2791,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000263
 name: first pharyngeal gill slit
+xref: UBERON:0008815
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000232 ! develops from presumptive first pharyngeal gill slit
@@ -2743,6 +2810,7 @@ relationship: RO:0002492 AMPHX:0000048 ! existence ends during larva-L1 stage
 [Term]
 id: AMPHX:1000265
 name: anus
+xref: UBERON:0001245
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000261 ! develops from presumptive anus
@@ -2752,6 +2820,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000266
 name: second pharyngeal gill slit
+xref: UBERON:0008815
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000264 ! develops from presumptive second pharyngeal gill slit
@@ -2770,6 +2839,7 @@ relationship: RO:0002492 AMPHX:0000049 ! existence ends during larva-L2 stage
 [Term]
 id: AMPHX:1000268
 name: third pharyngeal gill slit
+xref: UBERON:0008815
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000267 ! develops from presumptive third pharyngeal gill slit
@@ -2842,6 +2912,7 @@ relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
 [Term]
 id: AMPHX:1000276
 name: somite pair
+xref: UBERON:0002329
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000065 ! develops from paraxial mesoderm
@@ -2850,7 +2921,7 @@ relationship: RO:0002492 AMPHX:0000050 ! existence ends during larva-L3 stage
 
 [Term]
 id: AMPHX:1000277
-name: external cell layer 
+name: external cell layer
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000276 ! develops from somite pair
@@ -3183,7 +3254,7 @@ relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
 
 [Term]
 id: AMPHX:1000314
-name: myomere of schizocoelic somite pair 
+name: myomere of schizocoelic somite pair
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000242 ! develops from myotome of schizocoelic somite pair
@@ -3211,6 +3282,7 @@ relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
 [Term]
 id: AMPHX:1000317
 name: pharyngeal gill slit
+xref: UBERON:0008815
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000269 ! develops from presumptive pharyngeal gill slit
@@ -3238,6 +3310,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000320
 name: pharynx
+xref: UBERON:0006562
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000147 ! develops from pharyngeal endoderm
@@ -3283,6 +3356,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000325
 name: cirrus
+xref: UBERON:0012473
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000052 ! develops from anterior epidermis
@@ -3292,6 +3366,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000326
 name: dorsal fin
+xref: UBERON:0003097
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000051 ! develops from epidermis
@@ -3364,6 +3439,7 @@ relationship: RO:0002492 AMPHX:0000055 ! existence ends during larva-LML stage
 [Term]
 id: AMPHX:1000334
 name: myomere
+xref: UBERON:0003082
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000242 ! develops from myotome of schizocoelic somite pair
@@ -3391,6 +3467,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000337
 name: dermis
+xref: UBERON:0002067
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002202 AMPHX:1000277 ! develops from external cell layer
@@ -3416,6 +3493,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000340
 name: hepatic caecum
+xref: UBERON:0012474
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000234 ! part of gut
 relationship: RO:0002202 AMPHX:1000333 ! develops from hepatic caecum bud
@@ -3425,6 +3503,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000341
 name: male gonad
+xref: UBERON:0000473
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002488 AMPHX:0000057 ! existence starts during adult-A stage
@@ -3433,6 +3512,7 @@ relationship: RO:0002492 AMPHX:0000057 ! existence ends during adult-A stage
 [Term]
 id: AMPHX:1000342
 name: female gonad
+xref: UBERON:0000992
 is_a: UBERON:0000061 ! anatomical structure
 relationship: BFO:0000050 AMPHX:1000001 ! part of whole organism
 relationship: RO:0002488 AMPHX:0000057 ! existence starts during adult-A stage

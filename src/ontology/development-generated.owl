@@ -45,6 +45,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -117,6 +123,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16599</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gametogenesis</rdfs:label>
     </owl:Class>
     
@@ -131,6 +138,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16938</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oogenesis</rdfs:label>
     </owl:Class>
     
@@ -215,6 +223,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000068</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic development</rdfs:label>
     </owl:Class>
     
@@ -229,6 +238,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000106</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygote period</rdfs:label>
     </owl:Class>
     
@@ -249,6 +259,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000107</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cleavage period</rdfs:label>
     </owl:Class>
     
@@ -269,6 +280,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000108</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula period</rdfs:label>
     </owl:Class>
     
@@ -289,6 +301,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000109</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula period</rdfs:label>
     </owl:Class>
     
@@ -309,6 +322,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000110</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula period</rdfs:label>
     </owl:Class>
     
@@ -344,6 +358,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000069</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larval development</rdfs:label>
     </owl:Class>
     
@@ -364,6 +379,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000069</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva period</rdfs:label>
     </owl:Class>
     
@@ -414,6 +430,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0034919</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juvenile period</rdfs:label>
     </owl:Class>
     
@@ -449,6 +466,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000113</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult period</rdfs:label>
     </owl:Class>
     
@@ -491,6 +509,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007232</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-cell stage</rdfs:label>
     </owl:Class>
     
@@ -512,6 +531,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007233</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-cell stage</rdfs:label>
     </owl:Class>
     
@@ -533,6 +553,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007236</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-cell stage</rdfs:label>
     </owl:Class>
     
@@ -648,6 +669,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">initiation of asynchronous cell division</obo:IAO_0000115>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000108</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula stage</rdfs:label>
     </owl:Class>
     

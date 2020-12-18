@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/amphx/amphx.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/amphx/releases/2020-11-10/amphx.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/amphx/releases/2020-12-18/amphx.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amphioxus Development and Anatomy Ontology (AMPHX)</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
@@ -49,6 +49,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#DbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#DbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
     
 
 
@@ -124,6 +130,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16599</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gametogenesis</rdfs:label>
     </owl:Class>
     
@@ -138,6 +145,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16938</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oogenesis</rdfs:label>
     </owl:Class>
     
@@ -222,6 +230,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000068</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic development</rdfs:label>
     </owl:Class>
     
@@ -236,6 +245,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000106</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygote period</rdfs:label>
     </owl:Class>
     
@@ -256,6 +266,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000107</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cleavage period</rdfs:label>
     </owl:Class>
     
@@ -276,6 +287,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000108</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula period</rdfs:label>
     </owl:Class>
     
@@ -296,6 +308,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000109</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula period</rdfs:label>
     </owl:Class>
     
@@ -316,6 +329,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000110</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurula period</rdfs:label>
     </owl:Class>
     
@@ -351,6 +365,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000069</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larval development</rdfs:label>
     </owl:Class>
     
@@ -371,6 +386,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000069</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva period</rdfs:label>
     </owl:Class>
     
@@ -421,6 +437,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0034919</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juvenile period</rdfs:label>
     </owl:Class>
     
@@ -456,6 +473,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000113</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult period</rdfs:label>
     </owl:Class>
     
@@ -498,6 +516,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007232</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-cell stage</rdfs:label>
     </owl:Class>
     
@@ -519,6 +538,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007233</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-cell stage</rdfs:label>
     </owl:Class>
     
@@ -540,6 +560,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007236</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-cell stage</rdfs:label>
     </owl:Class>
     
@@ -655,6 +676,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">initiation of asynchronous cell division</obo:IAO_0000115>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hirakow and Kajita 1990</obo:IAO_0000301>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000108</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula stage</rdfs:label>
     </owl:Class>
     
@@ -1282,6 +1304,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12518</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastomere</rdfs:label>
     </owl:Class>
     
@@ -1291,6 +1314,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AMPHX_1000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12598</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole oocyte</rdfs:label>
     </owl:Class>
     
@@ -1306,6 +1330,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12801</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue</rdfs:label>
     </owl:Class>
     
@@ -1320,6 +1345,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C34144</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic territory</rdfs:label>
     </owl:Class>
     
@@ -1334,6 +1360,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_1000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12438</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central nervous system</rdfs:label>
     </owl:Class>
     
@@ -1464,6 +1491,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diploid cell produced by fusion of sperm cell nucleus and egg cell</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000365</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPD:0000786</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygote</rdfs:label>
     </owl:Class>
     
@@ -1485,6 +1514,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007232</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-cell stage embryo</rdfs:label>
     </owl:Class>
     
@@ -1506,6 +1536,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007233</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-cell stage embryo</rdfs:label>
     </owl:Class>
     
@@ -1534,6 +1565,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell of the embryo, before the formation of germ layers is complete</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000007</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastomere of 2-cell stage embryo</rdfs:label>
     </owl:Class>
     
@@ -1562,6 +1594,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell of the embryo, before the formation of germ layers is complete</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000007</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastomere of 4-cells stage embryo</rdfs:label>
     </owl:Class>
     
@@ -1701,6 +1734,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0006601</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">presumptive ectoderm</rdfs:label>
     </owl:Class>
     
@@ -1827,6 +1861,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0006603</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dorsal presumptive mesendoderm</rdfs:label>
     </owl:Class>
     
@@ -1860,6 +1895,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0006595</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ventral presumptive mesendoderm</rdfs:label>
     </owl:Class>
     
@@ -1893,6 +1929,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:3010455</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastopore lip</rdfs:label>
     </owl:Class>
     
@@ -1926,6 +1963,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:3010457</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dorsal blastopore lip</rdfs:label>
     </owl:Class>
     
@@ -1959,6 +1997,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:3010456</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ventral blastopore lip</rdfs:label>
     </owl:Class>
     
@@ -1986,6 +2025,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000924</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectoderm</rdfs:label>
     </owl:Class>
     
@@ -2085,6 +2125,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:6000119</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anterior ectoderm</rdfs:label>
     </owl:Class>
     
@@ -2310,6 +2351,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007284</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">presumptive neural plate</rdfs:label>
     </owl:Class>
     
@@ -2376,6 +2418,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:2007014</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">presumptive anterior neural plate</rdfs:label>
     </owl:Class>
     
@@ -2541,6 +2584,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003075</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neural plate</rdfs:label>
     </owl:Class>
     
@@ -2634,6 +2678,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007376</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidermis</rdfs:label>
     </owl:Class>
     
@@ -2727,6 +2772,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000058"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000926</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesoderm</rdfs:label>
     </owl:Class>
     
@@ -2760,6 +2806,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004880</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">presumptive notochord</rdfs:label>
     </owl:Class>
     
@@ -3090,6 +3137,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000058"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003077</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paraxial mesoderm</rdfs:label>
     </owl:Class>
     
@@ -3255,6 +3303,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002328</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">notochord</rdfs:label>
     </owl:Class>
     
@@ -3414,6 +3463,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000925</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endoderm</rdfs:label>
     </owl:Class>
     
@@ -3513,6 +3563,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002533</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tail bud</rdfs:label>
     </owl:Class>
     
@@ -4371,6 +4422,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001049</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neural tube</rdfs:label>
     </owl:Class>
     
@@ -4437,6 +4489,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003306</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ventral neural tube</rdfs:label>
     </owl:Class>
     
@@ -4503,6 +4556,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0009862</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cerebral vesicle</rdfs:label>
     </owl:Class>
     
@@ -4536,6 +4590,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002240</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spinal cord</rdfs:label>
     </owl:Class>
     
@@ -5724,6 +5779,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0009868</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">left Hatschek&amp;apos;s diverticulum</rdfs:label>
     </owl:Class>
     
@@ -5757,6 +5813,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0009869</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">right Hatschek&amp;apos;s diverticulum</rdfs:label>
     </owl:Class>
     
@@ -5955,6 +6012,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007097</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chordoneural hinge</rdfs:label>
     </owl:Class>
     
@@ -6417,6 +6475,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:2000083</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ventral mesoderm</rdfs:label>
     </owl:Class>
     
@@ -7869,6 +7928,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0018340</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pigment spot</rdfs:label>
     </owl:Class>
     
@@ -8562,6 +8622,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000930</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mouth primordium</rdfs:label>
     </owl:Class>
     
@@ -8661,6 +8722,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001555</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gut</rdfs:label>
     </owl:Class>
     
@@ -8694,6 +8756,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001041</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anterior gut</rdfs:label>
     </owl:Class>
     
@@ -8727,6 +8790,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001045</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid-gut</rdfs:label>
     </owl:Class>
     
@@ -8793,6 +8857,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001046</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hind-gut</rdfs:label>
     </owl:Class>
     
@@ -9156,6 +9221,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0011944</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subintestinal vessel</rdfs:label>
     </owl:Class>
     
@@ -9222,6 +9288,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0005805</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dorsal aorta</rdfs:label>
     </owl:Class>
     
@@ -9255,6 +9322,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0009866</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hatschek&amp;apos;s nephridium</rdfs:label>
     </owl:Class>
     
@@ -9288,6 +9356,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0009865</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pre-oral pit</rdfs:label>
     </owl:Class>
     
@@ -9354,6 +9423,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000165</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mouth</rdfs:label>
     </owl:Class>
     
@@ -9486,6 +9556,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0006870</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endostyle</rdfs:label>
     </owl:Class>
     
@@ -9585,6 +9656,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12401</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">frontal eye</rdfs:label>
     </owl:Class>
     
@@ -9618,6 +9690,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0008815</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">first pharyngeal gill slit</rdfs:label>
     </owl:Class>
     
@@ -9684,6 +9757,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001245</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anus</rdfs:label>
     </owl:Class>
     
@@ -9717,6 +9791,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0008815</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second pharyngeal gill slit</rdfs:label>
     </owl:Class>
     
@@ -9783,6 +9858,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0008815</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">third pharyngeal gill slit</rdfs:label>
     </owl:Class>
     
@@ -10047,6 +10123,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000050"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002329</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">somite pair</rdfs:label>
     </owl:Class>
     
@@ -10080,7 +10157,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external cell layer </rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external cell layer</rdfs:label>
     </owl:Class>
     
 
@@ -11301,7 +11378,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myomere of schizocoelic somite pair </rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myomere of schizocoelic somite pair</rdfs:label>
     </owl:Class>
     
 
@@ -11400,6 +11477,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0008815</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pharyngeal gill slit</rdfs:label>
     </owl:Class>
     
@@ -11499,6 +11577,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0006562</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pharynx</rdfs:label>
     </owl:Class>
     
@@ -11664,6 +11743,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0012473</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cirrus</rdfs:label>
     </owl:Class>
     
@@ -11697,6 +11777,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003097</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dorsal fin</rdfs:label>
     </owl:Class>
     
@@ -11961,6 +12042,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003082</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myomere</rdfs:label>
     </owl:Class>
     
@@ -12060,6 +12142,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002067</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermis</rdfs:label>
     </owl:Class>
     
@@ -12147,6 +12230,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0012474</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hepatic caecum</rdfs:label>
     </owl:Class>
     
@@ -12174,6 +12258,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000473</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male gonad</rdfs:label>
     </owl:Class>
     
@@ -12201,6 +12286,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AMPHX_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000992</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female gonad</rdfs:label>
     </owl:Class>
     

@@ -1,5 +1,5 @@
 ID	anatomical structure	type (is-a)	part of	develops from	starts at stage	ends at stage	similar to UBERON term	description	synonyms	UBERON (is-a)	UBERON (non-exact)	cell type (is-a)	cell type (non-exact)	Pubmed id
-ID	A rdfs:label	C %	C  'part of' some %	C  'develops from' some %	C  'existence starts during' some %	C  'existence ends during' some %		A obo:IAO_0000115	A oboInOwl:hasExactSynonym					
+ID	A rdfs:label	C %	C  'part of' some %	C  'develops from' some %	C  'existence starts during' some %	C  'existence ends during' some %	A oboInOwl:hasDbXref	A obo:IAO_0000115	A oboInOwl:hasExactSynonym			A oboInOwl:hasDbXref		
 UBERON:0000061	anatomical structure													
 CL:0000000	cell													
 GO:0005575	cellular component		cell											
@@ -112,35 +112,35 @@ AMPHX:1000106	ventral neural tube	anatomical structure	neural tube	neural plate	
 AMPHX:1000107	lateral neural tube	anatomical structure	neural tube	neural plate	neurula-N2 stage	adult-A stage								
 AMPHX:1000108	cerebral vesicle	anatomical structure	neural tube	presumptive cerebral vesicle	neurula-N2 stage	adult-A stage	UBERON:0009862							
 AMPHX:1000109	spinal cord	anatomical structure	neural tube	presumptive spinal cord	neurula-N2 stage	adult-A stage	UBERON:0002240							
-AMPHX:1000110	somite pair 4	anatomical structure	somite pair 	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
+AMPHX:1000110	somite pair 4	anatomical structure	somite pair	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000111	anterior somite pair 4	anatomical structure	somite pair 4	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000112	posterior somite pair 4	anatomical structure	somite pair 4	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000113	dorsal somite pair 4	anatomical structure	somite pair 4	posterior paraxial mesoderm	neurula-N2 stage	neurula-N2 stage								
 AMPHX:1000114	ventral somite pair 4	anatomical structure	somite pair 4	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000115	left somite 4	anatomical structure	somite pair 4	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000116	right somite 4	anatomical structure	somite pair 4	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
-AMPHX:1000117	somite pair 5	anatomical structure	somite pair 	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
+AMPHX:1000117	somite pair 5	anatomical structure	somite pair	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000118	anterior somite pair 5	anatomical structure	somite pair 5	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000119	posterior somite pair 5	anatomical structure	somite pair 5	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000120	dorsal somite pair 5	anatomical structure	somite pair 5	posterior paraxial mesoderm	neurula-N2 stage	neurula-N2 stage								
 AMPHX:1000121	ventral somite pair 5	anatomical structure	somite pair 5	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000122	left somite 5	anatomical structure	somite pair 5	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
 AMPHX:1000123	right somite 5	anatomical structure	somite pair 5	posterior paraxial mesoderm	neurula-N2 stage	larva-L3 stage								
-AMPHX:1000124	somite pair 6	anatomical structure	somite pair 	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
+AMPHX:1000124	somite pair 6	anatomical structure	somite pair	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000125	anterior somite pair 6	anatomical structure	somite pair 6	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000126	posterior somite pair 6	anatomical structure	somite pair 6	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000127	dorsal somite pair 6	anatomical structure	somite pair 6	posterior paraxial mesoderm	neurula-N3 stage	neurula-N3 stage								
 AMPHX:1000128	ventral somite pair 6	anatomical structure	somite pair 6	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000129	left somite 6	anatomical structure	somite pair 6	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000130	right somite 6	anatomical structure	somite pair 6	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
-AMPHX:1000131	somite pair 7	anatomical structure	somite pair 	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
+AMPHX:1000131	somite pair 7	anatomical structure	somite pair	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000132	anterior somite pair 7	anatomical structure	somite pair 7	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000133	posterior somite pair 7	anatomical structure	somite pair 7	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000134	dorsal somite pair 7	anatomical structure	somite pair 7	posterior paraxial mesoderm	neurula-N3 stage	neurula-N3 stage								
 AMPHX:1000135	ventral somite pair 7	anatomical structure	somite pair 7	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000136	left somite 7	anatomical structure	somite pair 7	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
 AMPHX:1000137	right somite 7	anatomical structure	somite pair 7	posterior paraxial mesoderm	neurula-N3 stage	larva-L3 stage								
-AMPHX:1000138	somite pair 8	anatomical structure	somite pair 	posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage								
+AMPHX:1000138	somite pair 8	anatomical structure	somite pair	posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage								
 AMPHX:1000139	anterior somite pair 8	anatomical structure	somite pair 8	posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage								
 AMPHX:1000140	posterior somite pair 8	anatomical structure	somite pair 8	posterior paraxial mesoderm	neurula-N4 stage	larva-L3 stage								
 AMPHX:1000141	dorsal somite pair 8	anatomical structure	somite pair 8	posterior paraxial mesoderm	neurula-N4 stage	neurula-N4 stage								
@@ -279,7 +279,7 @@ AMPHX:1000273	myomere 1	anatomical structure	whole organism	myotome of somite pa
 AMPHX:1000274	left myomere 1	anatomical structure	myomere 1	left somite 1	larva-L4 stage	larva-LML stage								
 AMPHX:1000275	right myomere 1	anatomical structure	myomere 1	right somite 1	larva-L4 stage	larva-LML stage								
 AMPHX:1000276	somite pair	anatomical structure	whole organism	paraxial mesoderm	neurula-N1 stage	larva-L3 stage	UBERON:0002329							
-AMPHX:1000277	external cell layer 	anatomical structure	whole organism	somite pair	larva-L4 stage	larva-LML stage								
+AMPHX:1000277	external cell layer	anatomical structure	whole organism	somite pair	larva-L4 stage	larva-LML stage								
 AMPHX:1000278	myomere 2	anatomical structure	whole organism	myotome of somite pair 2	larva-L4 stage	larva-LML stage								
 AMPHX:1000279	left myomere 2	anatomical structure	myomere 2	left somite 2	larva-L4 stage	larva-LML stage								
 AMPHX:1000280	right myomere 2	anatomical structure	myomere 2	right somite 2	larva-L4 stage	larva-LML stage								
@@ -316,9 +316,9 @@ AMPHX:1000310	right myomere 12	anatomical structure	myomere 12	right somite 12	l
 AMPHX:1000311	myomere 13	anatomical structure	whole organism	myotome of somite pair 13	larva-L4 stage	larva-LML stage								
 AMPHX:1000312	left myomere 13	anatomical structure	myomere 13	left somite 13	larva-L4 stage	larva-LML stage								
 AMPHX:1000313	right myomere 13	anatomical structure	myomere 13	right somite 13	larva-L4 stage	larva-LML stage								
-AMPHX:1000314	myomere of schizocoelic somite pair 	anatomical structure	whole organism	myotome of schizocoelic somite pair 	larva-L4 stage	larva-LML stage								
-AMPHX:1000315	left schizocoelic somite myomere	anatomical structure	myomere of schizocoelic somite pair 	left schizocoelic somite	larva-L4 stage	larva-LML stage								
-AMPHX:1000316	right schizocoelic somite myomere	anatomical structure	myomere of schizocoelic somite pair 	right schizocoelic somite	larva-L4 stage	larva-LML stage								
+AMPHX:1000314	myomere of schizocoelic somite pair	anatomical structure	whole organism	myotome of schizocoelic somite pair	larva-L4 stage	larva-LML stage								
+AMPHX:1000315	left schizocoelic somite myomere	anatomical structure	myomere of schizocoelic somite pair	left schizocoelic somite	larva-L4 stage	larva-LML stage								
+AMPHX:1000316	right schizocoelic somite myomere	anatomical structure	myomere of schizocoelic somite pair	right schizocoelic somite	larva-L4 stage	larva-LML stage								
 AMPHX:1000317	pharyngeal gill slit	anatomical structure	whole organism	presumptive pharyngeal gill slit	larva-L1 stage	larva-MML stage	UBERON:0008815							
 AMPHX:1000318	metapleural fold	anatomical structure	whole organism	epidermis	larva-PL stage	adult-A stage								
 AMPHX:1000319	atrium wall	anatomical structure	whole organism	ventral mesoderm	larva-PL stage	adult-A stage								
@@ -336,10 +336,10 @@ AMPHX:1000330	Hatschek&apos;s groove	anatomical structure	whole organism	pre-ora
 AMPHX:1000331	left pharyngeal gill slit	anatomical structure	whole organism	pharyngeal gill slit	larva-LML stage	adult-A stage								
 AMPHX:1000332	right pharyngeal gill slit	anatomical structure	whole organism	pharyngeal gill slit	larva-LML stage	adult-A stage								
 AMPHX:1000333	hepatic caecum bud	anatomical structure	gut	mid-gut	larva-LML stage	larva-LML stage								
-AMPHX:1000334	myomere	anatomical structure	whole organism	myotome of schizocoelic somite pair 	juvenile-J stage	adult-A stage	UBERON:0003082							
+AMPHX:1000334	myomere	anatomical structure	whole organism	myotome of schizocoelic somite pair	juvenile-J stage	adult-A stage	UBERON:0003082							
 AMPHX:1000335	left myomere	anatomical structure	whole organism	left schizocoelic somite myomere	juvenile-J stage	adult-A stage								
 AMPHX:1000336	right myomere	anatomical structure	whole organism	right schizocoelic somite myomere	juvenile-J stage	adult-A stage								
-AMPHX:1000337	dermis	anatomical structure	whole organism	external cell layer 	juvenile-J stage	adult-A stage	UBERON:0002067							
+AMPHX:1000337	dermis	anatomical structure	whole organism	external cell layer	juvenile-J stage	adult-A stage	UBERON:0002067							
 AMPHX:1000338	velum	anatomical structure	whole organism		juvenile-J stage	adult-A stage								
 AMPHX:1000339	velar tentacle	anatomical structure	whole organism		juvenile-J stage	adult-A stage								
 AMPHX:1000340	hepatic caecum	anatomical structure	gut	hepatic caecum bud	juvenile-J stage	adult-A stage	UBERON:0012474							

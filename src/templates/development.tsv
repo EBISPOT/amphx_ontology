@@ -1,5 +1,5 @@
-ID	stage	part of stage	stage preceded by 	Obsolete	dev stage	synonyms	reference	definition	UBERON (is-a)
-ID	A rdfs:label	C 'part of' some %	C 'immediately preceded by' some %	AT owl:deprecated^^xsd:boolean	C %	A oboInOwl:hasExactSynonym SPLIT=|	A obo:IAO_0000301	A obo:IAO_0000115	
+ID	stage	part of stage	stage preceded by 	Obsolete	dev stage	synonyms	reference	definition	Xrefs
+ID	A rdfs:label	C 'part of' some %	C 'immediately preceded by' some %	AT owl:deprecated^^xsd:boolean	C %	A oboInOwl:hasExactSynonym SPLIT=|	A obo:IAO_0000301	A obo:IAO_0000115	A oboInOwl:hasDbXref
 AMPHX:0000001	gametogenesis				obo:UBERON_0000105				NCIT:C16599
 AMPHX:0000002	oogenesis	gametogenesis							NCIT:C16938
 AMPHX:0000003	spermatogenesis	gametogenesis							
@@ -20,7 +20,7 @@ AMPHX:0000017	juvenile		metamorphosis		obo:UBERON_0000105
 AMPHX:0000018	juvenile period	juvenile	larva period						UBERON:0034919
 AMPHX:0000019	adult		juvenile		obo:UBERON_0000105				
 AMPHX:0000020	adult period	adult	juvenile period						UBERON:0000113
-AMPHX:0000022	1-cell stage	zygote period	unfertilized egg stage					fertilized egg: time since fertilization is 0min, corresponding to 0.00% of development	
+AMPHX:0000022	1-cell stage	zygote period	unfertilized egg stage					"fertilized egg: time since fertilization is 0min, corresponding to 0.00% of development"	
 AMPHX:0000023	2-cell stage	cleavage period	1-cell stage				Hirakow and Kajita 1990		UBERON:0007232
 AMPHX:0000024	4-cell stage	cleavage period	2-cell stage				Hirakow and Kajita 1990		UBERON:0007233
 AMPHX:0000025	8-cell stage	cleavage period	4-cell stage				Hirakow and Kajita 1990		UBERON:0007236
@@ -32,28 +32,28 @@ AMPHX:0000030	256-cell stage			TRUE
 AMPHX:0000031	blastula stage	blastula period	128-cell stage				Hirakow and Kajita 1990	initiation of asynchronous cell division	UBERON:0000108
 AMPHX:0000032	gastrula-G0 stage	gastrula period	blastula stage					initial flattening of the vegetal zone	
 AMPHX:0000033	gastrula-G1 stage	gastrula period	gastrula-G0 stage			very early gastrula	Hirakow and Kajita 1991	flattened vegetal pole	
-AMPHX:0000034	gastrula-G2 stage	gastrula period	gastrula-G1 stage			very early gastrula	Hirakow and Kajita 1991	invaginated vegetal pole, mesendoderm does not touch ectoderm	
-AMPHX:0000035	gastrula-G3 stage	gastrula period	gastrula-G2 stage			early gastrula	Hirakow and Kajita 1991	cap shaped, mesendoderm touches ectoderm	
+AMPHX:0000034	gastrula-G2 stage	gastrula period	gastrula-G1 stage			very early gastrula	Hirakow and Kajita 1991	"invaginated vegetal pole, mesendoderm does not touch ectoderm"	
+AMPHX:0000035	gastrula-G3 stage	gastrula period	gastrula-G2 stage			early gastrula	Hirakow and Kajita 1991	"cap shaped, mesendoderm touches ectoderm"	
 AMPHX:0000036	gastrula-G4 stage	gastrula period	gastrula-G3 stage			mid-gastrula	Hirakow and Kajita 1991	cup shaped	
-AMPHX:0000037	gastrula-G5 stage	gastrula period	gastrula-G4 stage			late gastrula	Hirakow and Kajita 1991	vase shaped, due to body elongation during blastopore closure	
-AMPHX:0000038	gastrula-G6 stage	gastrula period	gastrula-G5 stage			very late gastrula	Hirakow and Kajita 1991	bottle shaped, flattening neuroectoderm	
+AMPHX:0000037	gastrula-G5 stage	gastrula period	gastrula-G4 stage			late gastrula	Hirakow and Kajita 1991	"vase shaped, due to body elongation during blastopore closure"	
+AMPHX:0000038	gastrula-G6 stage	gastrula period	gastrula-G5 stage			very late gastrula	Hirakow and Kajita 1991	"bottle shaped, flattening neuroectoderm"	
 AMPHX:0000039	gastrula G7 stage			TRUE					
-AMPHX:0000040	neurula-N0 stage	neurula period	gastrula-G6 stage			very early neurula		neural plate, just before blastopore closure	
+AMPHX:0000040	neurula-N0 stage	neurula period	gastrula-G6 stage			very early neurula		"neural plate, just before blastopore closure"	
 AMPHX:0000041	neurula-N1 stage	neurula period	neurula-N0 stage			very early neurula	Hirakow and Kajita 1994	1-3 somite pairs	
-AMPHX:0000042	neurula-N2 stage	neurula period	neurula-N1 stage			early neurula		4-5 somite pairs, hatching	
+AMPHX:0000042	neurula-N2 stage	neurula period	neurula-N1 stage			early neurula		"4-5 somite pairs, hatching"	
 AMPHX:0000043	neurula-N3 stage	neurula period	neurula-N2 stage			mid-neurula	Hirakow and Kajita 1994	6-7 somite pairs	
-AMPHX:0000044	neurula-N4 stage	neurula period	neurula-N3 stage			late neurula		8-9 somite pairs, prior to schizocoelic somite formation	
-AMPHX:0000045	tailbud-T0 stage	tailbud period	neurula-N4 stage			early premouth		12 somite pairs, tailbud shape, enlarged pharyngeal region	
-AMPHX:0000046	tailbud-T1 stage	tailbud period	tailbud-T0 stage			late premouth		13 somite pairs, mouth and pre-oral pit anlagen, first pigment spot	
-AMPHX:0000047	larva-L0 stage	larva period	tailbud-T1 stage			early larva		open mouth, no open gill slits	
-AMPHX:0000048	larva-L1 stage	larva period	larva-L0 stage			1-gill slit larva	Hirakow and Kajita 1994	open mouth, 1 open gill slit	
-AMPHX:0000049	larva-L2 stage	larva period	larva-L1 stage			2-gill slit larva	Hirakow and Kajita 1994	open mouth, 2 open gill slits	
-AMPHX:0000050	larva-L3 stage	larva period	larva-L2 stage			3-gill slit larva		open mouth, 3 open gill slits	
-AMPHX:0000051	larva-L4 stage	larva period	larva-L3 stage			late larva		open mouth, 4-13 gill slits	
-AMPHX:0000052	larva-PL stage	larva period	larva-L4 stage			pre-metamorphic larva		open mouth, 14-15 gill slits 	
+AMPHX:0000044	neurula-N4 stage	neurula period	neurula-N3 stage			late neurula		"8-9 somite pairs, prior to schizocoelic somite formation"	
+AMPHX:0000045	tailbud-T0 stage	tailbud period	neurula-N4 stage			early premouth		"12 somite pairs, tailbud shape, enlarged pharyngeal region"	
+AMPHX:0000046	tailbud-T1 stage	tailbud period	tailbud-T0 stage			late premouth		"13 somite pairs, mouth and pre-oral pit anlagen, first pigment spot"	
+AMPHX:0000047	larva-L0 stage	larva period	tailbud-T1 stage			early larva		"open mouth, no open gill slits"	
+AMPHX:0000048	larva-L1 stage	larva period	larva-L0 stage			1-gill slit larva	Hirakow and Kajita 1994	"open mouth, 1 open gill slit"	
+AMPHX:0000049	larva-L2 stage	larva period	larva-L1 stage			2-gill slit larva	Hirakow and Kajita 1994	"open mouth, 2 open gill slits"	
+AMPHX:0000050	larva-L3 stage	larva period	larva-L2 stage			3-gill slit larva		"open mouth, 3 open gill slits"	
+AMPHX:0000051	larva-L4 stage	larva period	larva-L3 stage			late larva		"open mouth, 4-13 gill slits"	
+AMPHX:0000052	larva-PL stage	larva period	larva-L4 stage			pre-metamorphic larva		"open mouth, 14-15 gill slits "	
 AMPHX:0000053	larva-EML stage	metamorphosis	larva-PL stage			early metamorphic larva		metapleural folds start to grow	
-AMPHX:0000054	larva-MML stage	metamorphosis	larva-EML stage			mid-metamorphic larva		gill slit row starts to duplicate, hepatic caecum starts to develop	
+AMPHX:0000054	larva-MML stage	metamorphosis	larva-EML stage			mid-metamorphic larva		"gill slit row starts to duplicate, hepatic caecum starts to develop"	
 AMPHX:0000055	larva-LML stage	metamorphosis	larva-MML stage			late metamorphic larva		mouth migration to frontal position	
-AMPHX:0000056	juvenile-J stage	juvenile period	larva-LML stage			post-metamorphic juvenile		adult-like morphology, length of less than 3cm	
-AMPHX:0000057	adult-A stage	adult period	juvenile-J stage			adult		adult-like morphology, length of more than 3cm	
+AMPHX:0000056	juvenile-J stage	juvenile period	larva-LML stage			post-metamorphic juvenile		"adult-like morphology, length of less than 3cm"	
+AMPHX:0000057	adult-A stage	adult period	juvenile-J stage			adult		"adult-like morphology, length of more than 3cm"	
 AMPHX:0000058	neurula-N5 stage	neurula period	neurula-N4 stage			very late neurula	Hirakow and Kajita 1994	10-11 somite pairs	
